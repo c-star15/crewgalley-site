@@ -8,7 +8,8 @@ src, dist = root / 'src', root / 'dist'
 shutil.rmtree(dist, ignore_errors=True)
 dist.mkdir()
 shutil.copy(root / 'style.css', dist / 'style.css')
-shutil.copy(root / 'icon.png', dist / 'icon.png')
+for f in ('icon.png', 'apple-touch-icon.png', 'favicon.ico', 'wordmark.png'):
+    shutil.copy(root / f, dist / f)
 header = (root / '_header.html').read_text()
 footer = (root / '_footer.html').read_text()
 
@@ -37,7 +38,7 @@ def page(md_text, meta):
         content = f'<main><div class="wrap">{body}</div></main>'
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{meta["title"]}</title><meta name="description" content="{meta.get("description","")}">
-<link rel="icon" href="/icon.png"><link rel="stylesheet" href="/style.css"></head><body>
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.png" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0B1424"><link rel="stylesheet" href="/style.css"></head><body>
 {header}{content}{footer}</body></html>'''
 
 for f in sorted(src.glob('*.md')):
