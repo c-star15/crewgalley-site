@@ -1,5 +1,5 @@
 ---
-title: Galley — the crew-only layover app
+title: Galley — find your crew, at base and away
 hero: true
-description: Find pilots and cabin crew from any airline on a layover in your city, up for the same thing. Made by crew, for crew. Every account checked.
+description: Find pilots and cabin crew who are free when you are. Padel, coffee, runs and study sessions at your base, and company on layovers. Made by crew, for crew. Every account checked.
 ---

@@ -16,39 +16,48 @@ footer = (root / '_footer.html').read_text()
 
 HERO = '''<section class="hero"><div class="wrap wide">
 <p class="eyebrow">By crew, for crew · any airline</p>
-<h1>Layover plans?<br><em>Find your people.</em></h1>
-<p class="lead">Landed, checked in, and free for the day? Discover pilots and cabin crew from other airlines who are in the same city. Grab a coffee, explore somewhere new, go for a run, or find dinner company.</p>
-<ul class="trust"><li><strong>Verified crew only.</strong> Every account is verified before access is granted.</li></ul>
+<h1>Find your people.<br><em>At base and away.</em></h1>
+<p class="lead">Off on a Tuesday? So are plenty of crew at your base. Mark your free days and join padel, coffee, a run or a study session with pilots and cabin crew. On a layover, find crew in town too.</p>
+<ul class="trust"><li><strong>Verified crew only.</strong> Every account is checked before it can see anyone.</li></ul>
 <div class="actions"><a class="btn" href="/verification/">How we check crew</a><a class="btn secondary" href="/private/">How chats stay private</a></div>
 <p class="soon">Coming to the App Store and Google Play in December 2026.</p>
 </div><svg class="skyline" viewBox="0 0 1440 340" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g class="far"><rect x="-20" y="120" width="90" height="230"/><rect x="70" y="120" width="90" height="230"/><rect x="190" y="170" width="90" height="180"/><rect x="310" y="170" width="120" height="180"/><rect x="430" y="170" width="90" height="180"/><rect x="530" y="80" width="90" height="270"/><rect x="630" y="200" width="90" height="150"/><rect x="720" y="80" width="60" height="270"/><rect x="810" y="80" width="90" height="270"/><rect x="900" y="80" width="60" height="270"/><rect x="990" y="80" width="90" height="270"/><rect x="1080" y="170" width="60" height="180"/><rect x="1140" y="200" width="60" height="150"/><rect x="1230" y="80" width="120" height="270"/><rect x="1350" y="200" width="120" height="150"/></g><g class="near"><rect x="0" y="244" width="66" height="106" rx="3"/><rect x="72" y="60" width="98" height="290" rx="3"/><rect x="176" y="220" width="98" height="130" rx="3"/><rect x="280" y="190" width="58" height="160" rx="3"/><rect x="344" y="20" width="42" height="330" rx="3"/><rect x="392" y="160" width="58" height="190" rx="3"/><rect x="456" y="100" width="42" height="250" rx="3"/><rect x="504" y="130" width="82" height="220" rx="3"/><rect x="592" y="20" width="42" height="330" rx="3"/><rect x="640" y="130" width="58" height="220" rx="3"/><rect x="704" y="270" width="42" height="80" rx="3"/><rect x="752" y="100" width="82" height="250" rx="3"/><rect x="840" y="160" width="82" height="190" rx="3"/><rect x="928" y="244" width="58" height="106" rx="3"/><rect x="992" y="190" width="98" height="160" rx="3"/><rect x="1096" y="130" width="42" height="220" rx="3"/><rect x="1144" y="160" width="66" height="190" rx="3"/><rect x="1216" y="160" width="58" height="190" rx="3"/><rect x="1280" y="220" width="66" height="130" rx="3"/><rect x="1352" y="160" width="98" height="190" rx="3"/></g><g class="lights"><rect class="lit" x="10" y="260" width="6" height="9" rx="1"/><rect class="lit" x="38" y="282" width="6" height="9" rx="1"/><rect class="lit" x="38" y="304" width="6" height="9" rx="1"/><rect class="lit" x="52" y="326" width="6" height="9" rx="1"/><rect class="lit" x="82" y="76" width="6" height="9" rx="1"/><rect class="lit" x="82" y="120" width="6" height="9" rx="1"/><rect class="lit" x="96" y="120" width="6" height="9" rx="1"/><rect class="lit" x="152" y="186" width="6" height="9" rx="1"/><rect class="lit" x="96" y="252" width="6" height="9" rx="1"/><rect class="lit" x="124" y="274" width="6" height="9" rx="1"/><rect class="lit" x="96" y="296" width="6" height="9" rx="1"/><rect class="lit" x="96" y="318" width="6" height="9" rx="1"/><rect class="lit" x="242" y="236" width="6" height="9" rx="1"/><rect class="lit" x="200" y="258" width="6" height="9" rx="1"/><rect class="lit" x="304" y="206" width="6" height="9" rx="1"/><rect class="lit" x="318" y="206" width="6" height="9" rx="1"/><rect class="lit" x="290" y="250" width="6" height="9" rx="1"/><rect class="lit" x="430" y="242" width="6" height="9" rx="1"/><rect class="lit" x="402" y="308" width="6" height="9" rx="1"/><rect class="lit" x="542" y="146" width="6" height="9" rx="1"/><rect class="lit" x="528" y="190" width="6" height="9" rx="1"/><rect class="lit" x="556" y="212" width="6" height="9" rx="1"/><rect class="lit" x="542" y="300" width="6" height="9" rx="1"/><rect class="lit" x="556" y="322" width="6" height="9" rx="1"/><rect class="lit" x="602" y="278" width="6" height="9" rx="1"/><rect class="lit" x="602" y="300" width="6" height="9" rx="1"/><rect class="lit" x="714" y="286" width="6" height="9" rx="1"/><rect class="lit" x="776" y="138" width="6" height="9" rx="1"/><rect class="lit" x="790" y="138" width="6" height="9" rx="1"/><rect class="lit" x="762" y="160" width="6" height="9" rx="1"/><rect class="lit" x="818" y="160" width="6" height="9" rx="1"/><rect class="lit" x="776" y="182" width="6" height="9" rx="1"/><rect class="lit" x="804" y="226" width="6" height="9" rx="1"/><rect class="lit" x="790" y="270" width="6" height="9" rx="1"/><rect class="lit" x="818" y="270" width="6" height="9" rx="1"/><rect class="lit" x="906" y="198" width="6" height="9" rx="1"/><rect class="lit" x="892" y="220" width="6" height="9" rx="1"/><rect class="lit" x="850" y="264" width="6" height="9" rx="1"/><rect class="lit" x="892" y="264" width="6" height="9" rx="1"/><rect class="lit" x="892" y="286" width="6" height="9" rx="1"/><rect class="lit" x="892" y="308" width="6" height="9" rx="1"/><rect class="lit" x="938" y="260" width="6" height="9" rx="1"/><rect class="lit" x="966" y="260" width="6" height="9" rx="1"/><rect class="lit" x="952" y="282" width="6" height="9" rx="1"/><rect class="lit" x="966" y="282" width="6" height="9" rx="1"/><rect class="lit" x="1044" y="250" width="6" height="9" rx="1"/><rect class="lit" x="1044" y="272" width="6" height="9" rx="1"/><rect class="lit" x="1058" y="272" width="6" height="9" rx="1"/><rect class="lit" x="1044" y="294" width="6" height="9" rx="1"/><rect class="lit" x="1058" y="294" width="6" height="9" rx="1"/><rect class="lit" x="1044" y="316" width="6" height="9" rx="1"/><rect class="lit" x="1106" y="256" width="6" height="9" rx="1"/><rect class="lit" x="1120" y="278" width="6" height="9" rx="1"/><rect class="lit" x="1154" y="176" width="6" height="9" rx="1"/><rect class="lit" x="1168" y="176" width="6" height="9" rx="1"/><rect class="lit" x="1196" y="242" width="6" height="9" rx="1"/><rect class="lit" x="1226" y="220" width="6" height="9" rx="1"/><rect class="lit" x="1240" y="220" width="6" height="9" rx="1"/><rect class="lit" x="1226" y="286" width="6" height="9" rx="1"/><rect class="lit" x="1318" y="258" width="6" height="9" rx="1"/><rect class="lit" x="1362" y="176" width="6" height="9" rx="1"/><rect class="lit" x="1404" y="242" width="6" height="9" rx="1"/><rect class="lit" x="1376" y="308" width="6" height="9" rx="1"/></g></svg></section>
 <main id="content" class="home">
 <section class="section how"><div class="wrap wide">
 <p class="eyebrow">How it works</p>
-<h2>Meet people, make plans, and explore together.</h2>
+<h2>Plans with crew who are free when you are.</h2>
 <ol class="steps">
-<li><span class="step-n">01</span><h3>Add your layover</h3><p>Add your city and dates. See who will be there before you land.</p></li>
-<li><span class="step-n">02</span><h3>Find your people</h3><p>Meet verified pilots and cabin crew from different airlines. Find someone up for coffee, a run, exploring the city, or dinner.</p></li>
-<li><span class="step-n">03</span><h3>Make it happen</h3><p>Start a plan or join one. Chat with the crew and make the most of your time off.</p></li>
+<li><span class="step-n">01</span><h3>Mark your free days</h3><p>Tap the days you’re off. Nobody sees your calendar; Galley only uses it to show you what’s on.</p></li>
+<li><span class="step-n">02</span><h3>Join your crowd</h3><p>Padel, running, coffee, gym, studying and more. Each base gets its own, like Dubai Padel or Doha Coffee Club.</p></li>
+<li><span class="step-n">03</span><h3>Show up</h3><p>Join a plan with a spot left, or start one in four taps: what, when, where, how many.</p></li>
 </ol>
 </div></section>
 <section class="section band"><div class="wrap wide">
 <p class="eyebrow">Meeting new people</p>
 <h2>Easy to say yes. Easy to say no.</h2>
-<p class="intro">Galley is built around plans, so meeting someone new feels relaxed for everyone.</p>
+<p class="intro">Galley is built around plans, not profiles, so meeting someone new feels relaxed for everyone.</p>
 <div class="grid">
 <div class="card"><span class="num">1</span><strong>Everyone is verified crew</strong>Galley checks every account before it can see anyone else.</div>
-<div class="card"><span class="num">2</span><strong>An invite is a simple plan</strong>Someone suggests dinner, a run or a coffee, and a time. Tap Accept and a chat opens to pick the place. Tap Not now and they’re never told.</div>
-<div class="card"><span class="num">3</span><strong>You choose who can invite you</strong>Invites are off until you turn them on. Then, by default, only crew who’ve landed in your city can send one. Their phone checks the city; we never see anyone’s location.</div>
-<div class="card"><span class="num">4</span><strong>Women-only events</strong>Start one or join one. Only women can see them.</div>
+<div class="card"><span class="num">2</span><strong>Plans, not profiles</strong>At base you see what’s on and how many crew are free. Never a list of who’s free.</div>
+<div class="card"><span class="num">3</span><strong>Chat once you’ve met</strong>At your base, a private chat opens when a plan you both joined starts.</div>
+<div class="card"><span class="num">4</span><strong>Women-only plans</strong>Start one or join one. Only women can see them.</div>
 </div></div></section>
+<section class="section how"><div class="wrap wide">
+<p class="eyebrow">On a layover</p>
+<h2>Away from base, too.</h2>
+<ol class="steps">
+<li><span class="step-n">01</span><h3>Add your layover</h3><p>City and dates, two taps. See how many crew will be in town before you land.</p></li>
+<li><span class="step-n">02</span><h3>Join the locals</h3><p>Join plans there, from other crew on a layover to a local crew’s morning run.</p></li>
+<li><span class="step-n">03</span><h3>You pick who can invite you</h3><p>Invites are off until you turn them on. Then only crew who’ve landed can send one. Their phone checks the city; we never see anyone’s location.</p></li>
+</ol>
+</div></section>
 <section class="section origin"><div class="wrap">
 <p class="eyebrow">Made by crew</p>
 <h2>Built from the inside.</h2>
-<p>Galley was started by a working airline pilot. On a layover your own crew often wants something different, while someone from another airline in the same city would happily join you. Galley is the app we wanted on our own trips, shaped by how crew really live on the road.</p>
+<p>Galley was started by a working airline pilot. Crew days off land midweek, rosters change every month, and the group chat never lines up. Galley is the app we wanted: who’s free when you are, what’s on, and good company when you’re away.</p>
 </div></section>
 <section class="section closing"><div class="wrap">
-<h2>See you on the layover.</h2>
+<h2>See you at base. And away.</h2>
 <p>For pilots and cabin crew of any airline, 18+. Coming to the App Store and Google Play in December 2026.</p>
 <div class="actions"><a class="btn" href="/verification/">How we check crew</a><a class="btn ghost" href="/safety/">Tips for meeting safely</a></div>
 </div></section>
