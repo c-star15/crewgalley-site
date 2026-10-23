@@ -2,10 +2,12 @@
 title: How verification works
 description: Every Galley account is checked by a person before it can see anyone. Here is exactly how.
 ---
-# Crew only, by hand
+# Crew only. Checked by a person.
 
-## Why it matters
-A layover is better with people who live the same job: same hours, same jet lag, same stories, same instinct for where to go and when to stop. That only works if everyone in the room is crew. The moment family pass holders, enthusiasts or recruiters get in, the board stops being worth opening. So every account is checked by a person before it can see anyone.
+## Why
+You land somewhere for a day or two. Your crew has other plans, and the city is waiting. Someone from another airline is in town too, free and up for the same thing. Galley helps you find each other.
+
+Saying yes to someone you just met is easy when you know they are real crew. So a person checks every account before it can see anyone.
 
 ## Who is accepted
 Current pilots and cabin crew of any airline, anywhere in the world.
