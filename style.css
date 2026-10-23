@@ -139,3 +139,14 @@ main .btn{margin:4px 0}
 .skip:focus{left:8px}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]) .band{border-block:1px solid var(--band-edge)}}
 :root[data-theme=dark] .band{border-block:1px solid var(--band-edge)}
+/* Light/dark switch */
+.mode{display:inline-grid;place-items:center;width:44px;height:44px;flex:none;border:1.5px solid rgba(244,239,230,.22);border-radius:50%;background:transparent;color:var(--cream);cursor:pointer;transition:background .15s,border-color .15s}
+.mode[hidden]{display:none}
+.mode:hover{background:rgba(244,239,230,.08);border-color:rgba(244,239,230,.5)}
+.mode svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.mode .moon{fill:currentColor;stroke:none}
+.mode .sun{display:none}
+:root[data-mode=dark] .mode .sun{display:block}
+:root[data-mode=dark] .mode .moon{display:none}
+@media (prefers-reduced-motion:no-preference){body,.card,header.top,footer{transition:background-color .25s,color .25s,border-color .25s}}
+@media (max-width:560px){header.top .brand{margin-right:auto}nav{order:3}.mode{width:40px;height:40px}}
