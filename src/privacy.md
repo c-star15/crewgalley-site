@@ -59,7 +59,8 @@ You must not put hotel names, room numbers, flight numbers or long ID numbers in
 
 ### 3.2 Data created when you use Galley
 
-- **Verification decisions**: approved, rejected or second proof requested, the reason, the date and which admin decided. No image and nothing read from your proof is stored with it.
+- **Verification decisions**: approved, rejected or second proof requested, the reason, the date and which admin decided. No image is stored with it.
+- **Identity mark**: when we approve you, the reviewer types the staff number and surname shown on your proof, and our server turns them, with your airline, into a keyed one-way code. The staff number and surname themselves are not stored, and the code cannot be turned back into them; the key that makes it is held outside our database. We use it only to stop someone we have banned from joining again with a new account. It is deleted with your account. If we ban you, a copy with no link to you is kept for 3 years, and a new sign-up with the same code is held for a person to review.
 - **Board views**: one record per person, city and day you opened that city's board. Used, in totals, to understand whether Galley is useful. Kept 18 months.
 - **Automatic account decisions**: an account reported as "not crew" is asked to verify again; an account with two open reports is suspended until reviewed; invites and message requests from an account pause if 3 or more different people block or report it within 30 days, or if fewer than 10% of at least 12 of its invites across 3 or more cities are accepted ("not now" on its own never pauses anyone), until a person reviews it; if someone you invited is rejected, your invite link is switched off, and if three are, you are asked to verify again. A person reviews every report, and you can appeal any decision (Terms, section 8).
 - **Meetup records**: who joined, who said "still in", and whether two participants confirmed it happened. Used for go/no-go, reminders and to measure whether meetups happen.
@@ -68,7 +69,7 @@ You must not put hotel names, room numbers, flight numbers or long ID numbers in
 
 ### 3.3 Data we do not collect
 
-Hotel names or addresses, room numbers, flight numbers, pairings, duty times, staff or crew ID numbers, passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. Location is used only while the app is open, in two cases: if you choose to pin a tip to where you are standing (rounded to about 100 metres), and when you send an invite to someone who takes invites only from crew who've landed. In that case your phone checks, using approximate location, that it is within about 50 km of the city, and tells us only the city.
+Hotel names or addresses, room numbers, flight numbers, pairings, duty times, staff or crew ID numbers (only the one-way identity mark above), passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. Location is used only while the app is open, in two cases: if you choose to pin a tip to where you are standing (rounded to about 100 metres), and when you send an invite to someone who takes invites only from crew who've landed. In that case your phone checks, using approximate location, that it is within about 50 km of the city, and tells us only the city.
 
 We never run face recognition or any face-matching software. A selfie sent with a crew ID is compared by eye by a person on our team, then deleted.
 
@@ -103,7 +104,7 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 | Running your account, verification, profiles, boards, messages, meetups, tips, photos | Performance of our contract with you (the Terms) |
 | Invites and your invite settings | Performance of our contract with you (the Terms) |
 | Optional gender for women-only meetups; meetup photos on city pages; location for a tip pin or a "landed" check | Your consent, which you can withdraw at any time in the app (or in your phone's location settings) |
-| Safety and moderation: reports, blocks, the text filter, invite limits and pauses, suspensions, records of decisions | Our legitimate interest in keeping members safe and the community limited to crew |
+| Safety and moderation: reports, blocks, the text filter, invite limits and pauses, suspensions, the identity mark and ban marks, records of decisions | Our legitimate interest in keeping members safe and the community limited to crew |
 | Product analytics | Our legitimate interest in knowing whether Galley works. You can switch it off in Settings |
 | Service and security logs | Our legitimate interest in running a secure service |
 | Answering legal requests, keeping consent records, tax and accounting | Legal obligation |
@@ -145,7 +146,8 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Meetups and their group chat | Group chat closes 24 hours after the start; the meetup is deleted 7 days after the start |
 | Meetup records for measuring whether meetups happen | 18 months, with only random account IDs, removed if you delete your account |
 | Board views | 18 months |
-| Profile, photos, tips, verification decisions, consents | Until you delete your account |
+| Profile, photos, tips, verification decisions, consents, identity mark | Until you delete your account |
+| Ban mark (the identity mark of a banned account, with no link to the account) | 3 years after the ban |
 | Reports and blocks | Until either person's account is deleted |
 | Inactive accounts | Deleted after 24 months without a sign-in, after an email warning |
 | Analytics events | Deleted with your account; otherwise PostHog's retention period |

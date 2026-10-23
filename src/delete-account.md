@@ -21,7 +21,7 @@ If you no longer have the app or can't sign in, email **[privacy@crewgalley.app]
 
 - your account, email address and password
 - your profile, photos, bio, prompts, interests and gender if you set it
-- your verification records and any proof that hasn't been purged yet
+- your verification records, your identity mark and any proof that hasn't been purged yet
 - your stays, home base and Up for choices
 - your conversations (for both people) and the messages you sent in meetup chats
 - the meetups you hosted, your tips and votes, the meetup photos you uploaded, and your answers on other people's photos
@@ -36,6 +36,7 @@ If you no longer have the app or can't sign in, email **[privacy@crewgalley.app]
 - **Service logs** (IP addresses and request times) are kept by our hosting provider for no more than 90 days.
 - **Copies other people already have**, such as a message you sent that they screenshotted, are outside our control.
 - **Meetup photos someone else uploaded** that show you stay with the people who were there, but every one of them goes back to private until the remaining people agree again. You can ask us to remove a photo of you at [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
+- **If your account was banned**, a one-way code made from your airline, staff number and surname, with no link to you, is kept for 3 years so the ban still applies to a new account.
 - **Records we must keep by law**, such as a response to a legal request, are kept only as long as the law requires.
 
 ## Deleting some data, not everything
