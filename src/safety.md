@@ -10,6 +10,7 @@ Most crew meetups are exactly what they look like: a few tired people finding di
 
 ## Before
 
+- **Invites are yours to switch on.** They start off. When on, by default only crew who've landed in your city can invite you, and "Not now" is never shown to the sender.
 - **Verified isn't vetted.** Galley checks that someone showed proof of airline employment. It does not check identity documents, criminal records or character.
 - **Chat first.** A few messages in the app tell you a lot. Keep the conversation in Galley until you've met; you can report what happens here.
 - **Keep your hotel to yourself.** Never share your hotel name, room number or flight details, and never ask for anyone else's. Meetups meet in the lobby by default, and the venue is shown only to members.

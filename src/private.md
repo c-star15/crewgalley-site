@@ -7,7 +7,7 @@ description: Every Galley message is end-to-end encrypted on your phone. We cann
 <p class="lead">Every message on Galley is encrypted on your phone before it leaves it, and only the people in the conversation can open it. We can't read your chats. Neither can anyone who breaks into our servers, and neither can anyone who asks us for them.</p>
 
 <div class="grid">
-<div class="card"><strong>Requests</strong>The first message to someone new. Encrypted from the first word.</div>
+<div class="card"><strong>Invites</strong>How you reach someone new: a plan and a time, no text, so there's nothing to read. If they say yes, the chat opens, encrypted from the first word.</div>
 <div class="card"><strong>Chats</strong>Every message after they accept. Encrypted, every one.</div>
 <div class="card"><strong>Meetup chats</strong>The group chat for a meetup. Encrypted for the people going, and closed 24 hours after.</div>
 </div>
@@ -27,7 +27,7 @@ You talk about where you are, when you land, what you're doing tonight. That's n
 
 We would rather tell you than have you find out.
 
-**We can't see** what you write: requests, chats and meetup chats are sealed on your phone.
+**We can't see** what you write: chats, meetup chats and any older requests are sealed on your phone.
 
 **We can see** what it takes to run the app:
 
@@ -35,6 +35,8 @@ We would rather tell you than have you find out.
 - how many phones you use and when each last opened Galley
 - roughly how long a message is
 - the "Up for" chip a request came from (coffee, dinner…)
+- invites: who, the plan, the day and time of day, and the answer (invites contain no text)
+- when you send an invite to someone who takes them only from crew who've landed: the city your phone says you're in, for 12 hours. Your phone does the check; we never get your location
 - meetup titles, neighbourhoods, venues and times, because they're posted to the board
 - your profile and stays, because that is how the board shows you to crew who overlap you
 
@@ -44,7 +46,7 @@ Because we can't read chats, we only ever see what **you** choose to show us. Wh
 
 ## What this means for you
 
-- **A new phone starts fresh.** Messages are locked to the phones that were in the conversation. On a new phone you'll see new messages; older ones stay on your old phone. Chats on Galley are short-lived anyway: requests expire after 7 days, meetup chats close after 24 hours.
+- **A new phone starts fresh.** Messages are locked to the phones that were in the conversation. On a new phone you'll see new messages; older ones stay on your old phone. Chats on Galley are short-lived anyway: invites expire at the end of their day, meetup chats close after 24 hours.
 - **Deleting your account deletes your keys:** the phone you delete from erases its private key and we erase every public key. What's left on our servers can no longer be opened by anyone. Other phones signed in to the account keep their key until you remove the app.
 - **Your data export** (You → Settings → Export my data) opens the messages you sent on your phone and saves them as text. We never see that file.
 

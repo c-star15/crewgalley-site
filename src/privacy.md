@@ -23,6 +23,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 - We collect the minimum needed to let verified crew find each other in the same city on the same days.
 - Your proof of employment is seen only by our verification team and deleted, usually within 24 hours of the decision.
 - Other members see your profile only when you are both verified and both have a stay or home base in the same city on overlapping dates, and only from 2 days before your overlap starts. Before that they see a count, never your name. Nobody can browse a city where they have no stay or home base, and your home base is always your base city.
+- New contacts start with an invite: a plan and a time, no text. Only members who switch invites on can get them, and by default only from crew whose phone shows they've landed in the same city. Your phone does that check; only the city is sent to us, never where you are.
 - Your messages are end-to-end encrypted on your phone. We cannot read them, and neither can anyone who gets into our servers.
 - We never ask for your hotel, room, flight number, roster or staff number, and our filter catches the common forms of them in public text.
 - We do not sell your data, do not show ads, and do not use advertising or cross-app tracking.
@@ -42,7 +43,10 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Work email address (if you verify by an emailed code, once that option is available) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
 | Stays (city, dates and an optional short note) and home base (your base city) | To show you who overlaps with you, and you to them | Verified members with an overlapping stay or home base in that city, from 2 days before the overlap starts; before that, only as part of a count |
 | "Up for" choices for today (e.g. dinner, run) and a short note | To let overlapping crew see what you are up for | Overlapping verified members |
-| Messages: requests, chats and meetup chats | Conversations you choose to have | The people in the conversation. Messages are end-to-end encrypted on the sender's phone; we store only ciphertext we cannot open (section 4a) |
+| Invites (who, the plan, the day, the time of day, the city, and the answer) | To let crew in the same city suggest a plan | The two people involved. The sender sees only "sent" or "accepted", never "not now". Invites carry no text and are not encrypted |
+| Your invite settings (open to invites or not; from crew who've landed, or anyone with an overlapping stay) | So the app only lets the right people invite you | Members who can see you see whether you take invites |
+| "Landed" check: the city your phone says you are in, and when | So that, by default, only crew who are really in your city can invite you | Nobody. Your phone compares its approximate location with the city; the location itself is never sent to us. We keep the city and time for 12 hours |
+| Messages: chats and meetup chats (and any older message requests) | Conversations you choose to have | The people in the conversation. Messages are end-to-end encrypted on the sender's phone; we store only ciphertext we cannot open (section 4a) |
 | An optional note to the reviewer, and the invite code you joined with | Verification and invite accountability | Our verification team only |
 | Your phone's public encryption key | So other members' phones can seal messages to your phone | Members who can see you, have a conversation with you, or share a meetup with you |
 | Meetups you post or join (title, type, day, time slot, neighbourhood, venue, size, audience) | To organise meetups | The listing: verified members in that city whom its audience allows. The venue, the member list and the group chat: members of the meetup only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them |
@@ -57,14 +61,14 @@ You must not put hotel names, room numbers, flight numbers or long ID numbers in
 
 - **Verification decisions**: approved, rejected or second proof requested, the reason, the date and which admin decided. No image and nothing read from your proof is stored with it.
 - **Board views**: one record per person, city and day you opened that city's board. Used, in totals, to understand whether Galley is useful. Kept 18 months.
-- **Automatic account decisions**: an account reported as "not crew" is asked to verify again; an account with two open reports is suspended until reviewed; if someone you invited is rejected, your invite link is switched off, and if three are, you are asked to verify again. A person reviews every report, and you can appeal any decision (Terms, section 8).
+- **Automatic account decisions**: an account reported as "not crew" is asked to verify again; an account with two open reports is suspended until reviewed; invites and message requests from an account pause if 3 or more different people block or report it within 30 days, or if fewer than 10% of at least 12 of its invites across 3 or more cities are accepted ("not now" on its own never pauses anyone), until a person reviews it; if someone you invited is rejected, your invite link is switched off, and if three are, you are asked to verify again. A person reviews every report, and you can appeal any decision (Terms, section 8).
 - **Meetup records**: who joined, who said "still in", and whether two participants confirmed it happened. Used for go/no-go, reminders and to measure whether meetups happen.
 - **Product analytics**: events such as "signed up", "set Up for" or "joined a meetup", linked to a random account ID, with counts and chip names. No name, email, airline, message text, city or meetup audience is sent with them, and PostHog's location lookup from your IP address is switched off. Some events carry the ID of the meetup or tip concerned. Processed by PostHog in the EU.
 - **Technical data**: IP address, device type, operating system and app version, which our hosting and update providers log to run and secure the service.
 
 ### 3.3 Data we do not collect
 
-Hotel names or addresses, room numbers, flight numbers, pairings, duty times, staff or crew ID numbers, passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. Location is requested only if you choose to pin a tip to where you are standing, and it is rounded to about 100 metres.
+Hotel names or addresses, room numbers, flight numbers, pairings, duty times, staff or crew ID numbers, passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. Location is used only while the app is open, in two cases: if you choose to pin a tip to where you are standing (rounded to about 100 metres), and when you send an invite to someone who takes invites only from crew who've landed. In that case your phone checks, using approximate location, that it is within about 50 km of the city, and tells us only the city.
 
 We never run face recognition or any face-matching software. A selfie sent with a crew ID is compared by eye by a person on our team, then deleted.
 
@@ -74,9 +78,9 @@ Only someone who was in a meetup can add a photo, and only after it starts. The 
 
 ## 4a. Messages are end-to-end encrypted
 
-Requests, chats and meetup group chats are encrypted on the sender's phone before they are sent, and can be opened only by the phones of the people in the conversation. Each phone creates its own private key, which stays in the phone's secure storage and is never sent to us. We, our hosting provider and anyone who gains access to our servers see only sealed ciphertext.
+Chats, meetup group chats and any older message requests are encrypted on the sender's phone before they are sent, and can be opened only by the phones of the people in the conversation. Each phone creates its own private key, which stays in the phone's secure storage and is never sent to us. We, our hosting provider and anyone who gains access to our servers see only sealed ciphertext.
 
-What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, how many phones you use and when each last opened Galley, the "Up for" choice a request started from, and anything you post to a board (meetup titles, neighbourhoods, venues and times).
+What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, how many phones you use and when each last opened Galley, the "Up for" choice a request started from, invites (who, the plan, the day, the time of day and the answer; invites contain no text), and anything you post to a board (meetup titles, neighbourhoods, venues and times).
 
 What this means: a new phone cannot open messages sent before it was signed in; deleting your account erases the private key on the phone you delete from and all our copies of your public keys, so nothing left on our servers can be opened again (other phones signed in to the account keep their key until the app is removed); your data export opens the messages you sent, on your phone.
 
@@ -86,7 +90,8 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 
 - **Before verification**: nobody but our verification team.
 - **After verification**: verified members see your profile only when you both have a stay or home base in the same city with overlapping dates, the overlap starts within 2 days, and neither of you has blocked the other. Before that, someone with an overlapping stay sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
-- **Limits that protect you**: a stay's city can't be changed after it is added, stays can start at most 60 days ahead, each account can add 8 stays and send 6 message requests a week (3 waiting at a time), your home base is your base city, and your base can change once a month.
+- **Who can contact you**: nobody can invite you unless you switch on "Open to invites" (it starts off). When it's on, by default only crew who've landed in your city can invite you; you can widen it to anyone with an overlapping stay. Without invites, people can still meet you at events. Starting a new conversation with free text is no longer possible; it begins with an invite you accept.
+- **Limits that protect you**: a stay's city can't be changed after it is added, stays can start at most 60 days ahead, each account can add 8 stays and send 6 invites or requests a week (3 waiting at a time), your home base is your base city, and your base can change once a month.
 - **City activity**: anyone verified can see how many crew are in each city. These are counts only, never names.
 - **Admins** never appear on boards or in counts.
 
@@ -95,8 +100,9 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 | Purpose | Legal basis (EU/UK GDPR) |
 | --- | --- |
 | Running your account, verification, profiles, boards, messages, meetups, tips, photos | Performance of our contract with you (the Terms) |
-| Optional gender for women-only meetups; meetup photos on city pages; location for a tip pin | Your consent, which you can withdraw at any time in the app |
-| Safety and moderation: reports, blocks, the text filter, suspensions, records of decisions | Our legitimate interest in keeping members safe and the community limited to crew |
+| Invites and your invite settings | Performance of our contract with you (the Terms) |
+| Optional gender for women-only meetups; meetup photos on city pages; location for a tip pin or a "landed" check | Your consent, which you can withdraw at any time in the app (or in your phone's location settings) |
+| Safety and moderation: reports, blocks, the text filter, invite limits and pauses, suspensions, records of decisions | Our legitimate interest in keeping members safe and the community limited to crew |
 | Product analytics | Our legitimate interest in knowing whether Galley works. You can switch it off in Settings |
 | Service and security logs | Our legitimate interest in running a secure service |
 | Answering legal requests, keeping consent records, tax and accounting | Legal obligation |
@@ -130,7 +136,10 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Stays | The day after you depart; home base until you change it |
 | Up for | The end of that day in that city |
 | Unanswered or declined message requests | 7 days |
-| Record that you added a stay or sent a request (time only, for the weekly limits) | 8 days |
+| Record that you added a stay or sent an invite or request (time only, for the weekly limits) | 8 days |
+| Invites | 30 days after the day they were for |
+| "Landed" check (city and time) | 12 hours |
+| Invite pauses and their review | Until your account is deleted |
 | Accepted conversations | Until you or the other person deletes their account. "Delete for me" hides the thread from you only |
 | Meetups and their group chat | Group chat closes 24 hours after the start; the meetup is deleted 7 days after the start |
 | Meetup records for measuring whether meetups happen | 18 months, with only random account IDs, removed if you delete your account |

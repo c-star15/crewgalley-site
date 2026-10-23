@@ -26,7 +26,8 @@ The single most important rule.
 ## Respect each other
 
 - No harassment, threats, intimidation, stalking or pressure. "No", silence and a declined request are answers. Do not create new ways to contact someone who has declined or blocked you.
-- Add the layovers you actually fly. Stays added to see who is in a city you are not going to are misuse. The app limits each account to 8 new stays and 6 message requests a week, and shows names only from 2 days before an overlap.
+- Plans, not pickup lines. Invites are for doing something together: a run, dinner, a walk. "Not now" is a full answer; don't invite the same person again or look for another way to reach them.
+- Add the layovers you actually fly, and don't fake your location. Stays added to see who is in a city you are not going to are misuse. The app limits each account to 8 new stays and 6 invites or requests a week, and shows names only from 2 days before an overlap.
 - No hate or discrimination based on race, ethnicity, nationality, religion, gender, sexual orientation, disability, age, airline, rank or role.
 - No sexual content, nudity, or sexual messages that weren't clearly welcomed. Galley is not a dating app. If two adults hit it off, that's their business; uninvited advances are not.
 - No humiliating, mocking or rating other crew, their airlines or their bodies.
@@ -57,6 +58,7 @@ The single most important rule.
 
 ## If something goes wrong
 
+- **Not now** turns down an invite. The sender never finds out. Right after it you can choose **Don't show me them again** (a block) or **Report**.
 - **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a meetup you're in.
 - **Report** someone from their profile or from your chat with them. You can attach your recent messages with them; we can't read chats otherwise, because they're encrypted. Reporting also blocks. The person isn't told who reported them.
 - For a tip, photo or meetup, email [reporting@crewgalley.app](mailto:reporting@crewgalley.app). In-app reporting for these is coming.
@@ -67,7 +69,7 @@ The single most important rule.
 
 - Reports of sexual, hateful or threatening content, or of someone at risk, are acted on within 24 hours. Every other report gets a decision within 72 hours.
 - Depending on what happened, we may dismiss the report, warn the person, remove content, ask them to verify again, suspend the account until we've reviewed it, or ban it permanently. Serious first offences (threats, sexual harassment, sharing someone's hotel, fake proof) can lead straight to a ban.
-- Some steps are automatic. Public text matching common hotel brands or the patterns of flight numbers, room numbers or long numbers is rejected. A "not crew" report triggers re-verification. Two open reports suspend an account until we review it.
+- Some steps are automatic. Public text matching common hotel brands or the patterns of flight numbers, room numbers or long numbers is rejected. A "not crew" report triggers re-verification. Two open reports suspend an account until we review it. If several people block or report someone, or very few of their invites are accepted, their invites pause until we review it.
 - If we act on your account or content, we tell you what we did, which rule, whether it was automatic, and how to appeal. Reply to that message to appeal; we answer within 7 days.
 
 Thanks for looking after each other. That's the whole point.

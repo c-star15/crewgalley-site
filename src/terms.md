@@ -50,10 +50,13 @@ Follow the Community Guidelines. In particular, you must not:
 - impersonate anyone, or misrepresent your airline, role or employment;
 - use Galley for dating services, sex work, commercial promotion, recruitment, surveys, fundraising or selling anything, unless we have agreed in writing;
 - scrape, copy or collect data about other members, or use bots or automated access;
-- attempt to bypass verification, blocks, filters, rate limits or security, or probe our systems;
+- attempt to bypass verification, blocks, filters, rate limits, invite settings, the "landed" location check or security, or probe our systems, including by faking your phone's location or adding stays you will not fly;
 - use Galley if you are under 18.
 
 ## 6. Meetups and meeting in person
+
+New contacts start with an invite: a plan, a day and a time, which the other person accepts or turns down. Only members who switch invites on can be invited. Accepting opens a chat. Nobody is owed an answer.
+
 
 Meetups are arranged by members, not by Galley. We do not organise, supervise, inspect or vouch for any meetup, venue, activity or person. You decide whether to go, and you are responsible for your own safety, belongings and conduct, including following your employer's rules on rest, alcohol and fitness for duty. Activities such as running, hiking, swimming or drinking carry risks you accept when you take part.
 
@@ -71,7 +74,7 @@ We do not check content before it appears, but we may remove or restrict any con
 
 ## 8. Moderation, suspension and ending your account
 
-How we moderate: members can report and block anyone. Reports go to our moderation team. We act on reports of sexual, hateful or threatening content, or of someone at risk, within 24 hours, and decide every other report within 72 hours. Some steps are automatic: public text matching common hotel brands or the patterns of flight numbers, room numbers or long ID numbers is rejected; an account reported as "not crew" is asked to verify again; an account with two open reports is suspended until reviewed. Messages are end-to-end encrypted and we cannot read them; we see only messages a member chooses to attach to a report.
+How we moderate: members can report and block anyone. Reports go to our moderation team. We act on reports of sexual, hateful or threatening content, or of someone at risk, within 24 hours, and decide every other report within 72 hours. Some steps are automatic: public text matching common hotel brands or the patterns of flight numbers, room numbers or long ID numbers is rejected; an account reported as "not crew" is asked to verify again; an account with two open reports is suspended until reviewed; invites and message requests from an account pause if several people block or report it, or if very few of its invites are accepted across several cities, until we review it. Each account can add 8 stays and send 6 invites or requests a week, with 3 waiting at a time. Messages are end-to-end encrypted and we cannot read them; we see only messages a member chooses to attach to a report.
 
 What we may do: warn you, remove content, ask you to verify again, suspend your account until we have reviewed what happened, or ban it permanently. When we restrict your account or content, we tell you what we did, why, which rule it was, whether it was automatic, and how to appeal. You can appeal once per decision by replying to our message; we answer within 7 days.
 

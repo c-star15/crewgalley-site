@@ -25,7 +25,14 @@ HERO = '''<section class="hero"><div class="wrap">
 <div class="card"><strong>Meetups and events</strong>Post one, join one, chat with the group. Women-only, your airline only, pilots or cabin crew only: your call.</div>
 <div class="card"><strong>Crew tips</strong>Per city, from crew who have been there. The run route, the 24-hour place, the thing only crew know.</div>
 <div class="card"><strong>Chats only you can read</strong>Every message is end-to-end encrypted on your phone. We can't read them. <a href="/private/">How it works</a></div>
-<div class="card"><strong>Nothing public</strong>No search, no directory, no map. Your stay is visible only to verified crew in the same city, on the same dates.</div>
+<div class="card"><strong>Nothing public</strong>No search, no directory, no map. Your stay is visible only to verified crew in the same city, on the same dates, from 2 days out.</div>
+</div>
+<h2>Plans, not pickup lines.</h2>
+<div class="grid">
+<div class="card"><strong>Everyone here is verified crew</strong>A person checks every account before it can see anyone.</div>
+<div class="card"><strong>Invites are plans, not messages</strong>Dinner, a run, coffee, and a time. No text. They tap yes or not now, and nobody hears about a not now.</div>
+<div class="card"><strong>Only crew who've landed can invite you</strong>Invites start off. Switch them on and, by default, only crew in your city can send one. Their phone checks the city; we never get anyone's location.</div>
+<div class="card"><strong>Women-only events, one tap</strong>Post one or join one. Only women see it.</div>
 </div>
 <p class="meta">Pilots and cabin crew of any airline, 18+. Coming to the App Store and Google Play in December 2026.</p>
 </div></main>'''
