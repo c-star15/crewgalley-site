@@ -26,6 +26,7 @@ The single most important rule.
 ## Respect each other
 
 - No harassment, threats, intimidation, stalking or pressure. "No", silence and a declined request are answers. Do not create new ways to contact someone who has declined or blocked you.
+- Add the layovers you actually fly. Stays added to see who is in a city you are not going to are misuse. The app limits each account to 8 new stays and 6 message requests a week, and shows names only from 2 days before an overlap.
 - No hate or discrimination based on race, ethnicity, nationality, religion, gender, sexual orientation, disability, age, airline, rank or role.
 - No sexual content, nudity, or sexual messages that weren't clearly welcomed. Galley is not a dating app. If two adults hit it off, that's their business; uninvited advances are not.
 - No humiliating, mocking or rating other crew, their airlines or their bodies.

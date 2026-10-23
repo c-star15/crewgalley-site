@@ -22,7 +22,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 
 - We collect the minimum needed to let verified crew find each other in the same city on the same days.
 - Your proof of employment is seen only by our verification team and deleted, usually within 24 hours of the decision.
-- Other members see your profile only when you are both verified and both have a stay or home base in the same city on overlapping dates. Nobody can browse a city where they have no stay or home base.
+- Other members see your profile only when you are both verified and both have a stay or home base in the same city on overlapping dates, and only from 2 days before your overlap starts. Before that they see a count, never your name. Nobody can browse a city where they have no stay or home base, and your home base is always your base city.
 - Your messages are end-to-end encrypted on your phone. We cannot read them, and neither can anyone who gets into our servers.
 - We never ask for your hotel, room, flight number, roster or staff number, and our filter catches the common forms of them in public text.
 - We do not sell your data, do not show ads, and do not use advertising or cross-app tracking.
@@ -40,7 +40,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Gender (optional: female, male, other) | Only to let women create and join women-only meetups | Nobody. It is never shown on your profile |
 | Proof of employment: a roster screenshot, a screenshot of your company mailbox, or a crew ID photo plus a selfie | To verify that you are crew | Our verification team only. Deleted usually within 24 hours of the decision, or 30 days after you submit it if it is never decided |
 | Work email address (if you verify by an emailed code, once that option is available) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
-| Stays (city, dates and an optional short note) and home base (city) | To show you who overlaps with you, and you to them | Verified members with an overlapping stay or home base in that city |
+| Stays (city, dates and an optional short note) and home base (your base city) | To show you who overlaps with you, and you to them | Verified members with an overlapping stay or home base in that city, from 2 days before the overlap starts; before that, only as part of a count |
 | "Up for" choices for today (e.g. dinner, run) and a short note | To let overlapping crew see what you are up for | Overlapping verified members |
 | Messages: requests, chats and meetup chats | Conversations you choose to have | The people in the conversation. Messages are end-to-end encrypted on the sender's phone; we store only ciphertext we cannot open (section 4a) |
 | An optional note to the reviewer, and the invite code you joined with | Verification and invite accountability | Our verification team only |
@@ -85,7 +85,8 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 ## 5. Who can see you
 
 - **Before verification**: nobody but our verification team.
-- **After verification**: verified members see your profile only when you both have a stay or home base in the same city with overlapping dates, and neither of you has blocked the other. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
+- **After verification**: verified members see your profile only when you both have a stay or home base in the same city with overlapping dates, the overlap starts within 2 days, and neither of you has blocked the other. Before that, someone with an overlapping stay sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
+- **Limits that protect you**: a stay's city can't be changed after it is added, stays can start at most 60 days ahead, each account can add 8 stays and send 6 message requests a week (3 waiting at a time), your home base is your base city, and your base can change once a month.
 - **City activity**: anyone verified can see how many crew are in each city. These are counts only, never names.
 - **Admins** never appear on boards or in counts.
 
@@ -129,6 +130,7 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Stays | The day after you depart; home base until you change it |
 | Up for | The end of that day in that city |
 | Unanswered or declined message requests | 7 days |
+| Record that you added a stay or sent a request (time only, for the weekly limits) | 8 days |
 | Accepted conversations | Until you or the other person deletes their account. "Delete for me" hides the thread from you only |
 | Meetups and their group chat | Group chat closes 24 hours after the start; the meetup is deleted 7 days after the start |
 | Meetup records for measuring whether meetups happen | 18 months, with only random account IDs, removed if you delete your account |
