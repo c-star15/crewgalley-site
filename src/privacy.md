@@ -20,9 +20,10 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 
 ## 2. The short version
 
-- We collect the minimum needed to let verified crew find each other in the same city on the same days.
+- We collect the minimum needed to let verified crew make plans at their base and find each other in the same city on the same days.
 - Your proof of employment is seen only by our verification team and deleted, usually within 24 hours of the decision.
-- Other members see your profile only when you are both verified and both have a stay or home base in the same city on overlapping dates, and only from 2 days before your overlap starts. Before that they see a count, never your name. Nobody can browse a city where they have no stay or home base, and your home base is always your base city.
+- Other members see your profile only when you share a meetup, or when you are both on a layover in the same city on overlapping dates, and then only from 2 days before your overlap starts. Before that they see a count, never your name. Nobody can browse a city where they have no layover, crew based in a city never appear on its board, and your home base is always your base city.
+- The free days you mark at your base are only ever counted. Nobody sees your free days, and a count under 3 is never shown.
 - New contacts start with an invite: a plan and a time, no text. Only members who switch invites on can get them, and by default only from crew whose phone shows they've landed in the same city. Your phone does that check; only the city is sent to us, never where you are.
 - Your messages are end-to-end encrypted on your phone. We cannot read them, and neither can anyone who gets into our servers.
 - We never ask for your hotel, room, flight number, roster or staff number, and our filter catches the common forms of them in public text.
@@ -36,12 +37,14 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Data | Why | Who can see it |
 | --- | --- | --- |
 | Email address and password | Your account and sign-in. Your account email is your personal email, never your work email. | Only you and us. The password is stored hashed; we cannot read it. |
-| Display name, up to 5 photos, short bio, answers to fixed prompts, interests from a fixed list | Your profile | Verified members who overlap with you in a city (section 5) |
-| Airline (from a list), role (pilot or cabin crew), base city | Verification and your profile | Overlapping verified members see role and base, and your airline unless you switch "Show my airline" off in Settings (then it is hidden everywhere other members see you, including chats, invites, meetup lists and tips) |
+| Display name, up to 5 photos, short bio, answers to fixed prompts, interests from a fixed list | Your profile | Verified members who share a meetup with you or overlap with you on a layover (section 5) |
+| Airline (from a list), role (pilot or cabin crew), base city | Verification, your profile, and what you see at your base | Members who can see you (section 5) see role and base, and your airline unless you switch "Show my airline" off in Settings (then it is hidden everywhere other members see you, including chats, invites, meetup lists and tips) |
 | Gender (optional: female, male, other) | Only to let women create and join women-only meetups | Nobody. It is never shown on your profile |
 | Proof of employment: a roster screenshot, a screenshot of your company mailbox, or a crew ID photo plus a selfie | To verify that you are crew | Our verification team only. Deleted usually within 24 hours of the decision, or 30 days after you submit it if it is never decided |
 | Work email address (if you verify by an emailed code, once that option is available) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
-| Stays (city, dates and an optional short note) and home base (your base city) | To show you who overlaps with you, and you to them | Verified members with an overlapping stay or home base in that city, from 2 days before the overlap starts; before that, only as part of a count |
+| Stays (city, dates and an optional short note) and home base (your base city) | To show you who overlaps with you on a layover, and you to them | Verified members on a layover in that city whose stay overlaps yours, from 2 days before the overlap starts; before that, only as part of a count. A home base never puts you on a city board |
+| Free days at your base (a day, optionally morning, afternoon or evening, up to 14 days ahead) and the "Count me" switch | To show you what's on when you're free, and how many crew are free | Nobody. Other members at your base see only totals of crew free on a day, never fewer than 3 and never who. Switch "Count me" off to leave the totals |
+| Communities you join at your base (for example Padel or Running) | To show you activities in them | Nobody sees who is in a community. Members at your base see how many are |
 | "Up for" choices for today (e.g. dinner, run) and a short note | To let overlapping crew see what you are up for | Overlapping verified members |
 | Invites (who, the plan, the day, the time of day, the city, and the answer) | To let crew in the same city suggest a plan | The two people involved. The sender sees only "sent" or "accepted", never "not now". Invites carry no text and are not encrypted |
 | Your invite settings (open to invites or not; from crew who've landed, or anyone with an overlapping stay) | So the app only lets the right people invite you | Members who can see you see whether you take invites |
@@ -49,7 +52,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Messages: chats and meetup chats (and any older message requests) | Conversations you choose to have | The people in the conversation. Messages are end-to-end encrypted on the sender's phone; we store only ciphertext we cannot open (section 4a) |
 | An optional note to the reviewer, and the invite code you joined with | Verification and invite accountability | Our verification team only |
 | Your phone's public encryption key | So other members' phones can seal messages to your phone | Members who can see you, have a conversation with you, or share a meetup with you |
-| Meetups you post or join (title, type, day, time slot, neighbourhood, venue, size, audience) | To organise meetups | The listing: verified members in that city whom its audience allows. The venue, the member list and the group chat: members of the meetup only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them |
+| Meetups and activities you post or join (title, type or interest, day, time, neighbourhood, venue, size, level, audience) | To organise meetups and activities | The listing: verified members in that city whom its audience allows. An activity at your base is listed to verified crew based there and, unless the host switches it off, to crew on a layover there that day. The venue, the member list and the group chat: members only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them; for an activity at your base, that chat opens when the activity starts, not when you join |
 | Meetup photos | To remember the evening | People who were in the meetup; on the city page only if everyone pictured agrees (section 4) |
 | City tips (text, optional photo, optional place pin rounded to about 100 m) | To share recommendations | All verified members, with your display name, photo and airline (unless you hide it) as the author. The most-voted tip photo can become the city's cover image |
 | Reports, blocks and city requests | Safety and the city list | Our moderation team. The person you report or block is not told who did it |
@@ -90,7 +93,8 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 ## 5. Who can see you
 
 - **Before verification**: nobody but our verification team.
-- **After verification**: verified members see your profile only when you both have a stay or home base in the same city with overlapping dates, the overlap starts within 2 days, and neither of you has blocked the other. Before that, someone with an overlapping stay sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
+- **After verification**: verified members see your profile only when you share a meetup, or when you are both on a layover in the same city with overlapping dates and the overlap starts within 2 days; never if either of you has blocked the other. Before that, someone with an overlapping layover sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
+- **At your base**: nobody browses the crew based in a city, and you appear on no board there. Crew based in your city see activities, how many crew are free on a day (never fewer than 3, never who) and how many are in each community. You meet them by joining the same activity; a private chat with each other member opens when it starts. Two people at their own base can't invite each other.
 - **Who can contact you**: nobody can invite you unless you switch on "Open to invites" (it starts off). When it's on, by default only crew who've landed in your city can invite you; you can widen it to anyone with an overlapping stay. Without invites, people can still meet you at events. Starting a new conversation with free text is no longer possible; it begins with an invite you accept.
 - **Limits that protect you**: a stay's city can't be changed after it is added, stays can start at most 60 days ahead, each account can add 8 stays and send 6 invites or requests a week (3 waiting at a time), your home base is your base city, and your base can change once a month.
 - **Only at events**: in Settings you can choose "Only at events". You then appear on no city board, and only people who share a meetup with you can open your profile or invite you. You still see others and still count in the numbers.
@@ -137,6 +141,8 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Work email address | Deleted when the code is confirmed or expires (15 minutes); the hash stays with your account |
 | Stays | The day after you depart; home base until you change it |
 | Up for | The end of that day in that city |
+| Free days | The end of that day in your base city; all of them when you change base |
+| Community memberships | Until you leave the community, change base or delete your account |
 | Unanswered or declined message requests | 7 days |
 | Record that you added a stay or sent an invite or request (time only, for the weekly limits) | 8 days |
 | Invites | 30 days after the day they were for |

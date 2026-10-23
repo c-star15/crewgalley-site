@@ -27,6 +27,7 @@ The single most important rule.
 
 - No harassment, threats, intimidation, stalking or pressure. "No", silence and a declined request are answers. Do not create new ways to contact someone who has declined or blocked you.
 - Plans, not pickup lines. Invites are for doing something together: a run, dinner, a walk. "Not now" is a full answer; don't invite the same person again or look for another way to reach them.
+- At your base, people are your colleagues too. Join plans to do the thing, not to find out who's free or when someone's away. Free days are only ever shown as totals; don't try to work out whose they are.
 - Add the layovers you actually fly, and don't fake your location. Stays added to see who is in a city you are not going to are misuse. The app limits each account to 8 new stays and 6 invites or requests a week, and shows names only from 2 days before an overlap.
 - No hate or discrimination based on race, ethnicity, nationality, religion, gender, sexual orientation, disability, age, airline, rank or role.
 - No sexual content, nudity, or sexual messages that weren't clearly welcomed. Galley is not a dating app. If two adults hit it off, that's their business; uninvited advances are not.
@@ -43,7 +44,7 @@ The single most important rule.
 ## Meet well
 
 - Turn up when you say you're in. If plans change, tap "Leave" (or "Can't make it" in the last hour) so the seat goes back. Hosts: cancel early rather than leave people waiting.
-- Choose public places. Meet in the lobby, then go together.
+- Choose public places. On a layover, meet in the lobby, then go together. At your base, meet at the venue.
 - No pressure to drink, stay out, spend, or go anywhere private.
 - Respect audience settings. Women-only meetups are for women, pilots-only for pilots, and so on.
 - Ask before taking photos of people, and before posting them anywhere outside Galley.
