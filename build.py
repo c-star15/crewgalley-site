@@ -20,7 +20,7 @@ HERO = '''<section class="hero"><div class="wrap">
 </div></section>
 <main><div class="wrap">
 <div class="grid">
-<div class="card"><strong>Now and Later</strong>Add a stay: city, arrival, departure. See every verified crew member whose dates overlap yours, and nobody else.</div>
+<div class="card"><strong>Meet</strong>Add a layover: city and dates. See how many crew overlap you, then who, from 2 days out. Today and every trip ahead in one place.</div>
 <div class="card"><strong>Up for today</strong>Coffee, a run, dinner, a night out. Say it once; it shows on your row until midnight.</div>
 <div class="card"><strong>Meetups and events</strong>Post one, join one, chat with the group. Women-only, your airline only, pilots or cabin crew only: your call.</div>
 <div class="card"><strong>Crew tips</strong>Per city, from crew who have been there. The run route, the 24-hour place, the thing only crew know.</div>
