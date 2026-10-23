@@ -32,6 +32,7 @@ We would rather tell you than have you find out.
 **We can see** what it takes to run the app:
 
 - that a conversation exists, between whom, and when messages were sent
+- how many phones you use and when each last opened Galley
 - roughly how long a message is
 - the "Up for" chip a request came from (coffee, dinner…)
 - meetup titles, neighbourhoods, venues and times, because they're posted to the board
@@ -44,8 +45,8 @@ Because we can't read chats, we only ever see what **you** choose to show us. Wh
 ## What this means for you
 
 - **A new phone starts fresh.** Messages are locked to the phones that were in the conversation. On a new phone you'll see new messages; older ones stay on your old phone. Chats on Galley are short-lived anyway: requests expire after 7 days, meetup chats close after 24 hours.
-- **Deleting your account deletes your keys:** the phone erases its private key and we erase the public half. What's left on our servers can no longer be opened by anyone.
-- **Your data export** (You → Settings → Export my data) opens your messages on your phone and saves them as text. We never see that file.
+- **Deleting your account deletes your keys:** the phone you delete from erases its private key and we erase every public key. What's left on our servers can no longer be opened by anyone. Other phones signed in to the account keep their key until you remove the app.
+- **Your data export** (You → Settings → Export my data) opens the messages you sent on your phone and saves them as text. We never see that file.
 
 ## If someone asks us for your messages
 
@@ -54,10 +55,10 @@ We can only hand over what we have. For messages that is sealed ciphertext we ca
 ## For the technically curious
 
 - **Algorithms:** NaCl. Messages use XSalsa20-Poly1305 with a fresh 256-bit key and nonce per message. That key is sealed for each recipient phone with Curve25519 key agreement and XSalsa20-Poly1305.
-- **Keys:** one Curve25519 key pair per phone and account, generated on the phone and stored in the iOS Keychain (this device only, never synced to iCloud) or Android Keystore. Only the public half is registered with us. Up to five phones per account.
+- **Keys:** one Curve25519 key pair per phone and account, generated on the phone and stored in the iOS Keychain (this device only, never synced to iCloud) or, on Android, encrypted with a key held in the Android Keystore. Only the public half is registered with us. Up to five phones per account.
 - **Authenticity:** every message is authenticated by the sending phone's key; a changed byte or a swapped sender fails to open.
-- **Server checks:** the server can't read messages, but it refuses ones that aren't addressed to the people in the conversation or that are missing the recipient's phone.
-- **Tested:** an automated test runs the app's own encryption code on every change: sealing, opening, tampering, impersonation, new phones and report keys.
+- **Server checks:** the server can't read messages, but it refuses ones that aren't addressed to the people in the conversation, or, in a one-to-one chat, that leave out the other person's phone.
+- **Tested:** an automated test runs the app's own encryption code on every change to it: sealing, opening, tampering, impersonation, new phones and report keys.
 - **What it doesn't do yet:** there are no security codes to compare with the other person in person, and keys are long-lived rather than rotated with every message as Signal's are. Both are on the list.
 
 Questions: [privacy@crewgalley.app](mailto:privacy@crewgalley.app).

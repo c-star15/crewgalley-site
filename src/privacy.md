@@ -38,11 +38,12 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Display name, up to 5 photos, short bio, answers to fixed prompts, interests from a fixed list | Your profile | Verified members who overlap with you in a city (section 5) |
 | Airline (from a list), role (pilot or cabin crew), base city | Verification and your profile | Overlapping verified members see airline, role and base |
 | Gender (optional: female, male, other) | Only to let women create and join women-only meetups | Nobody. It is never shown on your profile |
-| Proof of employment: a roster screenshot, or a crew ID photo plus a selfie | To verify that you are crew | Our verification team only. Deleted usually within 24 hours of the decision, or 30 days after you submit it if it is never decided |
-| Work email address (if you verify by company email) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
-| Stays (city and dates) and home base (city) | To show you who overlaps with you, and you to them | Verified members with an overlapping stay or home base in that city |
-| "Up for" choices for today or tomorrow (e.g. dinner, run) and short notes | To let overlapping crew see what you are up for | Overlapping verified members |
+| Proof of employment: a roster screenshot, a screenshot of your company mailbox, or a crew ID photo plus a selfie | To verify that you are crew | Our verification team only. Deleted usually within 24 hours of the decision, or 30 days after you submit it if it is never decided |
+| Work email address (if you verify by an emailed code, once that option is available) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
+| Stays (city, dates and an optional short note) and home base (city) | To show you who overlaps with you, and you to them | Verified members with an overlapping stay or home base in that city |
+| "Up for" choices for today (e.g. dinner, run) and a short note | To let overlapping crew see what you are up for | Overlapping verified members |
 | Messages: requests, chats and meetup chats | Conversations you choose to have | The people in the conversation. Messages are end-to-end encrypted on the sender's phone; we store only ciphertext we cannot open (section 4a) |
+| An optional note to the reviewer, and the invite code you joined with | Verification and invite accountability | Our verification team only |
 | Your phone's public encryption key | So other members' phones can seal messages to your phone | Members who can see you, have a conversation with you, or share a meetup with you |
 | Meetups you post or join (title, type, day, time slot, neighbourhood, venue, size, audience) | To organise meetups | The listing: verified members in that city whom its audience allows. The venue, the member list and the group chat: members of the meetup only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them |
 | Meetup photos | To remember the evening | People who were in the meetup; on the city page only if everyone pictured agrees (section 4) |
@@ -75,9 +76,9 @@ Only someone who was in a meetup can add a photo, and only after it starts. The 
 
 Requests, chats and meetup group chats are encrypted on the sender's phone before they are sent, and can be opened only by the phones of the people in the conversation. Each phone creates its own private key, which stays in the phone's secure storage and is never sent to us. We, our hosting provider and anyone who gains access to our servers see only sealed ciphertext.
 
-What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, the "Up for" choice a request started from, and anything you post to a board (meetup titles, neighbourhoods, venues and times).
+What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, how many phones you use and when each last opened Galley, the "Up for" choice a request started from, and anything you post to a board (meetup titles, neighbourhoods, venues and times).
 
-What this means: a new phone cannot open messages sent before it was signed in; deleting your account erases your phone's private key and our copy of its public key, so nothing left on our servers can be opened again; your data export opens your messages on your phone.
+What this means: a new phone cannot open messages sent before it was signed in; deleting your account erases the private key on the phone you delete from and all our copies of your public keys, so nothing left on our servers can be opened again (other phones signed in to the account keep their key until the app is removed); your data export opens the messages you sent, on your phone.
 
 **Reports.** Because we cannot read conversations, when you report someone the app offers to attach your recent messages with them. If you agree, your phone opens those messages and sends them to us with the single-use key for each one, which lets our reviewer confirm every attached message matches what was actually sent. Only those messages are disclosed. You can always report without attaching anything.
 
@@ -113,7 +114,7 @@ We do not sell or rent personal data, and we do not share it with airlines, empl
 
 When data goes to a provider in the United States, the transfer relies on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses in that provider's agreement. Our team accesses data from the United Arab Emirates.
 
-If you tap a Maps link on a tip, Apple Maps or Google Maps opens with the place name. Their privacy policies then apply.
+If you tap a Maps link on a tip, Apple Maps or Google Maps opens with the place name and, if the tip has a pin, its rounded location. Their privacy policies then apply.
 
 For messages we can only ever provide ciphertext we cannot open and the metadata in section 4a. We disclose data to authorities only under valid legal process, or without it only where we believe in good faith that there is a risk of death or serious injury. Our process is published at [crewgalley.app/reporting/](/reporting/).
 
@@ -138,12 +139,14 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Analytics events | Deleted with your account; otherwise PostHog's retention period |
 | Backups | Overwritten within 7 days |
 | Service logs | No more than 90 days |
+| Records of privacy and legal requests | 3 years |
+| Admin access log for proof images | 12 months |
 
 ## 9. Your rights
 
 Depending on where you live, you can ask to access, correct, delete or receive a copy of your data, object to or restrict how we use it, and withdraw consent. You can do most of it yourself:
 
-- **Export**: Settings → Export my data gives you your account, profile, verifications, consents, stays, messages (opened on your phone), meetups, photos, tips, blocks and reports. For a complete copy of everything we hold about you, including records such as board views and decisions about your account, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
+- **Export**: Settings → Export my data gives you your account, profile, verifications, consents, stays, the messages you sent (opened on your phone), meetups, photos, tips, blocks and reports. For a complete copy of everything we hold about you, including records such as board views and decisions about your account, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
 - **Correct**: edit your profile, stays and tips at any time.
 - **Delete**: Settings → Delete account. This deletes your profile, photos, stays, messages you sent, tips, consents and verification records, and removes your files from storage, usually within 24 hours. If you cannot open the app, see [crewgalley.app/delete-account/](/delete-account/).
 - **Withdraw consent**: clear your gender, switch off "Show on the city page", or remove a tip pin.
