@@ -4,7 +4,7 @@ description: Every Galley message is end-to-end encrypted on your phone. We cann
 ---
 # Your messages are yours
 
-<p class="lead">Every message on Galley is encrypted on your phone before it leaves it, and only the people in the conversation can open it. We can't read your chats. Neither can anyone who breaks into our servers, and neither can anyone who asks us for them.</p>
+<p class="lead">Every message on Galley is encrypted on your phone before it leaves it, and only the people in the conversation can open it. We can't read your chats, and nobody else can get them from us, because we never have them in a form anyone can read.</p>
 
 <div class="grid">
 <div class="card"><strong>Invites</strong>How you reach someone new: a plan and a time, no text, so there's nothing to read. If they say yes, the chat opens, encrypted from the first word.</div>
@@ -14,7 +14,7 @@ description: Every Galley message is end-to-end encrypted on your phone. We cann
 
 ## Why it matters to crew
 
-You talk about where you are, when you land, what you're doing tonight. That's nobody else's business: not ours, not an airline's, not a hacker's. Crew deserve to talk to crew the way they would in the galley, without wondering who else is reading.
+You talk about where you are, when you land, what you're doing tonight. That should stay between you and the people you're talking to. Crew should be able to chat the way they would in the galley, without wondering who else is reading.
 
 ## How it works, in four steps
 

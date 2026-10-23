@@ -4,7 +4,7 @@ description: How to reach Galley.
 ---
 # Support
 
-Email [support@crewgalley.app](mailto:support@crewgalley.app). We answer within two working days. Safety reports: [reporting@crewgalley.app](mailto:reporting@crewgalley.app).
+Stuck, or something not working? Email [support@crewgalley.app](mailto:support@crewgalley.app) and a person will reply within two working days. Safety reports: [reporting@crewgalley.app](mailto:reporting@crewgalley.app).
 
 ## Common questions
 
