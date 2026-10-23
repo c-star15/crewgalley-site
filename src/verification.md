@@ -10,7 +10,7 @@ You land somewhere for a day or two. Your crew has other plans, and the city is 
 Saying yes to someone you just met is easy when you know they are real crew. So a person checks every account before it can see anyone.
 
 ## Who can join
-Pilots and cabin crew flying now. Any airline, anywhere.
+Pilots and cabin crew flying now, or in airline new-hire training. Any airline, anywhere.
 
 Not ground staff, dispatchers or other airline staff, family or buddy pass holders, retired crew, student pilots, aviation fans or recruiters. No roster, no account.
 

@@ -9,7 +9,7 @@ description: How to delete your Galley account, with or without the app, and wha
 ## In the app (instant)
 
 1. Open Galley and go to **You → Settings**.
-2. Tap **Delete account** and confirm.
+2. Tap **Delete my account** and confirm.
 
 Your account is deleted immediately and your files are removed from storage, usually within 24 hours. You can download a copy of your data first from **Settings → Export my data**.
 

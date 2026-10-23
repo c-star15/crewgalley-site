@@ -14,8 +14,8 @@ header = (root / '_header.html').read_text()
 footer = (root / '_footer.html').read_text()
 
 HERO = '''<section class="hero"><div class="wrap">
-<h1>Crew only.<br>See who is in your city this week.</h1>
-<p>Galley shows verified pilots and cabin crew who else is on a layover in the same city on the same dates, with one tap to meet up. Every account is checked by a person before it can see anyone, and every message is end-to-end encrypted.</p>
+<h1>New city. Free day.<br>Find your people.</h1>
+<p>Your crew has other plans? Galley shows pilots and cabin crew from any airline on a layover in the same city, up for the same thing. One tap to meet up. Every account is checked by a person before it can see anyone, and every message is end-to-end encrypted.</p>
 <a class="btn" href="/verification/">How verification works</a><a class="btn secondary" href="/private/">Private by design</a>
 </div></section>
 <main><div class="wrap">

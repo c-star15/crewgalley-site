@@ -21,7 +21,7 @@ Galley is independent. It is not affiliated with, endorsed by or sponsored by an
 You may use Galley only if all of these are true:
 
 - you are at least 18 years old;
-- you currently work as a pilot or cabin crew member for an airline (including in training or on leave with a return date), and you stop using Galley when that stops being true;
+- you currently work as a pilot or cabin crew member for an airline (including airline new-hire training, but not flight school, and including leave with a return date), and you stop using Galley when that stops being true;
 - you have not been banned from Galley before;
 - using Galley is not against the law where you live or a rule of your employer that you are bound by. Many airlines have rules about social media, rosters, hotels, uniforms and alcohol. Following them is your responsibility.
 
@@ -29,7 +29,7 @@ One person, one account. Admin and test accounts are the only exceptions.
 
 ## 3. Verification
 
-Before you can see anyone, you must verify that you are crew, by a code sent to your company email, a roster screenshot, or a crew ID photo plus a selfie. You must only submit proof that is genuinely yours and current, with anything you are not required to show covered. Submitting someone else's proof, or a forged or edited one, is grounds for a permanent ban.
+Before you can see anyone, you must verify that you are crew, with a roster screenshot, a screenshot of your company mailbox, or a crew ID photo plus a selfie. A person checks every proof. You must only submit proof that is genuinely yours and current, with anything you are not required to show covered. Submitting someone else's proof, or a forged or edited one, is grounds for a permanent ban.
 
 **What verification means.** Verification checks proof of employment at a point in time. It does **not** check anyone's identity documents, character, criminal record, intentions or behaviour. A verified badge means the person showed us employment proof; it does not mean they are safe. Use your own judgement with everyone you meet (see [crewgalley.app/safety/](/safety/)). We may ask you to verify again at any time, and at least every 12 months.
 

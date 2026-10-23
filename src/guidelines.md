@@ -40,7 +40,7 @@ The single most important rule.
 
 ## Meet well
 
-- Turn up when you say you're in. If plans change, tap "Can't make it" so the seat goes back. Hosts: cancel early rather than leave people waiting.
+- Turn up when you say you're in. If plans change, tap "Leave" (or "Can't make it" in the last hour) so the seat goes back. Hosts: cancel early rather than leave people waiting.
 - Choose public places. Meet in the lobby, then go together.
 - No pressure to drink, stay out, spend, or go anywhere private.
 - Respect audience settings. Women-only meetups are for women, pilots-only for pilots, and so on.
@@ -58,7 +58,7 @@ The single most important rule.
 
 - **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a meetup you're in.
 - **Report** someone from their profile or from your chat with them. You can attach your recent messages with them; we can't read chats otherwise, because they're encrypted. Reporting also blocks. The person isn't told who reported them.
-- For a tip, photo or meetup, report the person who posted it, or email [reporting@crewgalley.app](mailto:reporting@crewgalley.app).
+- For a tip, photo or meetup, email [reporting@crewgalley.app](mailto:reporting@crewgalley.app). In-app reporting for these is coming.
 - If you are in danger, call local emergency services first, then tell us.
 - Not a member? Email [reporting@crewgalley.app](mailto:reporting@crewgalley.app).
 
