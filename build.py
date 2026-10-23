@@ -15,8 +15,8 @@ footer = (root / '_footer.html').read_text()
 
 HERO = '''<section class="hero"><div class="wrap">
 <h1>Crew only.<br>See who is in your city this week.</h1>
-<p>Galley shows verified pilots and cabin crew who else is on a layover in the same city on the same dates, with one tap to meet up. Every account is checked by a person before it can see anyone.</p>
-<a class="btn" href="/verification/">How verification works</a><a class="btn secondary" href="/support/">Get in touch</a>
+<p>Galley shows verified pilots and cabin crew who else is on a layover in the same city on the same dates, with one tap to meet up. Every account is checked by a person before it can see anyone, and every message is end-to-end encrypted.</p>
+<a class="btn" href="/verification/">How verification works</a><a class="btn secondary" href="/private/">Private by design</a>
 </div></section>
 <main><div class="wrap">
 <div class="grid">
@@ -24,7 +24,7 @@ HERO = '''<section class="hero"><div class="wrap">
 <div class="card"><strong>Up for today</strong>Coffee, a run, dinner, a night out. Say it once; it shows on your row until midnight.</div>
 <div class="card"><strong>Meetups and events</strong>Post one, join one, chat with the group. Women-only, your airline only, pilots or cabin crew only: your call.</div>
 <div class="card"><strong>Crew tips</strong>Per city, from crew who have been there. The run route, the 24-hour place, the thing only crew know.</div>
-<div class="card"><strong>Requests, not inboxes</strong>A first message from someone you have not met is a request. Nothing more arrives until you accept.</div>
+<div class="card"><strong>Chats only you can read</strong>Every message is end-to-end encrypted on your phone. We can't read them. <a href="/private/">How it works</a></div>
 <div class="card"><strong>Nothing public</strong>No search, no directory, no map. Your stay is visible only to verified crew in the same city, on the same dates.</div>
 </div>
 <p class="meta">Pilots and cabin crew of any airline, 18+. Coming to the App Store and Google Play in December 2026.</p>
