@@ -30,7 +30,7 @@ Only our two-person team sees it. Never shared, never used for anything else, de
 An answer within 24 hours, usually faster. If it is unclear, we ask for a second proof and tell you why.
 
 ## Keeping it real
-You verify again every 12 months. You get an invite link and you vouch for who you invite: one rejected invite turns your link off, three put you back under review. Any profile can be reported as "not crew". That account is hidden until it sends a new proof. A person reads every report.
+You verify again every 12 months. You get an invite link and you vouch for who you invite: one rejected invite turns your link off, three put you back under review. Any profile can be reported as "not crew". That account is hidden until a new proof is approved. A person reads every report.
 
 ## What verification is not
 It checks that you are crew. It does not check anyone's character. Meet people the way you would meet any new colleague: see [Meeting safely](/safety/).
