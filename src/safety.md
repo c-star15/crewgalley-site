@@ -4,27 +4,49 @@ description: Galley verifies employment, not character. These are the habits tha
 ---
 # Meeting safely
 
-Galley checks that members are airline crew. It cannot check how anyone behaves. Treat a first meetup the way you would treat meeting a colleague from another base for the first time.
+*Takes effect when Galley launches on the App Store and Google Play.*
+
+Most crew meetups are exactly what they look like: a few tired people finding dinner. A few habits keep it that way.
 
 ## Before
-- Meet in a public place: a café, a restaurant, a park, the hotel lobby bar. Never a room.
-- Tell someone on your own crew where you are going and who with.
-- Keep your hotel to yourself. The app never asks for it and you should not share it in a chat.
-- Look at the profile: airline, verification date, how long they have been a member.
+
+- **Verified isn't vetted.** Galley checks that someone showed proof of airline employment. It does not check identity documents, criminal records or character.
+- **Chat first.** A few messages in the app tell you a lot. Keep the conversation in Galley until you've met; you can report what happens here.
+- **Keep your hotel to yourself.** Never share your hotel name, room number or flight details, and never ask for anyone else's. Meetups meet in the lobby by default, and the venue is shown only to members.
+- **Tell someone.** Let a crew member on your trip, a friend or family know where you're going, who with, and when you'll be back.
+- **Check the plan.** Look at who's in, and pick public places, especially the first time.
 
 ## During
-- Keep your own transport. Do not rely on someone else to get you back.
-- Drink at your own pace, if at all; you may be flying tomorrow.
-- Leave the moment anything feels off. You owe nobody an explanation.
+
+- **Meet in public, go together.** Lobby, then a busy restaurant, café, promenade or bar. Not a room, a car, or an apartment.
+- **Your own transport.** Know how you'll get back. Keep your phone charged and some local cash.
+- **Watch your drink.** Drink at your own pace, keep it in sight, and mind your company's rules before duty.
+- **Leave whenever you want.** You owe nobody an explanation. "I've got an early pickup" works everywhere.
+- **Trust your instincts.** If something feels off, leave and tell us.
 
 ## After
-- If something was wrong, use Report on the profile or the chat. Reports go to a person and get a decision within 72 hours. Reporting also blocks them for you immediately.
-- A "not crew" report puts the account back into verification until it passes.
 
-## What the app does for you
-- Nothing about you is visible to anyone who is not verified and in the same city on overlapping dates.
-- A first message from someone you have not met is a request; nothing more is delivered until you accept.
-- Block hides both of you from each other everywhere.
-- Women-only events are visible only to members who have set their gender to female.
+- If anything made you uncomfortable, **report it**, even if it seems small. Reports are confidential, and patterns matter.
+- If you are hurt or in danger, **contact local emergency services first**. Then tell us: [reporting@crewgalley.app](mailto:reporting@crewgalley.app).
+- If someone pressures you to keep in touch outside Galley, you can block them in the app and on every other platform.
 
-Emergencies: contact local emergency services first. Then [support@crewgalley.app](mailto:support@crewgalley.app).
+## Running, hiking and outdoor plans
+
+Know your limits after a long sector, take water, tell someone your route, and stick to well-used paths in daylight. Heat, traffic and unfamiliar terrain are real risks.
+
+## Emergency numbers in common layover cities
+
+| Region | Number |
+| --- | --- |
+| EU, UK and most of Europe | 112 (UK also 999) |
+| United States and Canada | 911 |
+| UAE | 999 (police), 998 (ambulance) |
+| Hong Kong | 999 |
+| Japan | 110 (police), 119 (ambulance) |
+| China mainland | 110 (police), 120 (ambulance) |
+| Thailand | 191 (police), 1669 (ambulance), 1155 (tourist police) |
+| Singapore | 999 (police), 995 (ambulance) |
+| Australia | 000 |
+| India | 112 |
+
+Check the number for your city before you go out. Your company's security or crew-control line is also worth saving.
