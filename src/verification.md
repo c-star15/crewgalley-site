@@ -9,30 +9,30 @@ You land somewhere for a day or two. Your crew has other plans, and the city is 
 
 Saying yes to someone you just met is easy when you know they are real crew. So a person checks every account before it can see anyone.
 
-## Who is accepted
-Current pilots and cabin crew of any airline, anywhere in the world.
+## Who can join
+Pilots and cabin crew flying now. Any airline, anywhere.
 
-Not accepted: ground staff, dispatchers and other airline employees, family and buddy pass holders, retired crew, student pilots, aviation enthusiasts, recruiters and anyone else who does not currently fly a roster.
+Not ground staff, dispatchers or other airline staff, family or buddy pass holders, retired crew, student pilots, aviation fans or recruiters. No roster, no account.
 
-## How you prove it
-You submit one proof. Pick whichever is easiest; they are offered in this order.
+## How to prove it
+Send one. Pick the easiest.
 
-<div class="card"><strong>1. Company email (recommended)</strong>A one-time code is sent to your airline mailbox. You enter it in the app. The address is never shown anywhere and is not kept; only a fingerprint of it is stored so one mailbox cannot verify several accounts.</div>
-<div class="card"><strong>2. Roster screenshot</strong>A screenshot of your roster app or crew portal showing your name and the airline. Cover anything else you like. No ID number is involved.</div>
-<div class="card"><strong>3. Crew ID plus selfie</strong>A photo of your crew ID with the ID number covered, plus a selfie so the face can be matched. This is the fallback when the other two are not possible.</div>
+<div class="card"><strong>1. Roster screenshot (best)</strong>Your roster app or crew portal, with your name and airline. Hide anything else. No ID number.</div>
+<div class="card"><strong>2. Company email</strong>A screenshot of your work inbox showing your name and the airline email address. Checked by a person.</div>
+<div class="card"><strong>3. Crew ID + selfie</strong>Your crew ID with the number covered, plus a selfie to match the face. Only if 1 and 2 don't work.</div>
 
-We never ask for a government ID, a passport, a licence or any ID number.
+We never ask for a passport, a government ID or any ID number.
 
-## What happens to your proof
-It is looked at by a two-person admin team, both airline crew themselves, and by nobody else. It is never shared, never used for anything other than this decision, and it is deleted as soon as the decision is made. Only the decision itself (approved, rejected, or a request for another proof, with the date and the reason) is kept.
+## Your proof
+Only our two-person team sees it. Never shared, never used for anything else, deleted within 24 hours of the decision. We keep only the decision: approved, rejected or "send another proof", with the date and the reason.
 
 ## Timing
-You get a decision within 24 hours, usually faster. If the proof is unclear, you are asked for a second one with a one-line reason, and your account stays pending until it is in.
+An answer within 24 hours, usually faster. If it is unclear, we ask for a second proof and tell you why.
 
-## Keeping it honest
-Verification is renewed every 12 months. Every verified member gets an invite link, and the inviter is accountable: one rejected invitee disables the link, three put the inviter back under review. Every profile has a "not crew" report; a reported account is asked for a fresh proof within 48 hours and is hidden until it passes. Reports are read by a person, and the reporter is told the outcome.
+## Keeping it real
+You verify again every 12 months. You get an invite link and you vouch for who you invite: one rejected invite turns your link off, three put you back under review. Any profile can be reported as "not crew". That account is hidden until it sends a new proof. A person reads every report.
 
-## What verification is, and is not
-Verification checks employment proof. It does not vet anyone's character or conduct. Meet people the way you would meet any colleague for the first time: see the [safety page](/safety/).
+## What verification is not
+It checks that you are crew. It does not check anyone's character. Meet people the way you would meet any new colleague: see [Meeting safely](/safety/).
 
-Questions: [support@crewgalley.app](mailto:support@crewgalley.app)
+Questions? [support@crewgalley.app](mailto:support@crewgalley.app)
