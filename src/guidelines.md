@@ -4,7 +4,7 @@ description: What Galley is for and what gets you removed.
 ---
 # Galley Community Guidelines
 
-*Version 2026-10-23. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-26. Takes effect when Galley launches on the App Store and Google Play.*
 
 Galley exists so that nobody has to spend a layover alone unless they want to. It works only if everyone here is crew, everyone is decent, and nobody has to worry about where they sleep tonight. These are the house rules. Breaking them can get your content removed or your account suspended or banned (see "What happens when someone breaks them").
 
@@ -18,7 +18,7 @@ Galley exists so that nobody has to spend a layover alone unless they want to. I
 
 The single most important rule.
 
-- Never post or ask for hotel names, addresses, room numbers or "which floor". Meet in the lobby or at the venue.
+- Never post or ask for hotel names, addresses, room numbers or "which floor". Meet in the lobby or at the venue. (A plan at your base can be at a hotel's courts, gym or restaurant. That's a venue, not where crew sleep.)
 - Never post flight numbers, pairings, rosters, duty times or crew lists, yours or anyone else's.
 - Never share where another member is staying or when they are flying, inside or outside Galley.
 - Galley blocks some of this automatically. The filter is a backstop, not permission to try.
@@ -48,6 +48,7 @@ The single most important rule.
 - Choose public places. On a layover, meet in the lobby, then go together. At your base, meet at the venue.
 - No pressure to drink, stay out, spend, or go anywhere private.
 - Respect audience settings. Women-only meetups are for women, pilots-only for pilots, and so on.
+- Share plan links with crew you know. Any verified crew member who gets the link can join that plan, so don't post links publicly. If you're joining a plan in another city, only say you're in if you'll be there.
 - Ask before taking photos of people, and before posting them anywhere outside Galley.
 
 ## Keep it real and legal

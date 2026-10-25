@@ -37,7 +37,7 @@ We would rather tell you than have you find out.
 - the "Up for" chip a request came from (coffee, dinner…)
 - invites: who, the plan, the day and time of day, and the answer (invites contain no text)
 - when you send an invite to someone who takes them only from crew who've landed: the city your phone says you're in, for 12 hours. Your phone does the check; we never get your location
-- meetup titles, neighbourhoods, venues and times, because they're posted to the board
+- meetup titles, neighbourhoods, venues with their addresses and map pins, and times, because they're posted to the board
 - your profile and stays, because that is how the board shows you to crew who overlap you
 
 ## If something goes wrong

@@ -192,3 +192,34 @@ main .btn{margin:4px 0}
 .steps h3{font-size:clamp(21px,2.2vw,24px);line-height:1.2;letter-spacing:-.02em;font-weight:800;margin:0 0 10px;color:var(--text);font-variation-settings:"opsz" 32}
 .steps p{margin:0;color:var(--muted);font-size:17px;line-height:1.6}
 @media (max-width:819px){.how{padding:72px 0 80px}.how h2{margin-bottom:40px}}
+/* Plan link page (/join/?t=...): one plan card, then what Galley is */
+.join .eyebrow{margin-bottom:12px}
+.plan{background:var(--surface);border:1px solid var(--edge);border-radius:24px;box-shadow:var(--shadow);padding:26px 24px 24px;margin:0 0 44px;position:relative;overflow:hidden}
+.plan::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--amber)}
+.plan[hidden]{display:none}
+.plan-top{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.plan-dot{width:10px;height:10px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px rgba(242,169,59,.2)}
+.plan-kind{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber-text)}
+.plan-tag{font-size:13px;font-weight:700;color:var(--text);border:1.5px solid var(--edge);border-radius:999px;padding:2px 10px}
+.plan-tag[hidden]{display:none}
+main .plan-title{font-size:clamp(36px,9vw,52px);margin:4px 0 18px;overflow-wrap:anywhere}
+.plan-facts{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:10px}
+.plan-facts li{display:flex;align-items:center;gap:12px;margin:0;font-size:18px;font-weight:600;color:var(--text)}
+.plan-facts svg{flex:none;width:22px;height:22px;fill:none;stroke:var(--amber-text);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.plan-dots{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px 34px}
+.plan-dots span{width:14px;height:14px;border-radius:50%;border:2px solid var(--amber)}
+.plan-dots span.in{background:var(--amber)}
+.plan-dots:empty{display:none}
+.plan-state{font-weight:700;color:var(--amber-text);margin:-8px 0 18px}
+.plan-state[hidden]{display:none}
+.plan .actions .btn{flex:1 1 220px}
+.plan-note{font-size:14px;color:var(--muted);margin:12px 0 0}
+.plan-empty::before{background:var(--edge)}
+.plan-empty p{color:var(--muted);margin:0}
+.plan-loading{font-weight:600}
+.join-new h2{font-size:26px;letter-spacing:-.025em;line-height:1.2;margin:0 0 10px;font-weight:850;border:0;padding:0}
+main:not(.home) .join-new h2{border-top:0;padding-top:0;margin-top:0}
+.join-new > p{color:var(--muted)}
+.join-new .trust{margin:18px 0 22px}
+.join-new .trust li{color:var(--muted)}
+.join-new .trust strong{color:var(--text)}

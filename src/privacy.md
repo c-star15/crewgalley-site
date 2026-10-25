@@ -4,7 +4,7 @@ description: What Galley collects, why, who sees it, how long it is kept and how
 ---
 # Galley Privacy Policy
 
-*Version 2026-10-23. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-26. Takes effect when Galley launches on the App Store and Google Play.*
 
 Galley is a social app for verified airline pilots and cabin crew to meet other crew on layovers. This policy explains what we collect, why, who sees it, how long we keep it and what you can do about it. We wrote it to be read, not skimmed past. If anything is unclear, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
 
@@ -55,7 +55,9 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Messages: chats and meetup chats (and any older message requests) | Conversations you choose to have | The people in the conversation. Messages are end-to-end encrypted on the sender's phone; we store only ciphertext we cannot open (section 4a) |
 | An optional note to the reviewer, and the invite code you joined with | Verification and invite accountability | Our verification team only |
 | Your phone's public encryption key | So other members' phones can seal messages to your phone | Members who can see you, have a conversation with you, or share a meetup with you |
-| Meetups and activities you post or join (title, type or interest, day, time, neighbourhood, venue, size, level, audience) | To organise meetups and activities | The listing: verified members in that city whom its audience allows. An activity at your base is listed to verified crew based there and, unless the host switches it off, to crew on a layover there that day. The venue, the member list and the group chat: members only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them; for an activity at your base, that chat opens when the activity starts, not when you join |
+| Meetups and activities you post or join (title, type or interest, day, part of the day and optional time, neighbourhood, venue with its address and map pin, how many, level, audience) | To organise meetups and activities | The listing: verified members in that city whom its audience allows. An activity at your base is listed to verified crew based there and, unless the host switches it off, to crew on a layover there that day. Anyone in a plan can also share a link to it (below). The venue, its address and pin, the member list and the group chat: members only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them; for an activity at your base, that chat opens when the activity starts, not when you join |
+| Plan links (a random code, who shared it, and who opened it) | So you can invite crew you know, from any base, to one plan | Anyone with the link sees a web page with the plan's name, activity, city, day, time, area and how many are in. Never names, photos or the exact place. Verified crew who open the link in the app can see and join that one plan, if its audience allows them (a women-only plan stays women only) and nobody in it has blocked them. A link stops working when the person who shared it leaves the plan |
+| What you type to find a venue | To find the place for a plan and put it on the map | Nobody at Galley keeps it. It goes from our server to Photon, an OpenStreetMap search (section 7), with your base city's centre |
 | Meetup photos | To remember the evening | People who were in the meetup; on the city page only if everyone pictured agrees (section 4) |
 | City tips (place, text, optional photo, optional place pin rounded to about 100 m, optional price, time needed, best time and how to get there) | To share recommendations | All verified members, with your display name, photo and airline (unless you hide it) as the author, and a label when you're based in that city ("Local crew") or share the reader's base ("Your base"). The most-voted tip photo can become the city's cover image |
 | Tips you save | So you can find them again | Only you |
@@ -76,7 +78,7 @@ You must not put hotel names, room numbers, flight numbers or long ID numbers in
 
 ### 3.3 Data we do not collect
 
-Hotel names or addresses, room numbers, flight numbers, pairings, duty times, staff or crew ID numbers (only the one-way identity mark above), passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. Location is used only while the app is open, in two cases: if you choose to pin a tip to where you are standing (rounded to about 100 metres), and when you send an invite to someone who takes invites only from crew who've landed. In that case your phone checks, using approximate location, that it is within about 50 km of the city, and tells us only the city.
+Where you stay (hotel names or addresses), room numbers, flight numbers, pairings, duty times, staff or crew ID numbers (only the one-way identity mark above), passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. A plan at your base can name its venue, including a hotel's courts, gym or restaurant, with that venue's address and pin; that is the place you meet, shown only to people who join. Searching for a venue never uses your phone's location. Location is used only while the app is open, in two cases: if you choose to pin a tip to where you are standing (rounded to about 100 metres), and when you send an invite to someone who takes invites only from crew who've landed. In that case your phone checks, using approximate location, that it is within about 50 km of the city, and tells us only the city.
 
 We never run face recognition or any face-matching software. A selfie sent with a crew ID is compared by eye by a person on our team, then deleted.
 
@@ -88,7 +90,7 @@ Only someone who was in a meetup can add a photo, and only after it starts. The 
 
 Chats, meetup group chats and any older message requests are encrypted on the sender's phone before they are sent, and can be opened only by the phones of the people in the conversation. Each phone creates its own private key, which stays in the phone's secure storage and is never sent to us. We, our hosting provider and anyone who gains access to our servers see only sealed ciphertext.
 
-What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, how many phones you use and when each last opened Galley, the "Up for" choice a request started from, invites (who, the plan, the day, the time of day and the answer; invites contain no text), and anything you post to a board (meetup titles, neighbourhoods, venues and times).
+What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, how many phones you use and when each last opened Galley, the "Up for" choice a request started from, invites (who, the plan, the day, the time of day and the answer; invites contain no text), and anything you post to a board (meetup titles, neighbourhoods, venues with their addresses and pins, and times).
 
 What this means: a new phone cannot open messages sent before it was signed in; deleting your account erases the private key on the phone you delete from and all our copies of your public keys, so nothing left on our servers can be opened again (other phones signed in to the account keep their key until the app is removed); your data export opens the messages you sent, on your phone.
 
@@ -131,7 +133,9 @@ We do not sell or rent personal data, and we do not share it with airlines, empl
 
 When data goes to a provider in the United States, the transfer relies on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses in that provider's agreement. Our team accesses data from the United Arab Emirates.
 
-If you tap a Maps link on a tip, Apple Maps or Google Maps opens with the place name and, if the tip has a pin, its rounded location. Their privacy policies then apply.
+If you tap a Maps link on a tip or a plan, Apple Maps or Google Maps opens with the place name and, if it has a pin, its location. Their privacy policies then apply.
+
+When you search for a venue, the words you type and your base city's centre go from our server to Photon (photon.komoot.io), an OpenStreetMap search run by komoot in Germany. It never receives your account, your IP address or your phone's location, and we don't keep the search. Place data © OpenStreetMap contributors.
 
 For messages we can only ever provide ciphertext we cannot open and the metadata in section 4a. We disclose data to authorities only under valid legal process, or without it only where we believe in good faith that there is a risk of death or serious injury. Our process is published at [crewgalley.app/reporting/](/reporting/).
 
@@ -157,6 +161,7 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Invite pauses and their review | Until your account is deleted |
 | Accepted conversations | Until you or the other person deletes their account. "Delete for me" hides the thread from you only |
 | Meetups and their group chat | Group chat closes 24 hours after the start; the meetup is deleted 7 days after the start |
+| Plan links, who opened them, and who was next in line at the go/no-go | Deleted with the plan, 7 days after it starts |
 | Meetup records for measuring whether meetups happen | 18 months, with only random account IDs, removed if you delete your account |
 | Board views | 18 months |
 | Profile, photos, tips, verification decisions, consents, identity mark | Until you delete your account |
