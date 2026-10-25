@@ -43,8 +43,11 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Proof of employment: a roster screenshot, a screenshot of your company mailbox, or a crew ID photo plus a selfie | To verify that you are crew | Our verification team only. Deleted usually within 24 hours of the decision, or 30 days after you submit it if it is never decided |
 | Work email address (if you verify by an emailed code, once that option is available) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
 | Stays (city, dates and an optional short note) and home base (your base city) | To show you who overlaps with you on a layover, and you to them | Verified members on a layover in that city whose stay overlaps yours, from 2 days before the overlap starts; before that, only as part of a count. A home base never puts you on a city board |
-| Free days at your base (a day, optionally morning, afternoon or evening, up to the end of next month), what you're up for that day (coffee, padel, workout, dinner, studying, exploring or anything), and the "Count me" switch | To show you what's on when you're free, and how many crew are free | Nobody. Other members at your base see only totals of crew free on a day and of crew up for each activity, never fewer than 3 and never who. Switch "Count me" off to leave the totals |
+| Free days at your base (a day, optionally morning, afternoon or evening, up to the end of next month), what you're up for that day (up to six activities from the interests list, or "open to anything"; it does not change your profile), and the "Count me" switch | To show you what's on when you're free, and how many crew are free | Nobody. Other members at your base see only totals of crew free on a day and of crew up for each activity, never fewer than 3 and never who. Switch "Count me" off to leave the totals |
 | Clubs you join at your base (for example Padel or Running) | To show you activities in them | Club members are not listed to anyone. Members at your base see how many are in each club. People who join the same plan see each other |
+| Clubs you start (name, one line, what it's about, base or global) | To run the club; the team checks a new club before it opens | Before approval: you and the Galley team. After: verified members at that base (base clubs) or all verified members (global clubs), with your display name as the person who started it. You can edit or archive it |
+| What you add to a club: posts and replies (a title, text, an optional link) and places or routes (name, text, area, and optional price, indoor or outdoor, facilities, booking link, starting point, distance and time) | To share what's useful with the club | Verified members who can see the club, with your display name as the author. Places and routes are city tips too, so they also show in that city's guide in Away (see City tips). The club's organizer and the Galley team can hide them |
+| Activities you suggest for the list | To decide what to add | The Galley team, without your name |
 | "Up for" choices for today (e.g. dinner, run) and a short note | To let overlapping crew see what you are up for | Overlapping verified members |
 | Invites (who, the plan, the day, the time of day, the city, and the answer) | To let crew in the same city suggest a plan | The two people involved. The sender sees only "sent" or "accepted", never "not now". Invites carry no text and are not encrypted |
 | Your invite settings (open to invites or not; from crew who've landed, or anyone with an overlapping stay) | So the app only lets the right people invite you | Members who can see you see whether you take invites |
@@ -143,7 +146,10 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Stays | The day after you depart; home base until you change it |
 | Up for | The end of that day in that city |
 | Free days | The end of that day in your base city; all of them when you change base |
-| Club memberships | Until you leave the club, change base or delete your account |
+| Club memberships | Until you leave the club, change base (for base clubs) or delete your account |
+| Clubs you start | While the club exists. If you delete your account, the club stays for its members without your name |
+| Club posts, replies, places and routes | Until you delete them or your account. Hidden ones are kept until then for safety review |
+| Activity suggestions | Until you delete your account |
 | Unanswered or declined message requests | 7 days |
 | Record that you added a stay or sent an invite or request (time only, for the weekly limits) | 8 days |
 | Invites | 30 days after the day they were for |
@@ -169,8 +175,8 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 Depending on where you live, you can ask to access, correct, delete or receive a copy of your data, object to or restrict how we use it, and withdraw consent. You can do most of it yourself:
 
 - **Export**: Settings → Export my data gives you your account, profile, verifications, consents, stays, the messages you sent (opened on your phone), meetups, photos, tips, blocks and reports. For a complete copy of everything we hold about you, including records such as board views and decisions about your account, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
-- **Correct**: edit your profile, stays and tips at any time.
-- **Delete**: Settings → Delete account. This deletes your profile, photos, stays, messages you sent, tips, consents and verification records, and removes your files from storage, usually within 24 hours. If you cannot open the app, see [crewgalley.app/delete-account/](/delete-account/).
+- **Correct**: edit your profile, stays, tips, club posts and club places at any time.
+- **Delete**: Settings → Delete account. This deletes your profile, photos, stays, messages you sent, tips, club posts and replies, activity suggestions, consents and verification records, and removes your files from storage, usually within 24 hours. If you cannot open the app, see [crewgalley.app/delete-account/](/delete-account/).
 - **Withdraw consent**: clear your gender, switch off "Show on the city page", or remove a tip pin.
 - **Analytics**: switch off in Settings.
 

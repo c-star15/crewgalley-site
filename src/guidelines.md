@@ -39,6 +39,7 @@ The single most important rule.
 - No confidential company information: internal memos, safety reports, incident details, commercial information, crew-room gossip about named people.
 - No uniforms, airline logos or IDs in your photos.
 - Don't speak for an airline or present a meetup as official.
+- In clubs, share public information and your own experience. No confidential airline documents, protected selection or interview questions, proprietary training manuals, or operational instructions. What crew share in Galley is never official airline guidance.
 - Follow your own company's rules on social media, rest, alcohol before duty and fitness for duty. "Bottle to throttle" is your responsibility, not the meetup host's.
 
 ## Meet well
@@ -52,7 +53,8 @@ The single most important rule.
 ## Keep it real and legal
 
 - No spam, selling, promotion, recruitment, MLM, crypto pitches, surveys or fundraising.
-- No fake tips or paid reviews. Tips are honest recommendations from crew who have been there.
+- No fake tips or paid reviews. Tips, club places and routes are honest recommendations from crew who have been there. Keep prices and details current, or delete them when they're wrong.
+- Start a club for something real that isn't already there. The team takes a quick look before a new club opens; duplicates and fronts for selling are declined. Organizers keep their club on topic and can hide posts that break these guidelines.
 - No content that is illegal where you post it or where it is seen, including content about drugs, weapons or anything else that local law prohibits. Laws differ between layover cities; when in doubt, leave it out.
 - No content involving anyone under 18. Any sign of a minor in a sexual or exploitative context is reported to the authorities.
 - Don't post other people's copyrighted photos or text.
@@ -62,7 +64,8 @@ The single most important rule.
 - **Not now** turns down an invite. The sender never finds out. Right after it you can choose **Don't show me them again** (a block) or **Report**.
 - **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a meetup you're in.
 - **Report** someone from their profile or from your chat with them. You can attach your recent messages with them; we can't read chats otherwise, because they're encrypted. Reporting also blocks. The person isn't told who reported them.
-- For a tip, photo or meetup, email [reporting@crewgalley.app](mailto:reporting@crewgalley.app). In-app reporting for these is coming.
+- **Report** a club post, reply, place or route from its ••• menu. A person reviews it, and three reports from different members hide it until then. Reporting content doesn't block or suspend its author.
+- For a city tip outside a club, a photo or a meetup, email [reporting@crewgalley.app](mailto:reporting@crewgalley.app). In-app reporting for these is coming.
 - If you are in danger, call local emergency services first, then tell us.
 - Not a member? Email [reporting@crewgalley.app](mailto:reporting@crewgalley.app).
 
