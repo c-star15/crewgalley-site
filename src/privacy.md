@@ -54,7 +54,8 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Your phone's public encryption key | So other members' phones can seal messages to your phone | Members who can see you, have a conversation with you, or share a meetup with you |
 | Meetups and activities you post or join (title, type or interest, day, time, neighbourhood, venue, size, level, audience) | To organise meetups and activities | The listing: verified members in that city whom its audience allows. An activity at your base is listed to verified crew based there and, unless the host switches it off, to crew on a layover there that day. The venue, the member list and the group chat: members only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them; for an activity at your base, that chat opens when the activity starts, not when you join |
 | Meetup photos | To remember the evening | People who were in the meetup; on the city page only if everyone pictured agrees (section 4) |
-| City tips (text, optional photo, optional place pin rounded to about 100 m) | To share recommendations | All verified members, with your display name, photo and airline (unless you hide it) as the author. The most-voted tip photo can become the city's cover image |
+| City tips (place, text, optional photo, optional place pin rounded to about 100 m, optional price, time needed, best time and how to get there) | To share recommendations | All verified members, with your display name, photo and airline (unless you hide it) as the author, and a label when you're based in that city ("Local crew") or share the reader's base ("Your base"). The most-voted tip photo can become the city's cover image |
+| Tips you save | So you can find them again | Only you |
 | Reports, blocks and city requests | Safety and the city list | Our moderation team. The person you report or block is not told who did it |
 | Your consents (18+ confirmation, terms and privacy version, photo policy) | To show what you agreed to and when | Only you and us |
 
@@ -153,6 +154,7 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Meetup records for measuring whether meetups happen | 18 months, with only random account IDs, removed if you delete your account |
 | Board views | 18 months |
 | Profile, photos, tips, verification decisions, consents, identity mark | Until you delete your account |
+| Saved tips | Until you unsave them or delete your account |
 | Ban mark (the identity mark of a banned account, with no link to the account) | 3 years after the ban |
 | Reports and blocks | Until either person's account is deleted |
 | Inactive accounts | Deleted after 24 months without a sign-in, after an email warning |
