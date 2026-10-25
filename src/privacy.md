@@ -44,7 +44,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Work email address (if you verify by an emailed code, once that option is available) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
 | Stays (city, dates and an optional short note) and home base (your base city) | To show you who overlaps with you on a layover, and you to them | Verified members on a layover in that city whose stay overlaps yours, from 2 days before the overlap starts; before that, only as part of a count. A home base never puts you on a city board |
 | Free days at your base (a day, optionally morning, afternoon or evening, up to the end of next month), what you're up for that day (coffee, padel, workout, dinner, studying, exploring or anything), and the "Count me" switch | To show you what's on when you're free, and how many crew are free | Nobody. Other members at your base see only totals of crew free on a day and of crew up for each activity, never fewer than 3 and never who. Switch "Count me" off to leave the totals |
-| Communities you join at your base (for example Padel or Running) | To show you activities in them | Nobody sees who is in a community. Members at your base see how many are |
+| Clubs you join at your base (for example Padel or Running) | To show you activities in them | Club members are not listed to anyone. Members at your base see how many are in each club. People who join the same plan see each other |
 | "Up for" choices for today (e.g. dinner, run) and a short note | To let overlapping crew see what you are up for | Overlapping verified members |
 | Invites (who, the plan, the day, the time of day, the city, and the answer) | To let crew in the same city suggest a plan | The two people involved. The sender sees only "sent" or "accepted", never "not now". Invites carry no text and are not encrypted |
 | Your invite settings (open to invites or not; from crew who've landed, or anyone with an overlapping stay) | So the app only lets the right people invite you | Members who can see you see whether you take invites |
@@ -94,7 +94,7 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 
 - **Before verification**: nobody but our verification team.
 - **After verification**: verified members see your profile only when you share a meetup, or when you are both on a layover in the same city with overlapping dates and the overlap starts within 2 days; never if either of you has blocked the other. Before that, someone with an overlapping layover sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
-- **At your base**: nobody browses the crew based in a city, and you appear on no board there. Crew based in your city see activities, how many crew are free on a day (never fewer than 3, never who) and how many are in each community. You meet them by joining the same activity; a private chat with each other member opens when it starts. Two people at their own base can't invite each other.
+- **At your base**: nobody browses the crew based in a city, and you appear on no board there. Crew based in your city see activities, how many crew are free on a day (never fewer than 3, never who) and how many are in each club. You meet them by joining the same activity; a private chat with each other member opens when it starts. Two people at their own base can't invite each other.
 - **Who can contact you**: nobody can invite you unless you switch on "Open to invites" (it starts off). When it's on, by default only crew who've landed in your city can invite you; you can widen it to anyone with an overlapping stay. Without invites, people can still meet you at events. Starting a new conversation with free text is no longer possible; it begins with an invite you accept.
 - **Limits that protect you**: a stay's city can't be changed after it is added, stays can start at most 60 days ahead, each account can add 8 stays and send 6 invites or requests a week (3 waiting at a time), your home base is your base city, and your base can change once a month.
 - **Only at events**: in Settings you can choose "Only at events". You then appear on no city board, and only people who share a meetup with you can open your profile or invite you. You still see others and still count in the numbers.
@@ -142,7 +142,7 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Stays | The day after you depart; home base until you change it |
 | Up for | The end of that day in that city |
 | Free days | The end of that day in your base city; all of them when you change base |
-| Community memberships | Until you leave the community, change base or delete your account |
+| Club memberships | Until you leave the club, change base or delete your account |
 | Unanswered or declined message requests | 7 days |
 | Record that you added a stay or sent an invite or request (time only, for the weekly limits) | 8 days |
 | Invites | 30 days after the day they were for |

@@ -27,8 +27,8 @@ HERO = '''<section class="hero"><div class="wrap wide">
 <p class="eyebrow">How it works</p>
 <h2>Plans with crew who are free when you are.</h2>
 <ol class="steps">
-<li><span class="step-n">01</span><h3>Mark your free days</h3><p>Tap the days you’re off. Nobody sees your calendar; Galley only uses it to show you what’s on.</p></li>
-<li><span class="step-n">02</span><h3>Join your crowd</h3><p>Padel, running, coffee, gym, studying and more. Each base gets its own, like Dubai Padel or Doha Coffee Club.</p></li>
+<li><span class="step-n">01</span><h3>Add free time</h3><p>Only when you feel like doing something. Nobody sees it; others only see totals.</p></li>
+<li><span class="step-n">02</span><h3>Join a club</h3><p>Padel, running, coffee, gym, studying and more. Each base has its own, like Dubai Padel Club or Doha Coffee Club.</p></li>
 <li><span class="step-n">03</span><h3>Show up</h3><p>Join a plan with a spot left, or start one in four taps: what, when, where, how many.</p></li>
 </ol>
 </div></section>
