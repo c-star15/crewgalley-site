@@ -28,7 +28,7 @@ HERO = '''<section class="hero"><div class="wrap wide">
 <h2>Plans with crew who are free when you are.</h2>
 <ol class="steps">
 <li><span class="step-n">01</span><h3>Add free time</h3><p>Only when you feel like doing something. Your free time stays private; you pick who sees what you’re up for.</p></li>
-<li><span class="step-n">02</span><h3>Join a club</h3><p>Padel, running, coffee, gym, studying and more. Each base has its own, like Dubai Padel Club or Doha Coffee Club.</p></li>
+<li><span class="step-n">02</span><h3>Join a club</h3><p>Padel, running, coffee, gym, studying and more. Each base has its own, like Dubai Padel Club. See who’s in and ask anything in its forum.</p></li>
 <li><span class="step-n">03</span><h3>Show up</h3><p>Join a plan with a spot left, or start one in four taps: what, when, where, how many.</p></li>
 </ol>
 </div></section>
