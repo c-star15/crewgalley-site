@@ -28,7 +28,7 @@ robots: noindex
 <p>Galley is where pilots and cabin crew make plans with each other: padel, coffee, a run, dinner. At base on your days off, and on layovers. Every account is checked before it can see anyone.</p>
 <ul class="trust">
 <li><strong>Verified crew only.</strong> Any airline, pilots and cabin crew.</li>
-<li><strong>Plans, not profiles.</strong> You join what’s on; nobody browses who’s free.</li>
+<li><strong>Plans, not profiles.</strong> You join what’s on; free time stays private.</li>
 <li><strong>Coming in December 2026</strong> to the App Store and Google Play.</li>
 </ul>
 <p>Once your account is checked, open this link again and you’ll land on the plan.</p>

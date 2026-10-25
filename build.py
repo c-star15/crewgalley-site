@@ -27,7 +27,7 @@ HERO = '''<section class="hero"><div class="wrap wide">
 <p class="eyebrow">How it works</p>
 <h2>Plans with crew who are free when you are.</h2>
 <ol class="steps">
-<li><span class="step-n">01</span><h3>Add free time</h3><p>Only when you feel like doing something. Nobody sees it; others only see totals.</p></li>
+<li><span class="step-n">01</span><h3>Add free time</h3><p>Only when you feel like doing something. Your free time stays private; you pick who sees what you’re up for.</p></li>
 <li><span class="step-n">02</span><h3>Join a club</h3><p>Padel, running, coffee, gym, studying and more. Each base has its own, like Dubai Padel Club or Doha Coffee Club.</p></li>
 <li><span class="step-n">03</span><h3>Show up</h3><p>Join a plan with a spot left, or start one in four taps: what, when, where, how many.</p></li>
 </ol>
@@ -38,8 +38,8 @@ HERO = '''<section class="hero"><div class="wrap wide">
 <p class="intro">Galley is built around plans, not profiles, so meeting someone new feels relaxed for everyone.</p>
 <div class="grid">
 <div class="card"><span class="num">1</span><strong>Everyone is verified crew</strong>Galley checks every account before it can see anyone else.</div>
-<div class="card"><span class="num">2</span><strong>Plans, not profiles</strong>At base you see what’s on and how many crew are free. Never a list of who’s free.</div>
-<div class="card"><span class="num">3</span><strong>Chat once you’ve met</strong>At your base, a private chat opens when a plan you both joined starts.</div>
+<div class="card"><span class="num">2</span><strong>Plans, not profiles</strong>At base you see what’s on, and who’s up for something if they chose to show you. Free time itself is never listed.</div>
+<div class="card"><span class="num">3</span><strong>Chat inside the plan</strong>Message the group, or anyone in a plan you’ve both joined. Nobody can message you out of the blue.</div>
 <div class="card"><span class="num">4</span><strong>Women-only plans</strong>Start one or join one. Only women can see them.</div>
 </div></div></section>
 <section class="section how"><div class="wrap wide">
