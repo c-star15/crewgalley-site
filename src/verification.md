@@ -31,6 +31,9 @@ An airline email shows that someone works at an airline, not that they fly. So a
 
 You answer for who you bring in. One rejected invite turns your invite link off; three put you back under review. If someone you vouched for turns out not to be crew, your vouching and invite link switch off.
 
+## Invite-only at first
+We open base by base. While yours is invite-only, you get in with a crew member's invite link, a code from us, or two vouches. No code? Verify anyway and you're on the list. We open seats in waves and tell you when you're in.
+
 ## What verification is not
 Verification shows that someone is crew. It can't tell you what they're like as a person, so meet people the way you'd meet any new colleague. Here are some [tips for meeting safely](/safety/).
 

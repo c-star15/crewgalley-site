@@ -37,6 +37,8 @@ Before you can see anyone, you must show that you are crew: with a code sent to 
 
 **Invites and vouches.** Your invite link lets crew you know join. If someone you invited is rejected at verification, your link is switched off; if three are, you are asked to verify again. If someone you vouched for fails a crew check or is banned, your vouching and your invite link are switched off.
 
+**Invite-only bases.** While Galley or your base is invite-only, getting in takes a member's invite link, a code from us, or two vouches. Each member's link lets in a limited number of people while this lasts (we show you how many are left). Without one, you still verify, then wait on a list until we open seats, open your base, or end invite-only. Verifying doesn't guarantee a seat by a particular date, and codes are personal to the group they were given to: don't sell or publish them.
+
 ## 4. Your account
 
 Keep your sign-in details to yourself. You are responsible for what happens on your account unless it was used without your permission and you tell us promptly at [support@crewgalley.app](mailto:support@crewgalley.app). Give us accurate information and keep it current.
