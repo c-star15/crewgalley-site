@@ -61,6 +61,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | What you type to find a venue | To find the place for a plan and put it on the map | Nobody at Galley keeps it. It goes from our server to Photon, an OpenStreetMap search (section 7), with your base city's centre |
 | Meetup photos | To remember the evening | People who were in the meetup; on the city page only if everyone pictured agrees (section 4) |
 | City tips (place, text, optional photo, optional place pin rounded to about 100 m, optional price, time needed, best time and how to get there) | To share recommendations | All verified members, with your display name, photo and airline (unless you hide it) as the author, and a label when you're based in that city ("Local crew") or share the reader's base ("Your base"). The most-voted tip photo can become the city's cover image |
+| Comments you write on tips | To ask about or add to a tip | Verified members who can see the tip, with your display name and photo. You can delete yours; the tip's author and the Galley team can hide them |
 | Tips you save | So you can find them again | Only you |
 | Reports, blocks and city requests | Safety and the city list | Our moderation team. The person you report or block is not told who did it |
 | Your consents (18+ confirmation, terms and privacy version, photo policy) | To show what you agreed to and when | Only you and us |
@@ -155,6 +156,7 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Club memberships and your member-list setting | Until you leave the club, change base (for base clubs) or delete your account |
 | When you last opened each part of a club | Until the club or that part of it is removed, or you delete your account |
 | Clubs you start | While the club exists. If you delete your account, the club stays for its members without your name |
+| Comments on tips | Until you, or the tip's author by deleting the tip, delete them, or until you delete your account. Hidden ones are kept until then for safety review |
 | Club posts (and their photos), replies, places and routes | Until you delete them or your account. Hidden ones are kept until then for safety review |
 | Activity suggestions | Until you delete your account |
 | Unanswered or declined message requests | 7 days |
@@ -185,7 +187,7 @@ Depending on where you live, you can ask to access, correct, delete or receive a
 
 - **Export**: Settings → Export my data gives you your account, profile, verifications, consents, stays, the messages you sent (opened on your phone), meetups, photos, tips, blocks and reports. For a complete copy of everything we hold about you, including records such as board views and decisions about your account, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
 - **Correct**: edit your profile, stays, tips, club posts and club places at any time.
-- **Delete**: Settings → Delete account. This deletes your profile, photos, stays, messages you sent, tips, club posts and replies, activity suggestions, consents and verification records, and removes your files from storage, usually within 24 hours. If you cannot open the app, see [crewgalley.app/delete-account/](/delete-account/).
+- **Delete**: Settings → Delete account. This deletes your profile, photos, stays, messages you sent, tips, comments on tips, club posts and replies, activity suggestions, consents and verification records, and removes your files from storage, usually within 24 hours. If you cannot open the app, see [crewgalley.app/delete-account/](/delete-account/).
 - **Withdraw consent**: clear your gender, switch off "Show on the city page", or remove a tip pin.
 - **Analytics**: switch off in Settings.
 
