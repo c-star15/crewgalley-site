@@ -115,6 +115,7 @@ nav a[aria-current=page]{color:var(--chrome-text);box-shadow:inset 0 -2px 0 var(
 :root[data-theme=dark] .card .ic{background:rgba(242,169,59,.14)}
 .band .card{background:var(--band-surface);border-color:var(--band-edge);color:var(--band-muted);box-shadow:none}
 .band .card a{color:var(--band-text)}
+.card a.quiet,.band .card a.quiet{font-weight:inherit;color:inherit}
 .band .card strong{color:var(--band-text)}
 .band .card .num{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--amber);color:var(--ink);font-weight:850;font-size:15px;margin-bottom:14px}
 
