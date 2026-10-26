@@ -8,9 +8,11 @@ Stuck, or something not working? Email [support@crewgalley.app](mailto:support@c
 
 ## Common questions
 
-**My verification is pending.** Decisions come within 24 hours. If it has been longer, email us with the address you signed up with.
+**My verification is pending.** With a work-email code most people are in within a minute. If your airline's email domain is new to us, a person checks it once, usually within 24 hours. If it has been longer, email us from the address you signed up with.
 
-**I was rejected and I am crew.** Email us from your account's address with a different proof (roster screenshot, company mailbox screenshot, or crew ID with the number covered plus a selfie). A person will look again within 7 days.
+**The code didn't arrive.** Check spam; codes work for 15 minutes and you can ask for 3 a day. If your airline's mail never lets it through, ask two crew at your airline to vouch for you in the app instead.
+
+**I was rejected and I am crew.** Try your airline email address, or ask two crew at your airline to vouch. Still stuck? Email us from your account's address and a person will look again within 7 days. We never ask for screenshots or ID.
 
 **Password reset.** Use "Forgot password" on the sign-in screen and open the link from the email on the phone that has Galley installed. If it opened in a browser instead, see [/reset/](/reset/).
 

@@ -215,6 +215,7 @@ main .plan-title{font-size:clamp(36px,9vw,52px);margin:4px 0 18px;overflow-wrap:
 .plan-state[hidden]{display:none}
 .plan .actions .btn{flex:1 1 220px}
 .plan-note{font-size:14px;color:var(--muted);margin:12px 0 0}
+.code-big{font-size:32px;font-weight:850;letter-spacing:.14em;color:var(--text);margin:8px 0 16px;font-variant-numeric:tabular-nums}
 .plan-empty::before{background:var(--edge)}
 .plan-empty p{color:var(--muted);margin:0}
 .plan-loading{font-weight:600}

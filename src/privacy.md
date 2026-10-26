@@ -21,12 +21,12 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 ## 2. The short version
 
 - We collect the minimum needed to let verified crew make plans at their base and find each other in the same city on the same days.
-- Your proof of employment is seen only by our verification team and deleted, usually within 24 hours of the decision.
+- You show you're crew with a code to your work email, or two colleagues at your airline vouch for you. We keep a one-way code made from your work address, never the address. No screenshots, no ID.
 - Other members see your profile only when you share a meetup, or when you are both on a layover in the same city on overlapping dates, and then only from 2 days before your overlap starts. Before that they see a count, never your name. Nobody can browse a city where they have no layover, crew based in a city never appear on its board, and your home base is always your base city.
 - The free days you mark at your base are only ever counted; a count under 3 is never shown. If you also pick what you're up for that day, crew at your base see your name, photo and what you're up for, but only the group you choose: anyone, women only or men only.
 - New contacts start with an invite: a plan and a time, no text. Only members who switch invites on can get them, and by default only from crew whose phone shows they've landed in the same city. Your phone does that check; only the city is sent to us, never where you are.
 - Your messages are end-to-end encrypted on your phone. We cannot read them, and neither can anyone who gets into our servers.
-- We never ask for your hotel, room, flight number, roster or staff number, and our filter catches the common forms of them in public text.
+- We never ask for your hotel, room, staff number or any ID, and our filter catches the common forms of them in public text. The only time we see any of your roster is a crew check after someone reports you as "not crew": two small crops you cut on your phone, deleted once we decide.
 - We do not sell your data, do not show ads, and do not use advertising or cross-app tracking.
 - You can export your data or delete your account from Settings at any time.
 
@@ -40,8 +40,9 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Display name, up to 5 photos, short bio, answers to fixed prompts, interests from a fixed list | Your profile | Verified members who share a meetup with you or overlap with you on a layover (section 5) |
 | Airline (from a list), role (pilot or cabin crew), base city | Verification, your profile, and what you see at your base | Members who can see you (section 5) see role and base, and your airline unless you switch "Show my airline" off in Settings (then it is hidden everywhere other members see you, including chats, invites, meetup lists and tips) |
 | Gender (optional: female, male, other; asked only when you choose a women-only plan, or set in Settings) | Only to let women create and join women-only meetups | Nobody. It is never shown on your profile |
-| Proof of employment: a roster screenshot, a screenshot of your company mailbox, or a crew ID photo plus a selfie | To verify that you are crew | Our verification team only. Deleted usually within 24 hours of the decision, or 30 days after you submit it if it is never decided |
-| Work email address (if you verify by an emailed code, once that option is available) | To send a one-time code proving you work at an airline | Nobody. We keep only a one-way hash of it and its domain, to stop one mailbox verifying several accounts. The address itself is deleted when the code is confirmed or expires |
+| Work email address (only while you verify) | To send a one-time code proving you work at an airline now | Nobody. Our server turns it into a keyed one-way code (the identity mark, section 3.2) and keeps that and the domain. The address itself is deleted when you type the code, when the code expires (15 minutes), or if the email can't be sent. The email goes out through Resend (section 7); your airline's mail system sees one message from Galley |
+| Vouches. If you ask colleagues to vouch: the name you give, your airline, role and base, and a code. If you vouch: who you vouched for | To verify crew who can't get a work-email code, and so vouchers answer for who they let in | Your request: verified members at your airline who enter your code see your name, role, airline and base. Who vouched for whom: our team only. A request closes after 14 days |
+| Crew check, only if someone reports you as "not crew": two crops of a roster screenshot you choose (your name strip, and one day flown in the last 2 weeks), or a request for a short video call | To confirm you fly, without seeing the rest of your roster | Our team only. You cut the crops on your phone; nothing else from the screenshot leaves it. Crops are deleted when we decide, or 30 days after you send them. Calls are not recorded; we keep only the decision |
 | Stays (city, dates and an optional short note) and home base (your base city) | To show you who overlaps with you on a layover, and you to them | Verified members on a layover in that city whose stay overlaps yours, from 2 days before the overlap starts; before that, only as part of a count. A home base never puts you on a city board |
 | Free days at your base (a day, optionally morning, afternoon or evening, up to the end of next month), what you're up for that day (up to six activities from the interests list, or "open to anything"; it does not change your profile), who may see that (anyone, women only or men only), and the "Count me" switch | To show you what's on when you're free and how many crew are free, and to let crew at your base see who's up for something | Free days: nobody; other members at your base see only totals of crew free on a day, never fewer than 3 and never who. Switch "Count me" off to leave the totals. What you're up for: verified crew based in your city whom you chose (women only and men only reach only members who have set that gender in Settings) see your name, photo, role, airline (unless hidden), what you're up for and when, and can open your profile. Nobody sees it if you pick nothing, or if you choose "Only at events" |
 | Clubs you join (for example Padel or Running), whether you show yourself in each club's member list, and when you last opened each part of a club | To show you its activities and forum, to let members of a club find each other, and to mark what's new since your last visit | Other members of the same club see you in its member list (name, photo, role, airline unless hidden), how many of the club's plans you went to and hosted, how many posts you made, and whether you were active in the last 30 days; they can open your profile. Switch "Show me in the member list" off in a club, or choose "Only at events", and you're not listed (you still count). People outside a club see only how many members it has. Being in the same club doesn't let anyone message you. When you last opened a club: nobody |
@@ -53,7 +54,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Your invite settings (open to invites or not; from crew who've landed, or anyone with an overlapping stay) | So the app only lets the right people invite you | Members who can see you see whether you take invites |
 | "Landed" check: the city your phone says you are in, and when | So that, by default, only crew who are really in your city can invite you | Nobody. Your phone compares its approximate location with the city; the location itself is never sent to us. We keep the city and time for 12 hours |
 | Messages: chats and meetup chats (and any older message requests) | Conversations you choose to have | The people in the conversation. Messages are end-to-end encrypted on the sender's phone; we store only ciphertext we cannot open (section 4a) |
-| An optional note to the reviewer, and the invite code you joined with | Verification and invite accountability | Our verification team only |
+| The invite code you joined with | Invite accountability | Our team only |
 | Your phone's public encryption key | So other members' phones can seal messages to your phone | Members who can see you, have a conversation with you, or share a meetup with you |
 | Meetups and activities you post or join (title, type or interest, day, part of the day and optional time, neighbourhood, venue with its address and map pin, how many, level, audience) | To organise meetups and activities | The listing: verified members in that city whom its audience allows. An activity at your base is listed to verified crew based there and, unless the host switches it off, to crew on a layover there that day. Anyone in a plan can also share a link to it (below). The venue, its address and pin, the member list and the group chat: members only. Joining a meetup also opens a private chat between you and each other member, unless one of you declined a request from the other or blocked them; for an activity at your base, any member can start a private chat with another from the moment both have joined |
 | Your activity history (each plan you were in after it happened: name, activity, city, day, area, venue, how many went, whether you hosted, and who else was in it) | So you can look back and find the people again, including messaging them | Only you. You can delete one or all of it in the app at any time |
@@ -70,19 +71,19 @@ You must not put hotel names, room numbers, flight numbers or long ID numbers in
 
 ### 3.2 Data created when you use Galley
 
-- **Verification decisions**: approved, rejected or second proof requested, the reason, the date and which admin decided. No image is stored with it.
-- **Identity mark**: when we approve you, the reviewer types the staff number and surname shown on your proof, and our server turns them, with your airline, into a keyed one-way code. The staff number and surname themselves are not stored, and the code cannot be turned back into them; the key that makes it is held outside our database. We use it only to stop someone we have banned from joining again with a new account. It is deleted with your account. If we ban you, a copy with no link to you is kept for 3 years, and a new sign-up with the same code is held for a person to review.
+- **Verification decisions**: approved (automatically after a work-email code or two vouches, or by a person), held for a person to check, rejected or asked to try another way, the reason, the date and who decided. The same for crew checks: passed or not, the reason, the date. No image is stored with it.
+- **Identity mark**: when you confirm a work-email code, our server turns the address into a keyed one-way code. The address itself is not stored, and the code cannot be turned back into it; the key that makes it is held outside our database. We use it to stop one mailbox verifying two accounts and to stop someone we have banned joining again with the same work email. Accounts verified before 26 October 2026 by a screenshot have one made the same way from the staff number and surname on that proof. Accounts let in by vouches have none. It is deleted with your account. If we ban you, a copy with no link to you is kept for 3 years, and a new sign-up with the same code is held for a person to review.
 - **Board views**: one record per person, city and day you opened that city's board. Used, in totals, to understand whether Galley is useful. Kept 18 months.
-- **Automatic account decisions**: an account reported as "not crew" is asked to verify again; an account with two open reports is suspended until reviewed; invites and message requests from an account pause if 3 or more different people block or report it within 30 days, or if fewer than 10% of at least 12 of its invites across 3 or more cities are accepted ("not now" on its own never pauses anyone), until a person reviews it; if someone you invited is rejected, your invite link is switched off, and if three are, you are asked to verify again. A person reviews every report, and you can appeal any decision (Terms, section 8).
+- **Automatic account decisions**: a work-email code on a domain we know for your airline, or two vouches, approves you without a person (a new domain waits until a person checks it once); a "not crew" report opens a crew check: you have 72 hours to answer and stay visible meanwhile, and with no answer, or if the check doesn't confirm you fly, you're hidden until a check does; 12 months after your last verification you're asked to confirm your work email again and are hidden until you do; if someone you vouched for fails a crew check or is banned, your vouching and invite link switch off; if you file many "not crew" reports, or many turn out unfounded, a person looks at them, and nothing happens to you automatically; an account with two open reports (other than "not crew") is suspended until reviewed; invites and message requests from an account pause if 3 or more different people block or report it within 30 days, or if fewer than 10% of at least 12 of its invites across 3 or more cities are accepted ("not now" on its own never pauses anyone), until a person reviews it; if someone you invited is rejected, your invite link is switched off, and if three are, you are asked to verify again. A person reviews every report, and you can appeal any decision (Terms, section 8).
 - **Meetup records**: who joined, who said "still in", and whether two participants confirmed it happened. Used for go/no-go, reminders and to measure whether meetups happen.
 - **Product analytics**: events such as "signed up", "set Up for" or "joined a meetup", linked to a random account ID, with counts and chip names. No name, email, airline, message text, city or meetup audience is sent with them, and PostHog's location lookup from your IP address is switched off. Some events carry the ID of the meetup or tip concerned. Processed by PostHog in the EU.
 - **Technical data**: IP address, device type, operating system and app version, which our hosting and update providers log to run and secure the service.
 
 ### 3.3 Data we do not collect
 
-Where you stay (hotel names or addresses), room numbers, flight numbers, pairings, duty times, staff or crew ID numbers (only the one-way identity mark above), passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. A plan at your base can name its venue, including a hotel's courts, gym or restaurant, with that venue's address and pin; that is the place you meet, shown only to people who join. Searching for a venue never uses your phone's location. Location is used only while the app is open, in two cases: if you choose to pin a tip to where you are standing (rounded to about 100 metres), and when you send an invite to someone who takes invites only from crew who've landed. In that case your phone checks, using approximate location, that it is within about 50 km of the city, and tells us only the city.
+Where you stay (hotel names or addresses), room numbers, flight numbers, pairings, duty times (except the one day in a crew-check crop, deleted when we decide), staff or crew ID numbers (only the one-way identity mark above), passport or licence numbers, nationality, religion, sexual orientation, health information, political views, contacts from your phone, and your location in the background. A plan at your base can name its venue, including a hotel's courts, gym or restaurant, with that venue's address and pin; that is the place you meet, shown only to people who join. Searching for a venue never uses your phone's location. Location is used only while the app is open, in two cases: if you choose to pin a tip to where you are standing (rounded to about 100 metres), and when you send an invite to someone who takes invites only from crew who've landed. In that case your phone checks, using approximate location, that it is within about 50 km of the city, and tells us only the city.
 
-We never run face recognition or any face-matching software. A selfie sent with a crew ID is compared by eye by a person on our team, then deleted.
+We never run face recognition or any face-matching software, and we never ask for a selfie or an ID.
 
 ## 4. Meetup photos
 
@@ -100,7 +101,7 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 
 ## 5. Who can see you
 
-- **Before verification**: nobody but our verification team.
+- **Before verification**: nobody. If you ask colleagues to vouch, crew at your airline who enter your code see your name, role, airline and base.
 - **After verification**: verified members see your profile only when you share a meetup, or when you are both on a layover in the same city with overlapping dates and the overlap starts within 2 days; never if either of you has blocked the other. Before that, someone with an overlapping layover sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
 - **At your base**: you appear on no board there, and your free days are only counted (never fewer than 3, never who). Crew based in your city see activities and how many are in each club; members of a club you're in see you in its member list unless you hide yourself there. On a day you pick something you're up for, crew at your base in the group you chose (anyone, women only or men only) see you in "Up for something" and can open your profile; pick nothing and you stay out of it. Anyone in the same activity as you can start a private chat with you once you've both joined, and so can people you did an activity with while it's still in their history. Two people at their own base can't invite each other.
 - **Who can contact you**: nobody can invite you unless you switch on "Open to invites" (it starts off). When it's on, by default only crew who've landed in your city can invite you; you can widen it to anyone with an overlapping stay. Without invites, people can still meet you at events. Starting a new conversation with free text is no longer possible; it begins with an invite you accept.
@@ -116,7 +117,7 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 | Running your account, verification, profiles, boards, messages, meetups, tips, photos | Performance of our contract with you (the Terms) |
 | Invites and your invite settings | Performance of our contract with you (the Terms) |
 | Optional gender for women-only meetups; meetup photos on city pages; location for a tip pin or a "landed" check | Your consent, which you can withdraw at any time in the app (or in your phone's location settings) |
-| Safety and moderation: reports, blocks, the text filter, invite limits and pauses, suspensions, the identity mark and ban marks, records of decisions | Our legitimate interest in keeping members safe and the community limited to crew |
+| Safety and moderation: reports, blocks, the text filter, invite limits and pauses, suspensions, the identity mark and ban marks, crew checks, who vouched for whom, records of decisions | Our legitimate interest in keeping members safe and the community limited to crew |
 | Product analytics | Our legitimate interest in knowing whether Galley works. You can switch it off in Settings |
 | Service and security logs | Our legitimate interest in running a secure service |
 | Answering legal requests, keeping consent records, tax and accounting | Legal obligation |
@@ -129,7 +130,7 @@ We do not sell or rent personal data, and we do not share it with airlines, empl
 | --- | --- | --- |
 | Supabase | Database, sign-in, file storage, scheduled jobs | European Union |
 | PostHog | Product analytics | European Union |
-| Resend | Sends account and verification emails | United States |
+| Resend | Sends account emails and work-email codes | United States |
 | Expo (650 Industries) | Delivers app updates and, when enabled, push notifications | United States |
 | Apple and Google | App distribution and, when enabled, push notification delivery | Their own terms apply |
 
@@ -147,8 +148,10 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 
 | Data | Kept until |
 | --- | --- |
-| Proof of employment images | Usually within 24 hours of the verification decision; 30 days after submission if never decided |
-| Work email address | Deleted when the code is confirmed or expires (15 minutes); the hash stays with your account |
+| Crew-check crops (and any proof images sent before 26 October 2026) | Usually within 24 hours of the decision; 30 days after sending if never decided |
+| Work email address | Deleted when you type the code, when it expires (15 minutes) or if it can't be sent; the one-way code stays with your account |
+| Record that you asked for a code (time only, for the daily limit) | 2 days |
+| Vouch requests and who vouched | A request closes after 14 days; who vouched for whom is kept until either account is deleted |
 | Stays | The day after you depart; home base until you change it |
 | Up for | The end of that day in that city |
 | What you're up for at your base, and who may see it | Deleted with the free day, at the end of that day |
@@ -179,7 +182,7 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Backups | Overwritten within 7 days |
 | Service logs | No more than 90 days |
 | Records of privacy and legal requests | 3 years |
-| Admin access log for proof images | 12 months |
+| Admin access log for crew-check crops | 12 months |
 
 ## 9. Your rights
 
@@ -195,7 +198,7 @@ For anything else, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.a
 
 ## 10. Security
 
-Messages are end-to-end encrypted (section 4a). All other data is encrypted in transit and at rest with our hosting provider. Access is restricted by database permissions and row-level rules that decide who can read each row and call each function, tested automatically on every change. Proofs sit in a private bucket only our verification team can open, and every access will be logged. Admin access is limited to two named people. No system is perfect: if a breach puts you at risk, we will tell you and the relevant authorities as the law requires.
+Messages are end-to-end encrypted (section 4a). All other data is encrypted in transit and at rest with our hosting provider. Access is restricted by database permissions and row-level rules that decide who can read each row and call each function, tested automatically on every change. Crew-check crops sit in a private bucket only our team can open, and every access will be logged. Admin access is limited to two named people. No system is perfect: if a breach puts you at risk, we will tell you and the relevant authorities as the law requires.
 
 ## 11. Age
 

@@ -29,7 +29,7 @@ If you believe content on Galley infringes your copyright, email **[legal@crewga
 
 ## Requests from law enforcement and authorities
 
-Galley holds little: no hotels, flights or precise locations; messages are end-to-end encrypted, so we hold only ciphertext we cannot open and the metadata in Privacy Policy section 4a; proof images are deleted soon after a decision; stays, Up for and meetups expire within days. Some records last longer (accepted conversations' metadata, 18 months of board views and meetup records). Section 8 of the Privacy Policy lists every period. Please check whether what you need could exist before you ask.
+Galley holds little: no hotels, flights or precise locations; messages are end-to-end encrypted, so we hold only ciphertext we cannot open and the metadata in Privacy Policy section 4a; work email addresses are not kept, and crew-check crops are deleted soon after a decision; stays, Up for and meetups expire within days. Some records last longer (accepted conversations' metadata, 18 months of board views and meetup records). Section 8 of the Privacy Policy lists every period. Please check whether what you need could exist before you ask.
 
 - Send requests to **[legal@crewgalley.app](mailto:legal@crewgalley.app)** from an official address, identifying the authority, the legal basis, the account concerned (email or display name and airline), and exactly what is requested.
 - We disclose data only under valid legal process that binds us. We may ask for the request to come through an international channel (for example a mutual legal assistance request) where the law requires.

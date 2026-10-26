@@ -11,7 +11,7 @@ Galley exists so that nobody has to spend a layover alone unless they want to. I
 ## Be who you say you are
 
 - One account, yours, with your own photos and your real first name or the name crew know you by.
-- Verify with your own, current proof. No borrowed rosters, no edited screenshots.
+- Verify with your own work email. Only vouch for people you know fly for your airline now: your account answers for it. In a crew check, crop your own roster, nothing edited.
 - If you stop flying for an airline, stop using Galley. Former crew are welcome back when they return to the line.
 
 ## Protect the crew hotel
@@ -77,8 +77,8 @@ The single most important rule.
 ## What happens when someone breaks them
 
 - Reports of sexual, hateful or threatening content, or of someone at risk, are acted on within 24 hours. Every other report gets a decision within 72 hours.
-- Depending on what happened, we may dismiss the report, warn the person, remove content, ask them to verify again, suspend the account until we've reviewed it, or ban it permanently. Serious first offences (threats, sexual harassment, sharing someone's hotel, fake proof) can lead straight to a ban. A ban follows the person, not the email address: a new account with the same staff details is caught for 3 years.
-- Some steps are automatic. Public text matching common hotel brands or the patterns of flight numbers, room numbers or long numbers is rejected. A "not crew" report triggers re-verification. Two open reports suspend an account until we review it. If several people block or report someone, or very few of their invites are accepted, their invites pause until we review it.
+- Depending on what happened, we may dismiss the report, warn the person, remove content, ask them to verify again, suspend the account until we've reviewed it, or ban it permanently. Serious first offences (threats, sexual harassment, sharing someone's hotel, fake proof) can lead straight to a ban. A ban follows the person, not the account: a new account with the same work email is caught for 3 years.
+- Some steps are automatic. Public text matching common hotel brands or the patterns of flight numbers, room numbers or long numbers is rejected. A "not crew" report opens a crew check: the person has 72 hours to show us two roster crops or do a short video call, and stays visible meanwhile; with no answer, or no confirmation, they're hidden until a check passes. Report "not crew" only when you have a real reason. There's no limit, but we look at the reports of anyone who files a lot of them. Two open reports suspend an account until we review it. If several people block or report someone, or very few of their invites are accepted, their invites pause until we review it.
 - If we act on your account or content, we tell you what we did, which rule, whether it was automatic, and how to appeal. Reply to that message to appeal; we answer within 7 days.
 
 Thanks for looking after each other. That's the whole point.

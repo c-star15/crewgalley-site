@@ -4,7 +4,7 @@ description: The agreement between you and Galley.
 ---
 # Galley Terms of Service
 
-*Version 2026-10-23. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-26. Takes effect when Galley launches on the App Store and Google Play.*
 
 These terms are an agreement between you and **Galley's founder**, an individual based in Dubai, United Arab Emirates, who operates Galley ("Galley", "we", "us"), postal address on request at [privacy@crewgalley.app](mailto:privacy@crewgalley.app). By creating an account you accept them, together with the Community Guidelines ([crewgalley.app/guidelines/](/guidelines/)) and the Privacy Policy ([crewgalley.app/privacy/](/privacy/)), which form part of these terms.
 
@@ -29,11 +29,13 @@ One person, one account. Admin and test accounts are the only exceptions.
 
 ## 3. Verification
 
-Before you can see anyone, you must verify that you are crew, with a roster screenshot, a screenshot of your company mailbox, or a crew ID photo plus a selfie. A person checks every proof. You must only submit proof that is genuinely yours and current, with anything you are not required to show covered. Submitting someone else's proof, or a forged or edited one, is grounds for a permanent ban.
+Before you can see anyone, you must show that you are crew: with a code sent to your airline email address, or with vouches from two verified crew at your airline. Only use a work mailbox that is yours. Only vouch for someone you know flies for your airline now. Using someone else's mailbox, vouching for someone you don't know is crew, or sending crops from someone else's roster or an edited one, is grounds for a permanent ban.
 
-**What verification means.** Verification checks proof of employment at a point in time. It does **not** check anyone's identity documents, character, criminal record, intentions or behaviour. A verified badge means the person showed us employment proof; it does not mean they are safe. Use your own judgement with everyone you meet (see [crewgalley.app/safety/](/safety/)). We may ask you to verify again at any time, and at least every 12 months.
+**What verification means.** Verification checks, at a point in time, that you can receive mail at your airline (the code) or that two crew there vouch for you. An airline email address cannot show whether you are crew or office staff: you confirm your role, and any member can report someone as "not crew". Verification does **not** check anyone's identity documents, character, criminal record, intentions or behaviour. A verified badge does not mean someone is safe. Use your own judgement with everyone you meet (see [crewgalley.app/safety/](/safety/)). We ask you to confirm your work email again at least every 12 months, and may ask at any time.
 
-**Invites.** Your invite link lets crew you know join. If someone you invited is rejected at verification, your link is switched off; if three are, you are asked to verify again.
+**Crew checks.** If someone reports you as "not crew", you have 72 hours to show us two crops of your roster (your name, and one day you flew in the last 2 weeks), cut on your phone, or to do a short video call. You stay visible meanwhile. If you don't answer, or the check doesn't confirm that you fly, your account is hidden until a check does. We never tell you who reported you.
+
+**Invites and vouches.** Your invite link lets crew you know join. If someone you invited is rejected at verification, your link is switched off; if three are, you are asked to verify again. If someone you vouched for fails a crew check or is banned, your vouching and your invite link are switched off.
 
 ## 4. Your account
 
@@ -74,9 +76,9 @@ We do not check content before it appears, but we may remove or restrict any con
 
 ## 8. Moderation, suspension and ending your account
 
-How we moderate: members can report and block anyone. Reports go to our moderation team. We act on reports of sexual, hateful or threatening content, or of someone at risk, within 24 hours, and decide every other report within 72 hours. Some steps are automatic: public text matching common hotel brands or the patterns of flight numbers, room numbers or long ID numbers is rejected; an account reported as "not crew" is asked to verify again; an account with two open reports is suspended until reviewed; invites and message requests from an account pause if several people block or report it, or if very few of its invites are accepted across several cities, until we review it. Each account can add 8 stays and send 6 invites or requests a week, with 3 waiting at a time. Messages are end-to-end encrypted and we cannot read them; we see only messages a member chooses to attach to a report.
+How we moderate: members can report and block anyone. Reports go to our moderation team. We act on reports of sexual, hateful or threatening content, or of someone at risk, within 24 hours, and decide every other report within 72 hours. Some steps are automatic: public text matching common hotel brands or the patterns of flight numbers, room numbers or long ID numbers is rejected; an account reported as "not crew" gets a crew check (section 3); an account with two open reports (other than "not crew") is suspended until reviewed; a work-email code on a domain we know for your airline, or two vouches, approves an account without a person; an account goes into a check 12 months after its last verification until it confirms its work email again; invites and message requests from an account pause if several people block or report it, or if very few of its invites are accepted across several cities, until we review it. Each account can add 8 stays and send 6 invites or requests a week, with 3 waiting at a time. Messages are end-to-end encrypted and we cannot read them; we see only messages a member chooses to attach to a report.
 
-What we may do: warn you, remove content, ask you to verify again, suspend your account until we have reviewed what happened, or ban it permanently. A ban applies to you, not just the account: for 3 years we keep a one-way code made from your airline, staff number and surname, and a new account with the same details is held for review (Privacy Policy, section 3.2). When we restrict your account or content, we tell you what we did, why, which rule it was, whether it was automatic, and how to appeal. You can appeal once per decision by replying to our message; we answer within 7 days.
+What we may do: warn you, remove content, ask you to verify again, suspend your account until we have reviewed what happened, or ban it permanently. A ban applies to you, not just the account: for 3 years we keep a one-way code made from your work email (for accounts verified before 26 October 2026, from your airline, staff number and surname), and a new account with the same details is held for review (Privacy Policy, section 3.2). When we restrict your account or content, we tell you what we did, why, which rule it was, whether it was automatic, and how to appeal. You can appeal once per decision by replying to our message; we answer within 7 days.
 
 You can stop using Galley and delete your account at any time in Settings. We may close Galley or any feature with at least 30 days' notice, except where we must act faster for legal or safety reasons.
 
