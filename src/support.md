@@ -14,7 +14,7 @@ Stuck, or something not working? Email [support@crewgalley.app](mailto:support@c
 
 **Password reset.** Use "Forgot password" on the sign-in screen and open the link from the email on the phone that has Galley installed. If it opened in a browser instead, see [/reset/](/reset/).
 
-**Delete my account.** In the app: You → Settings → Delete my account. It removes your profile, photos, stays, messages and verification history. If you cannot sign in, email [privacy@crewgalley.app](mailto:privacy@crewgalley.app) from the account's address. See [/delete-account/](/delete-account/).
+**Delete my account.** In the app: your photo at the top right → Settings → Delete my account. It removes your profile, photos, stays, messages and verification history. If you cannot sign in, email [privacy@crewgalley.app](mailto:privacy@crewgalley.app) from the account's address. See [/delete-account/](/delete-account/).
 
 **My data.** In the app: Settings → Export my data. For anything more, email [privacy@crewgalley.app](mailto:privacy@crewgalley.app); we reply within 30 days. See the [privacy policy](/privacy/).
 

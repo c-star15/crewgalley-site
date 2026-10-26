@@ -48,7 +48,7 @@ Because we can't read chats, we only ever see what **you** choose to show us. Wh
 
 - **A new phone starts fresh.** Messages are locked to the phones that were in the conversation. On a new phone you'll see new messages; older ones stay on your old phone. Chats on Galley are short-lived anyway: invites expire at the end of their day, meetup chats close after 24 hours.
 - **Deleting your account deletes your keys:** the phone you delete from erases its private key and we erase every public key. What's left on our servers can no longer be opened by anyone. Other phones signed in to the account keep their key until you remove the app.
-- **Your data export** (You → Settings → Export my data) opens the messages you sent on your phone and saves them as text. We never see that file.
+- **Your data export** (your photo at the top right → Settings → Export my data) opens the messages you sent on your phone and saves them as text. We never see that file.
 
 ## If someone asks us for your messages
 
