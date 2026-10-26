@@ -80,6 +80,8 @@ You must not put hotel names, room numbers, flight numbers or long ID numbers in
 - **Automatic account decisions**: a work-email code on a domain we know for your airline, or two vouches, approves you without a person (a new domain waits until a person checks it once); a "not crew" report opens a crew check: you have 72 hours to answer and stay visible meanwhile, and with no answer, or if the check doesn't confirm you fly, you're hidden until a check does; 12 months after your last verification you're asked to confirm your work email again and are hidden until you do; if someone you vouched for fails a crew check or is banned, your vouching and invite link switch off; if you file many "not crew" reports, or many turn out unfounded, a person looks at them, and nothing happens to you automatically; an account with two open reports (other than "not crew") is suspended until reviewed; invites and message requests from an account pause if 3 or more different people block or report it within 30 days, or if fewer than 10% of at least 12 of its invites across 3 or more cities are accepted ("not now" on its own never pauses anyone), until a person reviews it; if someone you invited is rejected, your invite link is switched off, and if three are, you are asked to verify again. A person reviews every report, and you can appeal any decision (Terms, section 8).
 - **Meetup records**: who joined, who said "still in", and whether two participants confirmed it happened. Used for go/no-go, reminders and to measure whether meetups happen.
 - **Product analytics**: events such as "signed up", "set Up for" or "joined a meetup", linked to a random account ID, with counts and chip names. No name, email, airline, message text, city or meetup audience is sent with them, and PostHog's location lookup from your IP address is switched off. Some events carry the ID of the meetup or tip concerned. Processed by PostHog in the EU.
+- **Push notifications**: if you allow notifications on a phone, that phone's push token (an address Apple or Google gives the app on that phone), whether it's an iPhone or Android, and your switches in Settings → Notifications (Messages, Your plans, New plans for you; safety and account alerts are always on). A notification says who wrote ("Paula", "New message") but never what: messages are end-to-end encrypted and our server never has the text. Others carry a plan's title and a first name ("Ben joined"), a count ("2 plans on your day off"), or an account notice ("You're in", "Quick crew check"); the person you report is never named in any of them. Each one goes from our server through Expo to Apple or Google, which deliver it to your phone.
+- **Crash reports**: when the app crashes or hits an error, a report goes to Sentry in the EU: what went wrong in the code, the phone model, operating system, app version, the screen it happened on, and your random account ID. No name, email, IP address, message text or location, and nothing the app writes to its own logs.
 - **Technical data**: IP address, device type, operating system and app version, which our hosting and update providers log to run and secure the service.
 
 ### 3.3 Data we do not collect
@@ -96,7 +98,7 @@ Only someone who was in a meetup can add a photo, and only after it starts. The 
 
 Chats, meetup group chats and any older message requests are encrypted on the sender's phone before they are sent, and can be opened only by the phones of the people in the conversation. Each phone creates its own private key, which stays in the phone's secure storage and is never sent to us. We, our hosting provider and anyone who gains access to our servers see only sealed ciphertext.
 
-What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, how many phones you use and when each last opened Galley, the "Up for" choice a request started from, invites (who, the plan, the day, the time of day and the answer; invites contain no text), and anything you post to a board (meetup titles, neighbourhoods, venues with their addresses and pins, and times).
+What we can see: that a conversation exists, between whom, when each message was sent, its approximate size, how many phones you use and when each last opened Galley, the "Up for" choice a request started from, invites (who, the plan, the day, the time of day and the answer; invites contain no text), and anything you post to a board (meetup titles, neighbourhoods, venues with their addresses and pins, and times). A push notification about a message carries the sender's name and the words "New message", never the text; Apple or Google deliver it (section 3.2).
 
 What this means: a new phone cannot open messages sent before it was signed in; deleting your account erases the private key on the phone you delete from and all our copies of your public keys, so nothing left on our servers can be opened again (other phones signed in to the account keep their key until the app is removed); your data export opens the messages you sent, on your phone.
 
@@ -122,6 +124,8 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 | Optional gender for women-only and men-only plans; meetup photos on city pages; location for a tip pin or a "landed" check | Your consent, which you can withdraw at any time in the app (or in your phone's location settings) |
 | Safety and moderation: reports, blocks, the text filter, invite limits and pauses, suspensions, the identity mark and ban marks, crew checks, who vouched for whom, records of decisions | Our legitimate interest in keeping members safe and the community limited to crew |
 | Product analytics | Our legitimate interest in knowing whether Galley works. You can switch it off in Settings |
+| Push notifications | Your consent: your phone asks before any are sent, and you can turn them off there or per kind in Settings → Notifications. Safety and account alerts go out while notifications are on, as part of our contract with you |
+| Crash reports | Our legitimate interest in an app that works |
 | Service and security logs | Our legitimate interest in running a secure service |
 | Answering legal requests, keeping consent records, tax and accounting | Legal obligation |
 
@@ -134,8 +138,9 @@ We do not sell or rent personal data, and we do not share it with airlines, empl
 | Supabase | Database, sign-in, file storage, scheduled jobs | European Union |
 | PostHog | Product analytics | European Union |
 | Resend | Sends account emails and work-email codes | United States |
-| Expo (650 Industries) | Delivers app updates and, when enabled, push notifications | United States |
-| Apple and Google | App distribution and, when enabled, push notification delivery | Their own terms apply |
+| Expo (650 Industries) | Delivers app updates and push notifications | United States |
+| Sentry (Functional Software) | Crash and error reports | European Union |
+| Apple and Google | App distribution and push notification delivery | Their own terms apply |
 
 When data goes to a provider in the United States, the transfer relies on the EU–US Data Privacy Framework or the European Commission's standard contractual clauses in that provider's agreement. Our team accesses data from the United Arab Emirates.
 
@@ -182,6 +187,9 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Reports and blocks | Until either person's account is deleted |
 | Inactive accounts | Deleted after 24 months without a sign-in, after an email warning |
 | Analytics events | Deleted with your account; otherwise PostHog's retention period |
+| Push token | Until you sign out on that phone, the phone stops accepting notifications, or you delete your account (five phones at most; the oldest drops off) |
+| Notifications waiting to be sent, and sent ones | 7 days |
+| Crash reports | No more than 90 days |
 | Backups | Overwritten within 7 days |
 | Service logs | No more than 90 days |
 | Records of privacy and legal requests | 3 years |

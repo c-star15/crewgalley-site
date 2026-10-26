@@ -39,6 +39,7 @@ We would rather tell you than have you find out.
 - when you send an invite to someone who takes them only from crew who've landed: the city your phone says you're in, for 12 hours. Your phone does the check; we never get your location
 - plan titles, neighbourhoods, venues with their addresses and map pins, and times, because crew need them to join
 - your profile and stays, because that is how crew who overlap you see you when you've said you're open to meeting crew
+- a notification about a new message says who wrote and "New message". Never what they wrote: we don't have it. Apple or Google deliver it to your phone
 
 ## If something goes wrong
 
