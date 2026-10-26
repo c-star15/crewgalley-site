@@ -67,7 +67,7 @@ The single most important rule.
 ## If something goes wrong
 
 - **Not now** turns down an invite. The sender never finds out. Right after it you can choose **Don't show me them again** (a block) or **Report**.
-- **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a meetup you're in.
+- **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a plan you're in.
 - **Report** someone from their profile or from your chat with them. You can attach your recent messages with them; we can't read chats otherwise, because they're encrypted. Reporting also blocks. The person isn't told who reported them.
 - **Report** a club post, reply, place or route from its ••• menu. A person reviews it, and three reports from different members hide it until then. Reporting content doesn't block or suspend its author.
 - For a city tip outside a club, a photo or a meetup, email [reporting@crewgalley.app](mailto:reporting@crewgalley.app). In-app reporting for these is coming.

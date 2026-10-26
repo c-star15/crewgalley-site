@@ -9,7 +9,7 @@ description: Every Galley message is end-to-end encrypted on your phone. We cann
 <div class="grid">
 <div class="card"><strong>Invites</strong>How you reach someone new: a plan and a time, no text, so there's nothing to read. If they say yes, the chat opens, encrypted from the first word.</div>
 <div class="card"><strong>Chats</strong>Every message after they accept. Encrypted, every one.</div>
-<div class="card"><strong>Meetup chats</strong>The group chat for a meetup. Encrypted for the people going, and closed 24 hours after.</div>
+<div class="card"><strong>Plan chats</strong>The group chat for a plan. Encrypted for the people going, and closed 24 hours after.</div>
 </div>
 
 ## Why it matters to crew
@@ -27,7 +27,7 @@ You talk about where you are, when you land, what you're doing tonight. That sho
 
 We would rather tell you than have you find out.
 
-**We can't see** what you write: chats, meetup chats and any older requests are sealed on your phone.
+**We can't see** what you write: chats, plan chats and any older requests are sealed on your phone.
 
 **We can see** what it takes to run the app:
 
@@ -37,8 +37,8 @@ We would rather tell you than have you find out.
 - the "Up for" chip a request came from (coffee, dinner…)
 - invites: who, the plan, the day and time of day, and the answer (invites contain no text)
 - when you send an invite to someone who takes them only from crew who've landed: the city your phone says you're in, for 12 hours. Your phone does the check; we never get your location
-- meetup titles, neighbourhoods, venues with their addresses and map pins, and times, because they're posted to the board
-- your profile and stays, because that is how the board shows you to crew who overlap you
+- plan titles, neighbourhoods, venues with their addresses and map pins, and times, because crew need them to join
+- your profile and stays, because that is how crew who overlap you see you when you've said you're open to meeting crew
 
 ## If something goes wrong
 
