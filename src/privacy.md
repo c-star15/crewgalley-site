@@ -77,6 +77,7 @@ You must not put hotel names, room numbers, flight numbers or long ID numbers in
 - **Verification decisions**: approved (automatically after a work-email code or two vouches, or by a person), held for a person to check, rejected or asked to try another way, the reason, the date and who decided. The same for crew checks: passed or not, the reason, the date. No image is stored with it.
 - **Identity mark**: when you confirm a work-email code, our server turns the address into a keyed one-way code. The address itself is not stored, and the code cannot be turned back into it; the key that makes it is held outside our database. We use it to stop one mailbox verifying two accounts and to stop someone we have banned joining again with the same work email. Accounts verified before 26 October 2026 by a screenshot have one made the same way from the staff number and surname on that proof. Accounts let in by vouches have none. It is deleted with your account. If we ban you, a copy with no link to you is kept for 3 years, and a new sign-up with the same code is held for a person to review.
 - **How you got in**: open sign-up, a member's invite link, an access code from us, two vouches, or let in from the waiting list. While you wait on the list: that you're waiting, for which base and since when; the proof you gave is checked and its one-way code kept (so the same work email can't open a second account meanwhile). Codes you try are counted for a daily limit (time only).
+- **Account notices**: when we restrict your account or hide something you posted, a notice of what we did, why, which rule, whether it was automatic, and how to appeal. Shown in the app, emailed to your account address through Resend, and kept with your account as the record of the decision.
 - **Board views**: one record per person, city and day you opened that city's board. Used, in totals, to understand whether Galley is useful. Kept 18 months.
 - **Automatic account decisions**: a work-email code on a domain we know for your airline, or two vouches, approves you without a person (a new domain waits until a person checks it once); a "not crew" report opens a crew check: you have 72 hours to answer and stay visible meanwhile, and with no answer, or if the check doesn't confirm you fly, you're hidden until a check does; 12 months after your last verification you're asked to confirm your work email again and are hidden until you do; if someone you vouched for fails a crew check or is banned, your vouching and invite link switch off; if you file many "not crew" reports, or many turn out unfounded, a person looks at them, and nothing happens to you automatically; an account with two open reports (other than "not crew") is suspended until reviewed; invites and message requests from an account pause if 3 or more different people block or report it within 30 days, or if fewer than 10% of at least 12 of its invites across 3 or more cities are accepted ("not now" on its own never pauses anyone), until a person reviews it; if someone you invited is rejected, your invite link is switched off, and if three are, you are asked to verify again. A person reviews every report, and you can appeal any decision (Terms, section 8).
 - **Meetup records**: who joined, who said "still in", and whether two participants confirmed it happened. Used for go/no-go, reminders and to measure whether meetups happen.
@@ -138,7 +139,7 @@ We do not sell or rent personal data, and we do not share it with airlines, empl
 | --- | --- | --- |
 | Supabase | Database, sign-in, file storage, scheduled jobs | European Union |
 | PostHog | Product analytics | European Union |
-| Resend | Sends account emails and work-email codes | United States |
+| Resend | Sends account emails, work-email codes and account notices | United States |
 | Expo (650 Industries) | Delivers app updates and push notifications | United States |
 | Sentry (Functional Software) | Crash and error reports | European Union |
 | Apple and Google | App distribution and push notification delivery | Their own terms apply |
@@ -162,6 +163,7 @@ If Galley is transferred to a company we form to operate it (we plan to do this 
 | Record that you asked for a code (time only, for the daily limit) | 2 days |
 | Record that you tried an invite or access code (time only, for the daily limit) | 2 days |
 | Waiting-list place | Until you're let in or delete your account. How you got in is kept with your account |
+| Account notices | Until you delete your account |
 | Vouch requests and who vouched | A request closes after 14 days; who vouched for whom is kept until either account is deleted |
 | Stays | The day after you depart; home base until you change it |
 | Up for | The end of that day in that city |
