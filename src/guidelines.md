@@ -51,7 +51,7 @@ The single most important rule.
 - Turn up when you say you're in. If plans change, tap "Leave" (or "Can't make it" in the last hour) so the seat goes back. Hosts: cancel early rather than leave people waiting.
 - Choose public places. On a layover, meet in the lobby, then go together. At your base, meet at the venue.
 - No pressure to drink, stay out, spend, or go anywhere private.
-- Respect audience settings. Women-only meetups are for women, pilots-only for pilots, and so on.
+- Respect audience settings. Women-only plans are for women, men-only plans for men, and so on.
 - Share plan links with crew you know. Any verified crew member who gets the link can join that plan, so don't post links publicly. If you're joining a plan in another city, only say you're in if you'll be there.
 - Ask before taking photos of people, and before posting them anywhere outside Galley.
 
