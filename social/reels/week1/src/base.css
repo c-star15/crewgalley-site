@@ -1,0 +1,13 @@
+@font-face{font-family:InterV;src:url(../../../../fonts/inter-latin.woff2) format("woff2");font-weight:100 900;font-display:block}
+html,body{margin:0;padding:0;background:#13213A}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:InterV,Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+#stage *{box-sizing:border-box}
+.abs{position:absolute}
+.head{position:absolute;left:96px;margin:0;font-weight:900;letter-spacing:-.045em;word-spacing:.04em;line-height:.95;white-space:nowrap;font-variation-settings:"opsz" 32}
+.head .w{display:inline-block;will-change:transform}
+.wm{white-space:nowrap;font-weight:900;line-height:1;letter-spacing:-.065em;font-variation-settings:"opsz" 32}
+.wm svg{display:inline-block;vertical-align:-.2em;height:.5em;width:.335em;margin-left:.08em;overflow:visible}
+.ill{position:absolute;padding:6px 20px 5px;border-radius:999px;font-size:26px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid currentColor;opacity:.75;white-space:nowrap;line-height:1.2}
+.app{font-variation-settings:"opsz" 14;letter-spacing:0}
+.row{display:flex;align-items:center}
+.col{display:flex;flex-direction:column}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Galley Reel</title>
+<link rel="stylesheet" href="base.css">
+<script src="ionicons.js"></script><script src="lib.js"></script><script src="reels.js"></script>
+</head><body><div id="stage"></div>
+<script>
+// reel.html?r=<name>[&t=<seconds>]: builds one Reel; render(t) draws frame t (deterministic).
+(function () {
+  const q = new URLSearchParams(location.search);
+  const stage = document.getElementById('stage');
+  document.fonts.load('900 100px InterV').then(() => document.fonts.ready).then(() => {
+    const reel = window.REELS[q.get('r')](stage);
+    reel.headsFit && reel.headsFit();
+    stage.querySelectorAll('p.head').forEach((p) => {
+      // fit each headline to 888 px (Inter Black at 124 px unless a line is wider)
+      let size = 124; p.style.fontSize = size + 'px';
+      const o = p.style.opacity; p.style.opacity = 1;
+      while (p.offsetWidth > 888 && size > 60) { size -= 2; p.style.fontSize = size + 'px'; }
+      p.style.opacity = o;
+    });
+    window.render = reel.render;
+    window.REEL = { name: q.get('r'), bpm: reel.bpm, dur: reel.dur, cues: reel.cues, events: reel.events, cover: reel.cover, key: reel.key };
+    render(+(q.get('t') || 0));
+    window.READY = true;
+  });
+})();
+</script></body></html>
