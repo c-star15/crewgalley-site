@@ -339,19 +339,27 @@ main:not(.home) .join-new h2{border-top:0;padding-top:0;margin-top:0}
 .a-club b{font-size:16px;font-weight:700}
 .a-more{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px}
 .a-more span{padding:8px 14px;border-radius:999px;border:1.5px dashed #C9D0DD;font-size:14px;font-weight:700;color:#4A5470}
-/* Clubs section tiles (28 Oct) */
-.club-tiles{list-style:none;margin:8px 0 14px;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-@media (min-width:760px){.club-tiles{grid-template-columns:repeat(4,1fr);gap:16px}}
-.club-tile{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:4px;padding:18px 16px 20px;border-radius:22px;background:var(--band-surface);border:1px solid var(--band-edge);transition:transform .2s}
-.club-tile:hover{transform:translateY(-3px)}
-.club-tile::after{content:"";position:absolute;right:-28px;top:-28px;width:96px;height:96px;border-radius:50%;background:var(--amber);opacity:.14}
-.club-tile.t1::after{opacity:.24;width:120px;height:120px;right:-40px;top:-40px}
-.club-tile.t2::after{opacity:.1;right:auto;left:-30px;top:auto;bottom:-36px}
-.club-tile.t3::after{opacity:.2;width:70px;height:70px;right:12px;top:-20px}
-.club-ic{position:relative;z-index:1;display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--amber);color:var(--ink);margin-bottom:10px}
-.club-ic svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.club-tile b{position:relative;z-index:1;font-size:19px;font-weight:800;letter-spacing:-.01em;color:var(--band-text)}
-.club-tile span:last-child{position:relative;z-index:1;font-size:14px;line-height:1.4;color:var(--band-muted)}
-.tiles-more{margin:0 0 26px;font-size:15px;color:var(--band-muted)}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .club-tile::after{opacity:.07}}
-:root[data-theme=dark] .club-tile::after{opacity:.07}
+/* Clubs section: drifting club orbits (28 Oct) */
+.clubs-grid{display:grid;gap:28px;align-items:center}
+@media (min-width:900px){.clubs-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px}}
+.clubs .intro{margin-bottom:14px}
+.tiles-more{margin:6px 0 0;font-size:15px;color:var(--band-muted)}
+.orbits{position:relative;width:100%;max-width:520px;aspect-ratio:5/4;justify-self:center;margin:8px 0}
+.orb-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.orb-lines ellipse{fill:none;stroke:var(--band-muted);stroke-opacity:.3;stroke-width:1;stroke-dasharray:2 6;vector-effect:non-scaling-stroke}
+.orb-lines .orb-solid{stroke:var(--amber);stroke-opacity:.35;stroke-dasharray:none}
+.orb-spin{transform-origin:200px 165px}
+.orb-dot{fill:var(--amber)}.orb-dot.b{opacity:.6}
+.orb-core{position:absolute;left:50%;top:51.5%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--band-text)}
+.orb-pin{width:10px;height:10px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 5px rgba(242,169,59,.18)}
+.orb-chip{position:absolute;transform:translate(-50%,-50%);display:inline-flex;align-items:center;gap:6px;padding:6px 11px 6px 8px;border-radius:999px;background:var(--band-surface);border:1px solid var(--band-edge);color:var(--band-text);font-size:13px;font-weight:650;white-space:nowrap;box-shadow:0 6px 18px -12px rgba(11,20,36,.35)}
+.orb-chip svg{width:16px;height:16px;fill:none;stroke:var(--amber-text);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (prefers-reduced-motion:no-preference){
+  .orb-spin{animation:orb-rot 90s linear infinite}.orb-spin.rev{animation-duration:70s;animation-direction:reverse}
+  .orb-chip{animation:orb-float var(--d) ease-in-out var(--w) infinite alternate both}
+  .orb-pin{animation:orb-pulse 3s ease-in-out infinite}
+}
+@keyframes orb-rot{to{transform:rotate(360deg)}}
+@keyframes orb-float{from{transform:translate(-50%,-50%)}to{transform:translate(calc(-50% + 4px),calc(-50% - 9px))}}
+@keyframes orb-pulse{50%{box-shadow:0 0 0 9px rgba(242,169,59,.08)}}
+@media (max-width:520px){.orb-chip{font-size:12px;padding:5px 9px 5px 7px}.orb-chip svg{width:14px;height:14px}}
