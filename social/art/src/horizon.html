@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Horizon</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:
+  radial-gradient(90% 60% at 100% 0%,rgba(242,169,59,.30),transparent 70%),
+  radial-gradient(80% 40% at 8% 100%,rgba(214,203,184,.45),transparent 70%),
+  linear-gradient(180deg,#FBF7F0 0%,#F4EFE6 100%)}
+.lane{position:absolute;left:0;top:0;width:100%;height:100%}
+.strip{position:absolute;left:0;top:0}
+.world{position:absolute;inset:0}
+.cell{position:absolute}
+.ground{position:absolute;left:0;right:0;bottom:0}
+</style>
+<script src="data.js"></script><script src="lib.js"></script>
+</head><body><div id="stage"></div>
+<script>
+(function () {
+  const { KEYS, shuffled, rng, EASE, ramp, glyph, wordmark } = ART;
+  const q = new URLSearchParams(location.search);
+  const MODE = q.get('mode') || 'still';
+  const P = {
+    still: { W: 1080, H: 1440, S: 424, stepK: 0.68, ground: 1190, v: 0, seq: 'london,paris,rome,dubai,mumbai,newyork', focus: 'paris', focusX: 158, accMin: 0.8, boff: 60, wm: { px: 104, left: 96, bottom: 112 } },
+    reel:  { W: 1080, H: 1920, S: 450, ground: 1490, v: 54, seq: 'kualalumpur,barcelona,sanfrancisco,london,amsterdam,dubai,rome,paris,newyork,hongkong', focus: 'dubai', focusX: 540, focusT: 14, zoom: [1.5, 0, 11.2], wm: { px: 176, cy: 800, t0: 9.6, t1: 11.2 } },
+  }[MODE];
+  for (const k of ['S', 'ground', 'v', 'focusX', 'stepK', 'W', 'H']) if (q.has(k)) P[k] = +q.get(k);
+  if (q.has('focus')) P.focus = q.get('focus');
+  const stage = document.getElementById('stage');
+  stage.style.width = P.W + 'px'; stage.style.height = P.H + 'px';
+  const groundCol = q.get('gc') || '#EEE6D8';
+
+  function lane(name, keys, size, speed, lift, col, seed, twinkle) {
+    const l = document.createElement('div'); l.className = 'lane'; stage.appendChild(l);
+    const strip = document.createElement('div'); strip.className = 'strip'; l.appendChild(strip);
+    const step = Math.round(size * (P.stepK || 0.84));
+    const r = rng(seed);
+    const cells = [];
+    const top = P.ground - lift - size * 56 / 64;
+    for (let copy = 0; copy < 2; copy++) keys.forEach((k, i) => {
+      const idx = copy * keys.length + i;
+      const cell = document.createElement('div'); cell.className = 'cell';
+      cell.style.left = (idx * step + (step - size) / 2) + 'px';
+      cell.style.top = top + 'px';
+      const s = glyph(k, size, col); cell.appendChild(s); strip.appendChild(cell);
+      cells.push({ k, idx, acc: s._acc, ph: r() * 7 });
+    });
+    return { strip, step, dist: keys.length * step, keys, cells, speed, twinkle };
+  }
+  let front = shuffled(KEYS, 3); const back = shuffled(KEYS, 7);
+  const seq = q.get('seq') || P.seq;
+  if (seq) { const pick = seq.split(','); front = pick.concat(front.filter((k) => !pick.includes(k))); }
+  const S = P.S, SB = Math.round(S * 0.64), lift = Math.round(S * 0.04);
+  const L = [
+    lane('back', back, SB, 0.5, lift, { f: '#DDD3C2', a: '#DDD3C2', dOp: .55 }, 7, false),
+    lane('front', front, S, 1, 0, { f: '#2B3A57', a: '#F2A93B', dOp: .32 }, 11, true),
+  ];
+  const g = document.createElement('div'); g.className = 'ground';
+  g.style.top = P.ground + 'px'; g.style.background = groundCol; stage.insertBefore(g, stage.firstChild);
+  const world = document.createElement('div'); world.className = 'world'; stage.appendChild(world);
+  world.style.transformOrigin = `${P.W / 2}px ${P.ground}px`;
+  world.appendChild(L[0].strip.parentNode); world.appendChild(L[1].strip.parentNode);
+  // place the focus landmark at focusX at focusT
+  const fl = L[1], fi = fl.keys.indexOf(P.focus);
+  const base0 = fi * fl.step + fl.step / 2 - P.focusX - P.v * (P.focusT || 0);
+  // back lane: same reference so the parallax is consistent; offset by a fixed amount
+  const bOff = q.has('boff') ? +q.get('boff') : (P.boff || 0);
+
+  const wm = wordmark(P.wm.px, '#13213A'); stage.appendChild(wm);
+  if (P.wm.left != null) { wm.style.left = P.wm.left + 'px'; wm.style.bottom = P.wm.bottom + 'px'; }
+
+  const mod = (a, n) => ((a % n) + n) % n;
+  window.render = function (t) {
+    for (const l of L) {
+      const shift = l === fl ? base0 + P.v * t : base0 * 0.5 + bOff + P.v * 0.5 * t;
+      const x = -mod(shift, l.dist);
+      l.strip.style.transform = `translate3d(${x.toFixed(2)}px,0,0)`;
+      if (l.twinkle) for (const c of l.cells) {
+        const local = t + c.ph, n = Math.floor(local / 3.6), p = local / 3.6 - n;
+        const e = EASE.inOut(n % 2 ? 1 - p : p);
+        const o = Math.max(P.accMin || 0, 0.35 + 0.65 * e).toFixed(3);
+        for (const a of c.acc) a.setAttribute('opacity', o);
+      }
+    }
+    if (P.zoom) {
+      const [z0, a, b] = P.zoom, k = EASE.inOut(ramp(t, a, b));
+      const z = z0 + (1 - z0) * k;
+      world.style.transform = z === 1 ? 'none' : `scale(${z.toFixed(5)})`;
+    }
+    if (P.wm.t0 != null) {
+      const k = EASE.out(ramp(t, P.wm.t0, P.wm.t1));
+      const w = wm.offsetWidth, h = wm.offsetHeight;
+      wm.style.left = Math.round((P.W - w) / 2) + 'px';
+      wm.style.top = Math.round(P.wm.cy - h / 2 + (1 - k) * 24) + 'px';
+      wm.style.opacity = k.toFixed(3);
+    }
+  };
+  window.DURATION = 14;
+  document.fonts.ready.then(() => { render(+(q.get('t') || 0)); window.READY = true; });
+})();
+</script></body></html>

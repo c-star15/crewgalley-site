@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Departures</title>
+<link rel="stylesheet" href="base.css">
+<style>
+#stage{background:
+  radial-gradient(90% 60% at 100% 0%,rgba(242,169,59,.30),transparent 70%),
+  linear-gradient(180deg,#FBF7F0 0%,#F4EFE6 100%)}
+.tile{position:absolute}
+.half{position:absolute;left:0;right:0;overflow:hidden;box-sizing:border-box;background:linear-gradient(#FFFFFF,#FBF8F2);border:var(--bw) solid #E2D9C9;box-shadow:0 2px 0 rgba(19,33,58,.04)}
+.top{top:0;border-bottom:none;transform-origin:50% 100%}
+.bot{bottom:0;border-top:none;transform-origin:50% 0}
+.face{position:absolute;left:0;right:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;box-sizing:border-box}
+.bot .face{bottom:0}
+.top .face{top:0}
+.face svg{flex:none;display:block;overflow:visible}
+.face b{font-weight:800;line-height:1;letter-spacing:.12em;color:#13213A;font-variant-numeric:tabular-nums;font-variation-settings:"opsz" 28}
+.flap{backface-visibility:hidden;z-index:2;visibility:hidden}
+.shade{position:absolute;inset:0;background:#13213A;opacity:0;pointer-events:none}
+.home .half{border-color:#F2A93B}
+.home b{color:#B86A00}
+.plate{position:absolute;box-sizing:border-box;background:linear-gradient(#FFFFFF,#FBF8F2);border:var(--bw) solid #E2D9C9;box-shadow:0 2px 0 rgba(19,33,58,.04)}
+</style>
+<script src="data.js"></script><script src="lib.js"></script>
+</head><body><div id="stage"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs id="defs"></defs></svg></div>
+<script>
+(function () {
+  const { G, C, KEYS, rng, shuffled, EASE, wordmark } = ART;
+  const q = new URLSearchParams(location.search);
+  const MODE = q.get('mode') || 'still';
+  const T = 186, GAP = 24, TH = 212;
+  const P = {
+    // plate: [row, col0, span]; home: [row, col]
+    still: { W: 1080, H: 1440, rows: 6, plate: [5, 0, 3], home: [5, 3], wmPx: 116, dur: 0 },
+    reel:  { W: 1080, H: 1920, rows: 8, plate: [3, 0, 3], home: [3, 3], wmPx: 116, dur: 14 },
+  }[MODE];
+  const COLS = 5;
+  const stage = document.getElementById('stage');
+  stage.style.width = P.W + 'px'; stage.style.height = P.H + 'px';
+  stage.style.setProperty('--bw', '1.5px');
+  const mx = (P.W - (COLS * T + (COLS - 1) * GAP)) / 2;
+  const my = (P.H - (P.rows * TH + (P.rows - 1) * GAP)) / 2;
+  const X = (c) => mx + c * (T + GAP), Y = (r) => my + r * (TH + GAP);
+
+  // sprite with fixed colours: ink landmark, ink at .3 behind, amber detail
+  const NS = 'http://www.w3.org/2000/svg', defs = document.getElementById('defs');
+  for (const k of KEYS) {
+    const sym = document.createElementNS(NS, 'symbol'); sym.id = 'g-' + k; sym.setAttribute('viewBox', '0 0 64 64'); sym.setAttribute('overflow', 'visible');
+    for (const l of G[k].layers) {
+      const p = document.createElementNS(NS, 'path'); p.setAttribute('d', l.d);
+      const c = l.tone === 'accent' ? '#F2A93B' : '#13213A';
+      if (l.stroke) { p.setAttribute('fill', 'none'); p.setAttribute('stroke', c); p.setAttribute('stroke-width', l.stroke); p.setAttribute('stroke-linecap', 'round'); }
+      else p.setAttribute('fill', c);
+      if (l.evenodd) p.setAttribute('fill-rule', 'evenodd');
+      if (l.tone === 'dim') p.setAttribute('opacity', '.3');
+      sym.appendChild(p);
+    }
+    defs.appendChild(sym);
+  }
+  const rad = Math.round(T * 0.14), hingeR = 5, hinge = 3;
+  const GW = Math.round(T * 0.72), CODE_PX = Math.round(T * 0.15), CODE_MT = Math.round(T * 0.05);
+  function face() {
+    const f = document.createElement('div'); f.className = 'face';
+    f.style.height = TH + 'px'; f.style.paddingTop = Math.round(T * 0.08) + 'px';
+    f._k = undefined;
+    return f;
+  }
+  // Rebuilt on every change: toggling a <use> in place next to a 3D flap can leave stale paint in Chrome.
+  function setFace(f, key) {
+    if (f._k === key) return; f._k = key;
+    f.innerHTML = key
+      ? `<svg viewBox="0 0 64 64" width="${GW}" height="${GW}" aria-hidden="true"><use href="#g-${key}"></use></svg><b style="font-size:${CODE_PX}px;margin-top:${CODE_MT}px;padding-left:.12em">${C[key][1]}</b>`
+      : '';
+  }
+  function half(cls, tile) {
+    const h = document.createElement('div'); h.className = 'half ' + cls;
+    h.style.height = (TH / 2 - hinge / 2) + 'px';
+    if (cls.includes('top')) h.style.borderRadius = `${rad}px ${rad}px ${hingeR}px ${hingeR}px`;
+    else h.style.borderRadius = `${hingeR}px ${hingeR}px ${rad}px ${rad}px`;
+    const f = face(); h.appendChild(f); h._f = f;
+    if (cls.includes('flap')) { const sh = document.createElement('div'); sh.className = 'shade'; h.appendChild(sh); h._sh = sh; }
+    tile.appendChild(h); return h;
+  }
+
+  // board
+  const order = shuffled(KEYS.filter((k) => k !== 'dubai'), +(q.get('seed') || 11));
+  const tiles = [];
+  let n = 0;
+  const [pr, pc, ps] = P.plate, [hr, hc] = P.home;
+  for (let r = 0; r < P.rows; r++) for (let c = 0; c < COLS; c++) {
+    if (r === pr && c >= pc && c < pc + ps) continue;
+    const home = r === hr && c === hc;
+    const key = home ? 'dubai' : order[n++ % order.length];
+    const el = document.createElement('div'); el.className = 'tile' + (home ? ' home' : '');
+    el.style.left = X(c) + 'px'; el.style.top = Y(r) + 'px'; el.style.width = T + 'px'; el.style.height = TH + 'px';
+    if (home) el.style.setProperty('--bw', '3px');
+    const top = half('top', el), bot = half('bot', el), ftop = half('top flap', el), fbot = half('bot flap', el);
+    stage.appendChild(el);
+    tiles.push({ el, r, c, home, key0: key, top, bot, ftop, fbot, ev: [] });
+  }
+  // the plate with the wordmark
+  const plate = document.createElement('div'); plate.className = 'plate';
+  const pw = ps * T + (ps - 1) * GAP;
+  Object.assign(plate.style, { left: X(pc) + 'px', top: Y(pr) + 'px', width: pw + 'px', height: TH + 'px', borderRadius: rad + 'px' });
+  stage.appendChild(plate);
+  const wm = wordmark(P.wmPx, '#13213A'); plate.appendChild(wm);
+
+  // flip schedule, seeded: single flips, a column now and then top to bottom, then the board goes blank
+  const FLIP_A = 0.15, FLIP_B = 0.21, FLIP = FLIP_A + FLIP_B;
+  if (P.dur) {
+    const rand = rng(+(q.get('fseed') || 2026));
+    const cand = [];
+    for (let t = 0.5; t < 10.4; t += 0.34) cand.push({ t, kind: 'one' });
+    for (const tc of [2.3, 9.0]) {
+      const c = Math.floor(rand() * COLS);
+      tiles.filter((x) => x.c === c).forEach((x) => cand.push({ t: tc + x.r * 0.09, kind: 'col', tile: x }));
+    }
+    for (const x of tiles) if (!x.home) cand.push({ t: 11.0 + x.c * 0.07 + x.r * 0.085, kind: 'blank', tile: x });
+    cand.sort((a, b) => a.t - b.t);
+    const cur = new Map(tiles.map((x) => [x, x.key0])), busy = new Map(tiles.map((x) => [x, -1]));
+    const shown = new Set(tiles.map((x) => x.key0));
+    const nextKey = (old) => {
+      const free = KEYS.filter((k) => k !== 'dubai' && !shown.has(k));
+      const pool = free.length ? free : KEYS.filter((k) => k !== 'dubai' && k !== old);
+      return pool[Math.floor(rand() * pool.length)];
+    };
+    for (const e of cand) {
+      let x = e.tile;
+      if (e.kind === 'one') {
+        const free = tiles.filter((y) => !y.home && busy.get(y) <= e.t && cur.get(y));
+        if (!free.length) continue;
+        x = free[Math.floor(rand() * free.length)];
+      }
+      if (x.home || busy.get(x) > e.t) continue;
+      const from = cur.get(x), to = e.kind === 'blank' ? null : nextKey(from);
+      if (from) shown.delete(from); if (to) shown.add(to);
+      x.ev.push({ t: e.t, from, to }); cur.set(x, to); busy.set(x, e.t + FLIP);
+    }
+    window.FLIPS = tiles.reduce((s, x) => s + x.ev.length, 0);
+  }
+  const persp = Math.round(500 * T / 86);
+  const keyf = (p) => { // bottom flap: 90 -> -8 (at .75) -> 0
+    return p < 0.75 ? 90 + (-8 - 90) * (p / 0.75) : -8 + 8 * ((p - 0.75) / 0.25);
+  };
+  window.render = function (t) {
+    for (const x of tiles) {
+      let e = null;
+      for (const ev of x.ev) if (ev.t <= t) e = ev; else break;
+      const key = e ? e.to : x.key0;
+      if (!e || t >= e.t + FLIP) {
+        setFace(x.top._f, key); setFace(x.bot._f, key);
+        x.ftop.style.visibility = 'hidden'; x.fbot.style.visibility = 'hidden';
+        continue;
+      }
+      const u = t - e.t;
+      setFace(x.top._f, e.to); setFace(x.bot._f, e.from);
+      setFace(x.ftop._f, e.from); setFace(x.fbot._f, e.to);
+      if (u < FLIP_A) {
+        const p = EASE.in(u / FLIP_A), a = -90 * p;
+        x.ftop.style.visibility = 'visible'; x.ftop.style.transform = `perspective(${persp}px) rotateX(${a.toFixed(3)}deg)`;
+        x.ftop._sh.style.opacity = (0.10 * p).toFixed(3);
+        x.fbot.style.visibility = 'hidden';
+      } else {
+        const p = EASE.out((u - FLIP_A) / FLIP_B), a = keyf(p);
+        x.ftop.style.visibility = 'hidden';
+        x.fbot.style.visibility = 'visible'; x.fbot.style.transform = `perspective(${persp}px) rotateX(${a.toFixed(3)}deg)`;
+        x.fbot._sh.style.opacity = (0.10 * Math.max(0, a) / 90).toFixed(3);
+      }
+    }
+  };
+  window.DURATION = P.dur;
+  document.fonts.ready.then(() => {
+    // wordmark: left-aligned like the posts (x = 96 on the frame), centred on the plate's height by its x-height
+    const ph = TH, wh = wm.offsetHeight;
+    wm.style.left = (96 - X(pc)) + 'px';
+    wm.style.top = Math.round((ph - wh) / 2 + P.wmPx * 0.06) + 'px';
+    render(+(q.get('t') || 0)); window.READY = true;
+  });
+})();
+</script></body></html>

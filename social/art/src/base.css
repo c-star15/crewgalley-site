@@ -1,0 +1,5 @@
+@font-face{font-family:InterV;src:url(../../../fonts/inter-latin.woff2) format("woff2");font-weight:100 900;font-display:block}
+html,body{margin:0;padding:0;background:#F4EFE6}
+#stage{position:relative;overflow:hidden;font-family:InterV,Inter,system-ui,sans-serif}
+.wm{position:absolute;white-space:nowrap;font-weight:900;line-height:1;letter-spacing:-.065em;font-variation-settings:"opsz" 32;font-feature-settings:normal}
+.wm .pin{display:inline-block;vertical-align:-.2em;height:.5em;width:auto;margin-left:.08em;overflow:visible}
