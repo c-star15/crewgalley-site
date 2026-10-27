@@ -15,47 +15,60 @@ header = (root / '_header.html').read_text()
 footer = (root / '_footer.html').read_text()
 
 HERO = '''<section class="hero"><div class="wrap wide hero-grid"><div class="hero-copy">
-<p class="eyebrow">For pilots and cabin crew</p>
-<h1>Finally home.<br><em>Let’s do something nice.</em></h1>
-<p class="lead">Off on a Tuesday? Your friends are at work, or somewhere over Asia. Galley shows you who at your base is off the same day, and what’s on: padel, brunch, the beach, a sunrise run.</p>
-<ul class="trust"><li><strong>Only crew.</strong> We check every account before it can see anyone.</li></ul>
-<div class="actions"><a class="btn" href="https://www.instagram.com/crewgalley/" rel="noopener">Follow @crewgalley</a><a class="btn secondary" href="/verification/">How we check crew</a></div>
-<p class="soon">Starting in Dubai, December 2026.</p>
-</div><div class="hero-phone" role="img" aria-label="Galley’s Base screen: who’s free on Thursday and what’s on in Dubai, with a “Game on?” call from the Padel club."><div class="push" aria-hidden="true"><span class="push-icon"><svg viewBox="-60.7 -92.1 61.7 92.1"><path d="M-33.25 -68.40 L-38.11 -65.81 L0 0Z" fill="#13213A"/><circle cx="-35.68" cy="-67.10" r="24" fill="#13213A"/></svg></span><div class="push-text"><p class="push-top"><b>Galley</b><span>now</span></p><p class="push-title">Padel · Thu morning</p><p class="push-body">4 of you are free. Game on?</p></div></div><div class="phone" aria-hidden="true"><div class="screen"><div class="a-status"><b>9:41</b><span class="a-batt"></span></div><div class="a-head"><div class="a-head-t"><b>Dubai</b><span>Make the most of your days off.</span></div><span class="a-iconbtn"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span class="a-me">SK</span></div><div class="a-strip"><div class="a-col"><div class="a-cell "><span class="a-dow">Today</span><span class="a-num">10</span><span class="a-dots"><i></i></span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell free on"><span class="a-dow">Thu</span><span class="a-num">11</span><span class="a-dots"><i></i><i></i></span></div><span class="a-bar on"></span></div><div class="a-col"><div class="a-cell free"><span class="a-dow">Fri</span><span class="a-num">12</span><span class="a-dots"></span></div><span class="a-bar on"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Sat</span><span class="a-num">13</span><span class="a-dots"><i></i><i></i></span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Sun</span><span class="a-num">14</span><span class="a-dots"></span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Mon</span><span class="a-num">15</span><span class="a-dots"><i></i></span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Tue</span><span class="a-num">16</span><span class="a-dots"></span></div><span class="a-bar"></span></div></div><div class="a-key"><i class="sw"></i>Free<i class="dt"></i>Plans</div><div class="a-free"><p><b>Thu 11</b><span> · Free morning · Padel</span></p><span class="a-link">Edit</span><span class="a-info"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.7v.1"/></svg></span></div><p class="a-counts">14 crew free · 4 up for padel</p><p class="a-sec">Free Thursday</p><div class="a-people"><div class="a-person me"><span class="a-av">SK</span><b>You</b><span class="a-what">Padel</span><span class="a-when">Morning</span></div><div class="a-person"><span class="a-av">MR</span><b>Maya</b><span class="a-what">Padel · Coffee</span><span class="a-when">Morning</span></div><div class="a-person"><span class="a-av">OH</span><b>Omar</b><span class="a-what">Run</span><span class="a-when">All day</span></div><div class="a-person"><span class="a-av">LT</span><b>Lena</b><span class="a-what">Brunch</span><span class="a-when">Afternoon</span></div></div><div class="a-row"><b>Happening in Dubai</b><span class="a-link"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Create plan</span></div><div class="a-card"><span class="a-ic"><svg viewBox="0 0 24 24"><ellipse cx="8" cy="8" rx="2.6" ry="4.2"/><ellipse cx="16" cy="12.5" rx="2.6" ry="4.2"/><path d="M6.2 15.4h3.6M14.2 19.9h3.6"/></svg></span><div class="a-mid"><b>Sunrise run</b><span>06:30 · Kite Beach</span></div><div class="a-right"><span class="a-join">Join</span><span class="a-spots"><i class="in"></i><i class="in"></i><i class="in"></i><i class=""></i><i class=""></i><i class=""></i></span></div></div><div class="a-card"><span class="a-ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3.6 0-6.5 5.4-6.5 10a6.5 6.5 0 0 0 13 0C18.5 8.4 15.6 3 12 3Z"/></svg></span><div class="a-mid"><b>Long brunch</b><span>12:00 · Jumeirah · Women only</span></div><div class="a-right"><span class="a-join">Join</span><span class="a-spots"><i class="in"></i><i class="in"></i><i class=""></i><i class=""></i></span></div></div><div class="a-tabs"><span class="on"><svg viewBox="0 0 24 24" class="fill"><path d="M4 10.5 12 4l8 6.5V20h-5.5v-5.5h-5V20H4Z"/></svg>Base</span><span><svg viewBox="0 0 24 24"><path d="M10.5 3.6c0-.8.7-1.6 1.5-1.6s1.5.8 1.5 1.6V9l7 4v2l-7-2v5l2 1.5V21L12 20l-3.5 1v-1.5l2-1.5v-5l-7 2v-2l7-4Z"/></svg>Away</span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg>Explore</span><span><svg viewBox="0 0 24 24"><path d="M4 5.5h11A1.5 1.5 0 0 1 16.5 7v6.5A1.5 1.5 0 0 1 15 15H9l-3.5 3v-3H4a1.5 1.5 0 0 1-1.5-1.5V7A1.5 1.5 0 0 1 4 5.5Z"/><path d="M18.5 9H20a1.5 1.5 0 0 1 1.5 1.5V17a1.5 1.5 0 0 1-1.5 1.5h-1.5V21L15 18.5h-4"/></svg>Chats</span></div></div></div></div></div><div class="gm" id="planet" aria-hidden="true"></div><script src="/planet.js" defer></script></section>
+<p class="eyebrow">A community for pilots and cabin crew</p>
+<h1>Life beyond<br><em>the roster.</em></h1>
+<p class="tagline">Your time off, your interests, your community.</p>
+<p class="lead">Galley brings crew together through local clubs, shared interests and plans that fit around the way we live.</p>
+<div class="actions"><a class="btn" href="https://www.instagram.com/crewgalley/" rel="noopener">Follow the launch</a></div>
+<p class="soon">Starting in Dubai · December 2026</p>
+</div><div class="hero-phone" role="img" aria-label="An illustration of Galley’s Base screen: your days off this week and your clubs in Dubai."><span class="mock-label" aria-hidden="true">Illustration</span><div class="phone" aria-hidden="true"><div class="screen"><div class="a-status"><b>9:41</b><span class="a-batt"></span></div><div class="a-head"><div class="a-head-t"><b>Dubai</b><span>Make the most of your days off.</span></div><span class="a-iconbtn"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><span class="a-me">SK</span></div><div class="a-strip"><div class="a-col"><div class="a-cell "><span class="a-dow">Today</span><span class="a-num">10</span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell free on"><span class="a-dow">Thu</span><span class="a-num">11</span></div><span class="a-bar on"></span></div><div class="a-col"><div class="a-cell free"><span class="a-dow">Fri</span><span class="a-num">12</span></div><span class="a-bar on"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Sat</span><span class="a-num">13</span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Sun</span><span class="a-num">14</span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Mon</span><span class="a-num">15</span></div><span class="a-bar"></span></div><div class="a-col"><div class="a-cell "><span class="a-dow">Tue</span><span class="a-num">16</span></div><span class="a-bar"></span></div></div><div class="a-key"><i class="sw"></i>Your days off</div><div class="a-free"><p><b>Thu 11</b><span> · Free all day</span></p><span class="a-link">Edit</span></div><div class="a-row"><b>Your clubs</b><span class="a-link">See all</span></div><div class="a-clubs"><div class="a-club"><span class="a-ic"><svg viewBox="0 0 24 24"><ellipse cx="11" cy="9.5" rx="6" ry="6.5"/><path d="M14.6 14.6 19.5 20"/><circle cx="18.5" cy="5" r="1.6"/></svg></span><b>Padel</b></div><div class="a-club"><span class="a-ic"><svg viewBox="0 0 24 24"><ellipse cx="8" cy="8" rx="2.6" ry="4.2"/><ellipse cx="16" cy="12.5" rx="2.6" ry="4.2"/><path d="M6.2 15.4h3.6M14.2 19.9h3.6"/></svg></span><b>Running</b></div><div class="a-club"><span class="a-ic"><svg viewBox="0 0 24 24"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5Z"/><path d="M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16M9 3.5v2.5M12 3.5v2.5"/></svg></span><b>Coffee</b></div><div class="a-club"><span class="a-ic"><svg viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span><b>Books</b></div><div class="a-club"><span class="a-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6c3.5 3.5 3.5 9.3 0 12.8M18.4 5.6c-3.5 3.5-3.5 9.3 0 12.8"/></svg></span><b>Tennis</b></div><div class="a-club"><span class="a-ic"><svg viewBox="0 0 24 24"><path d="M2.5 9 12 4.5 21.5 9 12 13.5Z"/><path d="M6.5 11v4.5c1.5 1.5 3.5 2.2 5.5 2.2s4-.7 5.5-2.2V11"/></svg></span><b>Study</b></div></div><div class="a-row"><b>Clubs in Dubai</b><span class="a-link">Explore</span></div><div class="a-more"><span>Beach</span><span>Brunch</span><span>Gym</span><span>Day trips</span></div><div class="a-tabs"><span class="on"><svg viewBox="0 0 24 24" class="fill"><path d="M4 10.5 12 4l8 6.5V20h-5.5v-5.5h-5V20H4Z"/></svg>Base</span><span><svg viewBox="0 0 24 24"><path d="M10.5 3.6c0-.8.7-1.6 1.5-1.6s1.5.8 1.5 1.6V9l7 4v2l-7-2v5l2 1.5V21L12 20l-3.5 1v-1.5l2-1.5v-5l-7 2v-2l7-4Z"/></svg>Away</span><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg>Explore</span><span><svg viewBox="0 0 24 24"><path d="M4 5.5h11A1.5 1.5 0 0 1 16.5 7v6.5A1.5 1.5 0 0 1 15 15H9l-3.5 3v-3H4a1.5 1.5 0 0 1-1.5-1.5V7A1.5 1.5 0 0 1 4 5.5Z"/><path d="M18.5 9H20a1.5 1.5 0 0 1 1.5 1.5V17a1.5 1.5 0 0 1-1.5 1.5h-1.5V21L15 18.5h-4"/></svg>Chats</span></div></div></div></div></div><div class="gm" id="planet" aria-hidden="true"></div><script src="/planet.js" defer></script></section>
 <main id="content" class="home">
+<section class="section story"><div class="wrap wide">
+<p class="eyebrow">Your base</p>
+<h2>Same city. Different schedules.</h2>
+<div class="story-text">
+<p class="first">When your days off don’t follow the usual calendar, making plans isn’t always simple.</p>
+<p>Galley helps you discover what’s happening around your base, find crew with shared interests and join plans when you’re free.</p>
+<p>A morning run, a game of tennis, coffee after a late flight. No need to organize everything yourself.</p>
+</div>
+</div></section>
+<section class="section band clubs"><div class="wrap wide">
+<p class="eyebrow">Clubs</p>
+<h2>Good things start with common interests.</h2>
+<p class="intro">Join local clubs built around the things you enjoy.</p>
+<ul class="pills" aria-label="Clubs">
+<li>Tennis</li><li>Padel</li><li>Running</li><li>Coffee</li><li>Books</li><li>Studying</li><li class="more">and more</li>
+</ul>
+<p class="intro">Discover plans, exchange recommendations and get to know people who share your interests.</p>
+<p class="aside">Not every connection needs an event. Sometimes it starts with a good recommendation or a familiar face.</p>
+</div></section>
 <section class="section how" id="how"><div class="wrap wide">
-<p class="eyebrow">How it works</p>
-<h2>You bring the day off. Galley brings the plan.</h2>
+<p class="eyebrow">How Galley works</p>
+<h2>Simple from the start.</h2>
 <ol class="steps">
-<li><span class="step-n">01</span><h3>Say when you’re home</h3><p>One tap on your days off. Crew in your clubs see you’re free, or keep it to yourself.</p></li>
-<li><span class="step-n">02</span><h3>Pick your things</h3><p>Padel, running, brunch, the beach. Join the clubs you like at your base and see who else is off.</p></li>
-<li><span class="step-n">03</span><h3>Say yes</h3><p>When a few of you are free at once, Galley asks: Game on? Tap In and it’s a plan. Or start one yourself.</p></li>
+<li><span class="step-n">01</span><h3>Find your community</h3><p>Choose your home base and explore local clubs and interests.</p></li>
+<li><span class="step-n">02</span><h3>See what’s happening</h3><p>Discover plans that fit your time off. Share your availability only when you want to.</p></li>
+<li><span class="step-n">03</span><h3>Join in</h3><p>Meet for something you enjoy, or start a plan of your own.</p></li>
 </ol>
 </div></section>
-<section class="section band"><div class="wrap wide">
-<p class="eyebrow">No pressure</p>
-<h2>Easy to say yes. Easy to say no.</h2>
-<p class="intro">It’s about the padel game, not the people search. You join what’s on, and the rest is relaxed.</p>
-<div class="grid">
-<div class="card"><span class="num">1</span><strong>Plans, not profiles</strong>You see what’s on and who’s off that day. Never where anyone is.</div>
-<div class="card"><span class="num">2</span><strong>Any airline</strong>Pilots and cabin crew from every airline. Every account is checked first.</div>
-<div class="card"><span class="num">3</span><strong>Chats start with a plan</strong>Every plan has a group chat. One-to-one starts as a request, so nobody messages you out of the blue. <a class="quiet" href="/private/">Chats are end-to-end encrypted</a>.</div>
-<div class="card"><span class="num">4</span><strong>Women-only plans</strong>Start one or join one. Only women can see them.</div>
-</div></div></section>
 <section class="section origin"><div class="wrap">
-<p class="eyebrow">Flying out?</p>
-<h2>It packs light.</h2>
-<p>On a layover, join plans from crew who live there, like their morning run. Other crew in town see only a count, until you switch on “Open to meeting crew”.</p>
+<p class="eyebrow">When you’re away</p>
+<h2>Your community travels with you.</h2>
+<p>Explore places recommended by fellow crew and discover plans during your layovers. Wherever work takes you, Galley gives you a connection to the crew community.</p>
 </div></section>
 <section class="section origin"><div class="wrap">
-<p class="eyebrow">Why Galley</p>
-<h2>Days off land on a Wednesday.</h2>
-<p>Galley was started by an airline pilot who kept coming home to free days that nobody else had. Rosters change every month and the group chat never lines up. So Galley does the lining up: who’s off when you are, and something nice to do together.</p>
+<p class="eyebrow">Our story</p>
+<h2>Made with crew life in mind.</h2>
+<p>Galley began with a simple observation: people can share a home base, similar interests and the same unpredictable schedules, yet rarely have their days off together.</p>
+<p>Created by an airline pilot, Galley is designed to make those days a little easier to enjoy. It starts with the people and places around us.</p>
 </div></section>
 <section class="section closing"><div class="wrap">
-<h2>See you on your next day off.</h2>
-<p>For pilots and cabin crew of any airline, 18+. Starting in Dubai, December 2026.</p>
-<div class="actions"><a class="btn" href="https://www.instagram.com/crewgalley/" rel="noopener">Follow @crewgalley</a><a class="btn ghost" href="/verification/">How we check crew</a></div>
+<p class="eyebrow">Join us</p>
+<h2>A little more life off duty.</h2>
+<p>A community for verified pilots and cabin crew, beginning in Dubai.</p>
+<div class="actions"><a class="btn" href="https://www.instagram.com/crewgalley/" rel="noopener">Follow @crewgalley</a></div>
+<p class="small">Launching December 2026.</p>
+<p class="small">Galley is an independent community for pilots and cabin crew aged 18+. It is not affiliated with any airline.</p>
 </div></section>
 </main>'''
 

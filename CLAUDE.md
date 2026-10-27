@@ -16,7 +16,12 @@ agreement is `CLAUDE.md` in the app repo (c-star15/crew-hub). For this site:
   rotation yet.
 - Build with `python3 build.py`; check the page at 390 px wide in light and dark
   before pushing.
-- The home page leads with days off at home (Victor, 28 Oct 00:08): "Finally home. Let's
-  do something nice." Every layover-first crew app says "by crew, for crew", "connect with
-  verified crew" and "make the most of every layover", so don't bring those back, or
-  "Find your people. At base and away." as the headline. Layovers get one short block.
+- Brand line (Victor, 28 Oct 00:17): "Life beyond the roster." The home page is his copy:
+  a community for pilots and cabin crew, Your base, Clubs, How Galley works, one short
+  When you're away block, Our story, Join us. Base and Clubs are one story (Base says when
+  and where; clubs give people and interests worth going for), relaxed, not luxurious or
+  exclusive. No safety or verification section on the home page (the nav pages carry it),
+  no layover feature explainer, and no app mock that shows activity that hasn't happened
+  (counts, other people, plans); mocks are labelled "Illustration". Don't bring back
+  "by crew, for crew", "connect with verified crew", "make the most of every layover" or
+  "Find your people. At base and away."

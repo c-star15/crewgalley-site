@@ -318,3 +318,24 @@ main:not(.home) .join-new h2{border-top:0;padding-top:0;margin-top:0}
 @media (prefers-reduced-motion:no-preference){.push{animation:push-in .7s cubic-bezier(.2,.8,.2,1) .6s both}}
 @keyframes push-in{from{opacity:0;transform:translateY(-14px) scale(.97)}to{opacity:1;transform:none}}
 .hero-copy .actions{margin-bottom:0}
+/* Home page, 28 Oct (Victor): Life beyond the roster */
+.hero .tagline{font-size:clamp(20px,2.4vw,24px);line-height:1.35;font-weight:750;letter-spacing:-.01em;color:var(--hero-text);margin:0 0 14px;max-width:24em}
+.story .story-text{max-width:38em}
+.story .story-text p{font-size:18px;line-height:1.6;color:var(--muted);margin:0 0 14px}
+.story .story-text p.first{font-size:clamp(20px,2.2vw,22px);line-height:1.5;color:var(--text);font-weight:600}
+.pills{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px;padding:0}
+.pills li{padding:10px 18px;border-radius:999px;background:var(--band-surface);border:1px solid var(--band-edge);color:var(--band-text);font-weight:700;font-size:16px}
+.pills li.more{background:transparent;border-style:dashed;color:var(--band-muted);font-weight:600}
+.clubs .aside{margin:8px 0 0;max-width:30em;padding-left:18px;border-left:3px solid var(--amber);font-size:clamp(18px,2vw,21px);line-height:1.5;font-weight:650;color:var(--band-text)}
+.origin + .origin{padding-top:56px}
+.origin p:not(.eyebrow) + p{margin-top:14px}
+.closing .small{font-size:14px;margin:0 0 6px;max-width:34em}
+.closing .actions{margin-bottom:18px}
+.mock-label{position:absolute;z-index:3;top:-30px;left:50%;transform:translateX(-50%);padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-soon);border:1px solid currentColor;opacity:.75;white-space:nowrap}
+.a-key .sw{margin-right:2px}
+.a-clubs{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 16px}
+.a-club{display:flex;align-items:center;gap:12px;padding:12px;border-radius:16px;background:#FFF}
+.a-club .a-ic{width:42px;height:42px}
+.a-club b{font-size:16px;font-weight:700}
+.a-more{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px}
+.a-more span{padding:8px 14px;border-radius:999px;border:1.5px dashed #C9D0DD;font-size:14px;font-weight:700;color:#4A5470}

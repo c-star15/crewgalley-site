@@ -1,5 +1,5 @@
 ---
-title: Galley — days off, with crew who are off too
+title: Galley — Life beyond the roster
 hero: true
-description: Finally home with days off? See which pilots and cabin crew at your base are off the same day, and join padel, brunch, the beach or a run. Starting in Dubai, December 2026.
+description: A community for pilots and cabin crew. Local clubs, shared interests and plans that fit around your time off. Starting in Dubai, December 2026.
 ---
