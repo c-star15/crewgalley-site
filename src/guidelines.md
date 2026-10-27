@@ -42,7 +42,7 @@ The single most important rule.
 - No uniforms, airline logos or IDs in your photos.
 - Don't speak for an airline or present a meetup as official.
 - Club member lists are for finding people to play, run or study with. Join a plan or add a tip; don't use the list to chase someone who isn't interested.
-- Tapped In on a "Game on?"? Then you're in the plan: show up, or leave it in time so someone else can take the spot.
+- Tapped In on a "Who's in?"? Then you're in the plan: show up, or leave it in time so someone else can take the spot.
 - In a club's Tips, share what you've tried yourself: places, routes, what's worth knowing.
 - In clubs, share public information and your own experience. No confidential airline documents, protected selection or interview questions, proprietary training manuals, or operational instructions. What crew share in Galley is never official airline guidance.
 - Follow your own company's rules on social media, rest, alcohol before duty and fitness for duty. "Bottle to throttle" is your responsibility, not the meetup host's.
