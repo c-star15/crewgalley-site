@@ -14,7 +14,6 @@
   --chrome-bg:#F4EFE6;--chrome-text:#13213A;--chrome-muted:#3A4558;--chrome-line:#D6CBB8;--chrome-hover:rgba(19,33,58,.06);--chrome-track:#EBE3D4;
   --hero-glow:rgba(242,169,59,.34);--hero-shade:rgba(214,203,184,.5);--hero-top:#FBF7F0;--hero-bottom:#F4EFE6;
   --hero-text:#13213A;--hero-lead:#3A4558;--hero-accent:#B86A00;--hero-eyebrow:#8A5200;--hero-soon:#4A5468;
-  --sky-far:#DDD3C2;--sky-near:#2B3A57;--sky-lit:#F2A93B;
   --ghost-text:#13213A;--ghost-line:rgba(19,33,58,.35);--ghost-fill:rgba(19,33,58,.03);
   --band:#EBE3D4;--band-surface:#FFFFFF;--band-edge:#C9BDA7;--band-text:#13213A;--band-muted:#4A5468;
   --foot-bg:#EBE3D4;--foot-text:#4A5468;--foot-link:#13213A;
@@ -26,7 +25,6 @@
   --chrome-bg:#0B1424;--chrome-text:#F4EFE6;--chrome-muted:#D5DBE6;--chrome-line:rgba(244,239,230,.1);--chrome-hover:rgba(244,239,230,.08);--chrome-track:rgba(244,239,230,.06);
   --hero-glow:rgba(242,169,59,.26);--hero-shade:rgba(43,63,106,.55);--hero-top:#0B1424;--hero-bottom:#13213A;
   --hero-text:#F4EFE6;--hero-lead:#D5DBE6;--hero-accent:#F2A93B;--hero-eyebrow:#F2A93B;--hero-soon:#B7C0D1;
-  --sky-far:#1B2C4E;--sky-near:#0B1424;--sky-lit:#F2A93B;
   --ghost-text:#F4EFE6;--ghost-line:rgba(244,239,230,.35);--ghost-fill:rgba(244,239,230,.06);
   --band:#13213A;--band-surface:#1D3159;--band-edge:#334A78;--band-text:#F4EFE6;--band-muted:#B7C0D1;
   --foot-bg:#0B1424;--foot-text:#B7C0D1;--foot-link:#D5DBE6;
@@ -37,7 +35,6 @@
   --chrome-bg:#0B1424;--chrome-text:#F4EFE6;--chrome-muted:#D5DBE6;--chrome-line:rgba(244,239,230,.1);--chrome-hover:rgba(244,239,230,.08);--chrome-track:rgba(244,239,230,.06);
   --hero-glow:rgba(242,169,59,.26);--hero-shade:rgba(43,63,106,.55);--hero-top:#0B1424;--hero-bottom:#13213A;
   --hero-text:#F4EFE6;--hero-lead:#D5DBE6;--hero-accent:#F2A93B;--hero-eyebrow:#F2A93B;--hero-soon:#B7C0D1;
-  --sky-far:#1B2C4E;--sky-near:#0B1424;--sky-lit:#F2A93B;
   --ghost-text:#F4EFE6;--ghost-line:rgba(244,239,230,.35);--ghost-fill:rgba(244,239,230,.06);
   --band:#13213A;--band-surface:#1D3159;--band-edge:#334A78;--band-text:#F4EFE6;--band-muted:#B7C0D1;
   --foot-bg:#0B1424;--foot-text:#B7C0D1;--foot-link:#D5DBE6;
@@ -89,10 +86,24 @@ nav a[aria-current=page]{color:var(--chrome-text);box-shadow:inset 0 -2px 0 var(
 .btn.ghost{background:transparent;color:var(--text);border:1.5px solid var(--edge);box-shadow:none}
 .btn.ghost:hover{border-color:var(--text);background:transparent}
 .soon{margin:22px 0 0;font-size:14px;color:var(--hero-soon)}
-.skyline{display:block;width:100%;height:auto;margin-top:56px}
-.skyline .far{fill:var(--sky-far);opacity:.8}.skyline .near{fill:var(--sky-near)}.skyline .lights{fill:var(--sky-lit)}
-@media (prefers-reduced-motion:no-preference){.skyline .lit{animation:glow 6s ease-in-out infinite alternate}.skyline .lit:nth-child(3n){animation-delay:-2s}.skyline .lit:nth-child(4n){animation-delay:-4s}}
-@keyframes glow{from{opacity:.55}to{opacity:1}}
+/* Hero planet (planet.js; Victor, 27 Oct): the city landmarks stand on a turning planet that fades into the page. */
+.gm{--gm-text:#13213A;--gm-muted:#4A5468;--gm-acc:#F2A93B;--gm-planet0:#EDE4D5;--gm-page:#F4EFE6;--gm-ring:rgba(19,33,58,.07);--gm-glow:rgba(242,169,59,.30);
+  position:relative;display:block;width:100%;height:clamp(230px,24vw,350px);margin-top:56px;overflow:hidden}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .gm{--gm-text:#F4EFE6;--gm-muted:#B7C0D1;--gm-planet0:#1A2C52;--gm-page:#0B1424;--gm-ring:rgba(244,239,230,.08);--gm-glow:rgba(242,169,59,.22)}}
+:root[data-theme=dark] .gm{--gm-text:#F4EFE6;--gm-muted:#B7C0D1;--gm-planet0:#1A2C52;--gm-page:#0B1424;--gm-ring:rgba(244,239,230,.08);--gm-glow:rgba(242,169,59,.22)}
+.gm-f{fill:var(--gf,currentColor)}
+.gm-d{fill:var(--gf,currentColor);opacity:var(--gdo,.3)}
+.gm-a{fill:var(--ga,#F2A93B)}
+path.gm-s.gm-f,path.gm-s.gm-d{fill:none;stroke:var(--gf,currentColor);stroke-linecap:round}
+path.gm-s.gm-a{fill:none;stroke:var(--ga,#F2A93B);stroke-linecap:round}
+.gm-pl{position:absolute;inset:0;width:100%;height:100%;--gf:var(--gm-text);--ga:var(--gm-acc);--gdo:.3}
+.gm-pl-glow0{stop-color:var(--gm-glow)}.gm-pl-glow1{stop-color:var(--gm-glow);stop-opacity:0}
+.gm-pl-b0{stop-color:var(--gm-planet0)}.gm-pl-b1{stop-color:var(--gm-page)}
+.gm-pl-body{stroke:var(--gm-ring);stroke-width:1.5}
+.gm-pl-ring{fill:none;stroke:var(--gm-ring);stroke-width:1.2}
+.gm-pl-orbit{fill:none;stroke:var(--gm-muted);stroke-opacity:.28;stroke-width:1;stroke-dasharray:2 7}
+.gm-pl-plane{fill:var(--gm-acc)}
+.gm-pin-needle{fill:var(--gm-text)}.gm-pin-ball{fill:var(--gm-acc)}
 
 /* Sections */
 .section{padding:72px 0}
