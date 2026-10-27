@@ -27,9 +27,9 @@ HERO = '''<section class="hero"><div class="wrap wide hero-grid"><div class="her
 <p class="eyebrow">Your base</p>
 <h2>Same city. Different schedules.</h2>
 <div class="story-text">
-<p class="first">When your days off don’t follow the usual calendar, making plans isn’t always simple.</p>
-<p>Galley helps you discover what’s happening around your base, find crew with shared interests and join plans when you’re free.</p>
-<p>A morning run, a game of tennis, coffee after a late flight. No need to organize everything yourself.</p>
+<p class="first">Sharing a home base doesn’t always mean sharing the same days off.</p>
+<p>Galley brings together crew with similar interests, making it easier to find company and make plans whenever you’re free.</p>
+<p>Whether it’s tennis, a morning run, a study session before your next simulator, or simply catching up over coffee.</p>
 </div>
 </div></section>
 <section class="section band clubs"><div class="wrap wide">
