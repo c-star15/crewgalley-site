@@ -4,9 +4,9 @@ description: What Galley collects, why, who sees it, how long it is kept and how
 ---
 # Galley Privacy Policy
 
-*Version 2026-10-26. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-27. Takes effect when Galley launches on the App Store and Google Play.*
 
-Galley is a social app for verified airline pilots and cabin crew to meet other crew on layovers. This policy explains what we collect, why, who sees it, how long we keep it and what you can do about it. We wrote it to be read, not skimmed past. If anything is unclear, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
+Galley is a social app for verified airline pilots and cabin crew to make plans with other crew, at their home base and on layovers. This policy explains what we collect, why, who sees it, how long we keep it and what you can do about it. We wrote it to be read, not skimmed past. If anything is unclear, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
 
 ## 1. Who we are
 
@@ -22,7 +22,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 
 - We collect the minimum needed to let verified crew make plans at their base and find each other in the same city on the same days.
 - You show you're crew with a code to your work email, or two colleagues at your airline vouch for you. We keep a one-way code made from your work address, never the address. No screenshots, no ID.
-- Other members see your profile only when you share a plan, or when you switch on "Open to meeting crew" for a layover and they're on a layover in the same city on overlapping dates, and then only from 2 days before your overlap starts. Otherwise they see a count, never your name. Nobody can browse a city where they have no layover, crew based in a city never appear on its board, and your home base is always your base city.
+- Other members see your profile only in these cases: you're in a plan they can see; you're in the same club (unless you hide yourself there); you show crew at your base what you're up for on a free day; or you switch on "Open to meeting crew" for a layover and they're on a layover in the same city on overlapping dates, from 2 days before your overlap starts. Otherwise they see a count, never your name. Nobody can browse a city where they have no layover, crew based in a city never appear on its board, and your home base is always your base city.
 - The free days you mark at your base are only ever counted; a count under 3 is never shown. If you also pick what you're up for that day, crew at your base see your name, photo and what you're up for, but only the group you choose: anyone, women only or men only.
 - New contacts start with an invite: a plan and a time, no text. Only members who switch invites on can get them, and by default only from crew whose phone shows they've landed in the same city. Your phone does that check; only the city is sent to us, never where you are.
 - Your messages are end-to-end encrypted on your phone. We cannot read them, and neither can anyone who gets into our servers.
@@ -37,7 +37,7 @@ Galley is independent. It is not affiliated with, endorsed by or connected to an
 | Data | Why | Who can see it |
 | --- | --- | --- |
 | Email address and password | Your account and sign-in. Your account email is your personal email, never your work email. | Only you and us. The password is stored hashed; we cannot read it. |
-| Display name, up to 5 photos, short bio, answers to fixed prompts, interests from a fixed list, languages you speak (up to 8, from a fixed list, optional) | Your profile | Verified members who share a meetup with you or overlap with you on a layover (section 5) |
+| Display name, up to 5 photos, short bio, answers to fixed prompts, interests from a fixed list, languages you speak (up to 8, from a fixed list, optional) | Your profile | Verified members who can see you (section 5) |
 | Airline (from a list), role (pilot or cabin crew), base city | Verification, your profile, and what you see at your base | Members who can see you (section 5) see role and base, and your airline unless you switch "Show my airline" off in Settings (then it is hidden everywhere other members see you, including chats, invites, meetup lists and tips) |
 | Gender (optional: female, male, other; asked only when you choose a women-only or men-only plan, or set in Settings) | Only to let women create and join women-only plans, and men men-only plans | Nobody. It is never shown on your profile |
 | Work email address (only while you verify) | To send a one-time code proving you work at an airline now | Nobody. Our server turns it into a keyed one-way code (the identity mark, section 3.2) and keeps that and the domain. The address itself is deleted when you type the code, when the code expires (15 minutes), or if the email can't be sent. The email goes out through Resend (section 7); your airline's mail system sees one message from Galley |
@@ -109,7 +109,7 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 ## 5. Who can see you
 
 - **Before verification**: nobody. If you ask colleagues to vouch, crew at your airline who enter your code see your name, role, airline and base.
-- **After verification**: verified members see your profile only when you share a plan, or when you've switched on "Open to meeting crew" for a layover and they're on an overlapping layover in the same city, from 2 days before the overlap starts; never if either of you has blocked the other. Otherwise, someone with an overlapping layover sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
+- **After verification**: verified members see your profile only when you're in a plan they can see (Who's going), when you're in the same club and listed there, when you've shown crew at your base what you're up for (below), or when you've switched on "Open to meeting crew" for a layover and they're on an overlapping layover in the same city, from 2 days before the overlap starts; never if either of you has blocked the other. Otherwise, someone with an overlapping layover sees only how many crew overlap them, by role. When the overlap ends, you disappear from their board. A conversation you both accepted stays open.
 - **At your base**: you appear on no board there, and your free days are only counted (never fewer than 3, never who). Crew based in your city see activities and how many are in each club; members of a club you're in see you in its member list unless you hide yourself there. On a day you pick something you're up for, crew at your base in the group you chose (anyone, women only or men only) see you in "Up for something" and can open your profile; pick nothing and you stay out of it. Anyone in the same activity as you can start a private chat with you once you've both joined, and so can people you did an activity with while it's still in their history. Two people at their own base can't invite each other.
 - **Who can contact you**: nobody can invite you unless you switch on "Open to meeting crew" for that layover (it starts off and ends with the layover). When it's on, by default only crew who've landed in your city can invite you; in Settings you can widen it to anyone with an overlapping stay. Without it, people can still meet you in plans. Starting a new conversation with free text is no longer possible; it begins with an invite you accept.
 - **Limits that protect you**: a stay's city can't be changed after it is added, stays can start at most 60 days ahead, each account can add 8 stays and send 6 invites or requests a week (3 waiting at a time), your home base is your base city, and your base can change once a month.
@@ -130,6 +130,8 @@ What this means: a new phone cannot open messages sent before it was signed in; 
 | Crash reports | Our legitimate interest in an app that works |
 | Service and security logs | Our legitimate interest in running a secure service |
 | Answering legal requests, keeping consent records, tax and accounting | Legal obligation |
+
+**Automatic decisions.** Some decisions about your account are made by the app without a person: approving you after a work-email code or two vouches, hiding you when a crew check isn't answered in time, suspending an account with two open reports, pausing invites, and asking you to verify again after 12 months (section 3.2 lists them all). They are necessary to run a crew-only service under our contract with you. A person reviews every suspension and pause, and for any automatic decision you can ask for a person to look at it, give your side and contest it: reply to the account notice or write to [support@crewgalley.app](mailto:support@crewgalley.app).
 
 ## 7. Who we share data with
 

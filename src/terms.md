@@ -4,7 +4,7 @@ description: The agreement between you and Galley.
 ---
 # Galley Terms of Service
 
-*Version 2026-10-26. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-27. Takes effect when Galley launches on the App Store and Google Play.*
 
 These terms are an agreement between you and **Galley's founder**, an individual based in Dubai, United Arab Emirates, who operates Galley ("Galley", "we", "us"), postal address on request at [privacy@crewgalley.app](mailto:privacy@crewgalley.app). By creating an account you accept them, together with the Community Guidelines ([crewgalley.app/guidelines/](/guidelines/)) and the Privacy Policy ([crewgalley.app/privacy/](/privacy/)), which form part of these terms.
 
@@ -12,7 +12,7 @@ Sections 11 and 12 limit our liability and section 17 sets out where disputes ar
 
 ## 1. What Galley is
 
-Galley helps verified airline pilots and cabin crew find other crew who are in the same city on the same days, message each other, and organise meetups. Galley is free. We may add paid features later; if we do, we will tell you before anything is charged, and nothing you use today will start costing money without your agreement.
+Galley helps verified airline pilots and cabin crew find other crew who are free when they are, at their home base and on layovers, join and organise plans, and message each other. Galley is free. We may add paid features later; if we do, we will tell you before anything is charged, and nothing you use today will start costing money without your agreement.
 
 Galley is independent. It is not affiliated with, endorsed by or sponsored by any airline. Airline names appear only to describe where members work.
 
@@ -59,12 +59,12 @@ Follow the Community Guidelines. In particular, you must not:
 
 ## 6. Meetups and meeting in person
 
-New contacts start with an invite: a plan, a day and a time, which the other person accepts or turns down. Only members who switch invites on can be invited. Accepting opens a chat. Nobody is owed an answer.
+On a layover, new contacts start with an invite: a plan, a day and a time, which the other person accepts or turns down. Only members who switch on "Open to meeting crew" for that layover can be invited. Accepting opens a chat. At your base, people meet through plans, and people in the same plan can message each other once both have joined. Nobody is owed an answer.
 
 
 Meetups are arranged by members, not by Galley. We do not organise, supervise, inspect or vouch for any meetup, venue, activity or person. You decide whether to go, and you are responsible for your own safety, belongings and conduct, including following your employer's rules on rest, alcohol and fitness for duty. Activities such as running, hiking, swimming or drinking carry risks you accept when you take part.
 
-Meetups meet in the hotel lobby by default; never ask anyone to share a room or hotel details. Plans that do not reach their minimum crew may be called off automatically before they start.
+On a layover, plans meet in the hotel lobby by default; a plan at your base meets at its venue. Never ask anyone to share a room or hotel details. Plans that do not reach their minimum crew may be called off automatically before they start.
 
 ## 7. Your content
 

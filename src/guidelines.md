@@ -4,9 +4,9 @@ description: What Galley is for and what gets you removed.
 ---
 # Galley Community Guidelines
 
-*Version 2026-10-26. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-27. Takes effect when Galley launches on the App Store and Google Play.*
 
-Galley exists so that nobody has to spend a layover alone unless they want to. It works only if everyone here is crew, everyone is decent, and nobody has to worry about where they sleep tonight. These are the house rules. Breaking them can get your content removed or your account suspended or banned (see "What happens when someone breaks them").
+Galley exists so that nobody has to spend a day off or a layover alone unless they want to. It works only if everyone here is crew, everyone is decent, and nobody has to worry about where they sleep tonight. These are the house rules. Breaking them can get your content removed or your account suspended or banned (see "What happens when someone breaks them").
 
 ## Be who you say you are
 
@@ -70,7 +70,8 @@ The single most important rule.
 - **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a plan you're in.
 - **Report** someone from their profile or from your chat with them. You can attach your recent messages with them; we can't read chats otherwise, because they're encrypted. Reporting also blocks. The person isn't told who reported them.
 - **Report** a club post, reply, place or route from its ••• menu. A person reviews it, and three reports from different members hide it until then. Reporting content doesn't block or suspend its author.
-- For a city tip outside a club, a photo or a meetup, email [reporting@crewgalley.app](mailto:reporting@crewgalley.app). In-app reporting for these is coming.
+- **Report** a city tip or a comment on it from its ••• menu, in the same way.
+- For a photo or a plan, email [reporting@crewgalley.app](mailto:reporting@crewgalley.app). In-app reporting for these is coming.
 - If you are in danger, call local emergency services first, then tell us.
 - Not a member? Email [reporting@crewgalley.app](mailto:reporting@crewgalley.app).
 
