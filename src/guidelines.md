@@ -42,6 +42,7 @@ The single most important rule.
 - No uniforms, airline logos or IDs in your photos.
 - Don't speak for an airline or present a meetup as official.
 - Club member lists are for finding people to play, run or study with. Join a plan or reply in the forum; don't use the list to chase someone who isn't interested.
+- Tapped In on a "Game on?"? Then you're in the plan: show up, or leave it in time so someone else can take the spot.
 - In the forum, ask real questions and share real tips. Mark your question answered when it is.
 - In clubs, share public information and your own experience. No confidential airline documents, protected selection or interview questions, proprietary training manuals, or operational instructions. What crew share in Galley is never official airline guidance.
 - Follow your own company's rules on social media, rest, alcohol before duty and fitness for duty. "Bottle to throttle" is your responsibility, not the meetup host's.
@@ -59,7 +60,7 @@ The single most important rule.
 
 - No spam, selling, promotion, recruitment, MLM, crypto pitches, surveys or fundraising.
 - No fake tips or paid reviews. Tips, club places and routes are honest recommendations from crew who have been there. Keep prices and details current, or delete them when they're wrong.
-- Start a club for something real that isn't already there. The team takes a quick look before a new club opens; duplicates and fronts for selling are declined. Organizers keep their club on topic and can hide posts that break these guidelines.
+- Start a club for something real that isn't already there (crew can start clubs once their base has 300 members). The team takes a quick look before a new club opens; duplicates and fronts for selling are declined. Organizers keep their club on topic and can hide posts that break these guidelines.
 - No content that is illegal where you post it or where it is seen, including content about drugs, weapons or anything else that local law prohibits. Laws differ between layover cities; when in doubt, leave it out.
 - No content involving anyone under 18. Any sign of a minor in a sexual or exploitative context is reported to the authorities.
 - Don't post other people's copyrighted photos or text.
