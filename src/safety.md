@@ -13,7 +13,7 @@ Most crew meetups are exactly what they look like: a few tired people finding di
 - **Being seen on a layover is yours to switch on.** "Open to meeting crew?" starts off for each layover. When on, by default only crew who've landed in your city can invite you, and "Not now" is never shown to the sender.
 - **Verified isn't vetted.** Galley checks that someone works at an airline: a code to their airline email, or two vouches from crew there. It does not check identity documents, criminal records or character.
 - **Chat first.** A few messages in the app tell you a lot. Keep the conversation in Galley until you've met; you can report what happens here.
-- **Keep your hotel to yourself.** Never share your hotel name, room number or flight details, and never ask for anyone else's. Layover plans meet in the lobby by default, and a plan's venue is shown only to people who join.
+- **Keep your hotel to yourself.** Never share your hotel name, room number or flight details, and never ask for anyone else's. Layover plans meet in the lobby by default. A plan's venue shows to every crew member who can see the plan, so pick a public place, never where you're staying.
 - **Tell someone.** Let a crew member on your trip, a friend or family know where you're going, who with, and when you'll be back.
 - **Check the plan.** Look at who's in, and pick public places, especially the first time.
 
