@@ -36,9 +36,8 @@ HERO = '''<section class="hero"><div class="wrap wide hero-grid"><div class="her
 <p class="eyebrow">Clubs</p>
 <h2>A place for shared interests.</h2>
 <p class="intro">Join local clubs built around the things you enjoy.</p>
-<ul class="pills" aria-label="Clubs">
-<li>Tennis</li><li>Padel</li><li>Running</li><li>Coffee</li><li>Books</li><li>Studying</li><li class="more">and more</li>
-</ul>
+<ul class="club-tiles" aria-label="Clubs"><li class="club-tile t0"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6c3.5 3.5 3.5 9.3 0 12.8M18.4 5.6c-3.5 3.5-3.5 9.3 0 12.8"/></svg></span><b>Tennis</b><span>Courts and a partner</span></li><li class="club-tile t1"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="11" cy="9.5" rx="6" ry="6.5"/><path d="M14.6 14.6 19.5 20"/><circle cx="18.5" cy="5" r="1.6"/></svg></span><b>Padel</b><span>Find your four</span></li><li class="club-tile t2"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="8" cy="8" rx="2.6" ry="4.2"/><ellipse cx="16" cy="12.5" rx="2.6" ry="4.2"/><path d="M6.2 15.4h3.6M14.2 19.9h3.6"/></svg></span><b>Running</b><span>Routes and sunrise runs</span></li><li class="club-tile t3"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5Z"/><path d="M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16M9 3.5v2.5M12 3.5v2.5"/></svg></span><b>Coffee</b><span>Cafés worth the drive</span></li><li class="club-tile t0"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5Z"/></svg></span><b>Books</b><span>Swaps and good reads</span></li><li class="club-tile t1"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5Z"/><path d="M6.5 11v4.5c1.5 1.5 3.5 2.2 5.5 2.2s4-.7 5.5-2.2V11"/></svg></span><b>Study</b><span>Sim prep, together</span></li><li class="club-tile t2"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 0 1 8 8H4a8 8 0 0 1 8-8Z"/><path d="M12 12v7M4 20c2.7-1.3 5.3-1.3 8 0s5.3 1.3 8 0"/></svg></span><b>Beach</b><span>Mornings by the sea</span></li><li class="club-tile t3"><span class="club-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="7"/><circle cx="12" cy="13" r="2.5"/><path d="M4 4v4M2.5 4v3.5a1.5 1.5 0 0 0 3 0V4M20 4v16"/></svg></span><b>Brunch</b><span>Long and unhurried</span></li></ul>
+<p class="tiles-more">And more: gym, hiking, languages, photography…</p>
 <p class="intro">Discover plans, exchange recommendations and get to know crew at your home base.</p>
 </div></section>
 <section class="section how" id="how"><div class="wrap wide">
@@ -46,7 +45,7 @@ HERO = '''<section class="hero"><div class="wrap wide hero-grid"><div class="her
 <h2>Simple from the start.</h2>
 <ol class="steps">
 <li><span class="step-n">01</span><h3>Find your community</h3><p>Choose your home base and explore local clubs and interests.</p></li>
-<li><span class="step-n">02</span><h3>See what’s happening</h3><p>Discover plans that fit your time off. Share your availability only when you want to.</p></li>
+<li><span class="step-n">02</span><h3>See what’s happening</h3><p>Discover plans that fit your time off. Find crew who are free on the same days as you.</p></li>
 <li><span class="step-n">03</span><h3>Join in</h3><p>Meet for something you enjoy, or start a plan of your own.</p></li>
 </ol>
 </div></section>

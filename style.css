@@ -339,3 +339,19 @@ main:not(.home) .join-new h2{border-top:0;padding-top:0;margin-top:0}
 .a-club b{font-size:16px;font-weight:700}
 .a-more{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px}
 .a-more span{padding:8px 14px;border-radius:999px;border:1.5px dashed #C9D0DD;font-size:14px;font-weight:700;color:#4A5470}
+/* Clubs section tiles (28 Oct) */
+.club-tiles{list-style:none;margin:8px 0 14px;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:760px){.club-tiles{grid-template-columns:repeat(4,1fr);gap:16px}}
+.club-tile{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:4px;padding:18px 16px 20px;border-radius:22px;background:var(--band-surface);border:1px solid var(--band-edge);transition:transform .2s}
+.club-tile:hover{transform:translateY(-3px)}
+.club-tile::after{content:"";position:absolute;right:-28px;top:-28px;width:96px;height:96px;border-radius:50%;background:var(--amber);opacity:.14}
+.club-tile.t1::after{opacity:.24;width:120px;height:120px;right:-40px;top:-40px}
+.club-tile.t2::after{opacity:.1;right:auto;left:-30px;top:auto;bottom:-36px}
+.club-tile.t3::after{opacity:.2;width:70px;height:70px;right:12px;top:-20px}
+.club-ic{position:relative;z-index:1;display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--amber);color:var(--ink);margin-bottom:10px}
+.club-ic svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.club-tile b{position:relative;z-index:1;font-size:19px;font-weight:800;letter-spacing:-.01em;color:var(--band-text)}
+.club-tile span:last-child{position:relative;z-index:1;font-size:14px;line-height:1.4;color:var(--band-muted)}
+.tiles-more{margin:0 0 26px;font-size:15px;color:var(--band-muted)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .club-tile::after{opacity:.07}}
+:root[data-theme=dark] .club-tile::after{opacity:.07}
