@@ -60,10 +60,19 @@ The single most important rule.
 
 - No spam, selling, promotion, recruitment, MLM, crypto pitches, surveys or fundraising.
 - No fake tips or paid reviews. Tips, club places and routes are honest recommendations from crew who have been there. Keep prices and details current, or delete them when they're wrong.
-- Start a club for something real that isn't already there (crew can start clubs once their base has 300 members). The team takes a quick look before a new club opens; duplicates and fronts for selling are declined. Organizers keep their club on topic and can hide posts that break these guidelines.
 - No content that is illegal where you post it or where it is seen, including content about drugs, weapons or anything else that local law prohibits. Laws differ between layover cities; when in doubt, leave it out.
 - No content involving anyone under 18. Any sign of a minor in a sexual or exploitative context is reported to the authorities.
 - Don't post other people's copyrighted photos or text.
+
+## Clubs
+
+- Any member can ask for a club at their base. A person checks every new club before it opens, and every later change to its name or line; until then only you see it, and an open club keeps its old name.
+- A club is something to do together, open to all crew at that base, and not already there.
+- No clubs about dating, selling or promoting anything, or work (rosters, pay, what happens inside an airline).
+- No airline, hotel or people's names in a club's name or line.
+- No clubs about religion, politics, health, sexuality, ethnicity or unions: the clubs you're in show on your profile. Language clubs ("Portuguese speakers") are fine.
+- If a club or a change isn't approved, you get the reason in the app and by email. Change it and send it again, remove it, or appeal. A club that isn't approved is deleted 6 months after the decision.
+- Organizers keep their club on topic and can hide posts that break these guidelines.
 
 ## If something goes wrong
 
