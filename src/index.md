@@ -1,5 +1,5 @@
 ---
-title: Galley — find your crew, at base and away
+title: Galley — days off, with crew who are off too
 hero: true
-description: Find pilots and cabin crew who are free when you are. Padel, coffee, runs and study sessions at your base, and company on layovers. Made by crew, for crew. Every account checked.
+description: Finally home with days off? See which pilots and cabin crew at your base are off the same day, and join padel, brunch, the beach or a run. Starting in Dubai, December 2026.
 ---
