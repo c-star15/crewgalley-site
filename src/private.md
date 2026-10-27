@@ -50,18 +50,10 @@ Because we can't read chats, we only ever see what **you** choose to show us. Wh
 - **A new phone starts fresh.** Messages are locked to the phones that were in the conversation. On a new phone you'll see new messages; older ones stay on your old phone. Chats on Galley are short-lived anyway: invites expire at the end of their day, meetup chats close after 24 hours.
 - **Deleting your account deletes your keys:** the phone you delete from erases its private key and we erase every public key. What's left on our servers can no longer be opened by anyone. Other phones signed in to the account keep their key until you remove the app.
 - **Your data export** (your photo at the top right → Settings → Export my data) opens the messages you sent on your phone and saves them as text. We never see that file.
+- **Not built yet:** a code you can compare with someone to confirm it's really their phone, and keys that keep changing as you chat. Signal has both; they're on our list.
 
 ## If someone asks us for your messages
 
 We can only hand over what we have. For messages that is sealed ciphertext we cannot open. We answer only valid legal process, and we would rather have nothing to give.
-
-## For the technically curious
-
-- **Algorithms:** NaCl. Messages use XSalsa20-Poly1305 with a fresh 256-bit key and nonce per message. That key is sealed for each recipient phone with Curve25519 key agreement and XSalsa20-Poly1305.
-- **Keys:** one Curve25519 key pair per phone and account, generated on the phone and stored in the iOS Keychain (this device only, never synced to iCloud) or, on Android, encrypted with a key held in the Android Keystore. Only the public half is registered with us. Up to five phones per account.
-- **Authenticity:** every message is authenticated by the sending phone's key; a changed byte or a swapped sender fails to open.
-- **Server checks:** the server can't read messages, but it refuses ones that aren't addressed to the people in the conversation, or, in a one-to-one chat, that leave out the other person's phone.
-- **Tested:** an automated test runs the app's own encryption code on every change to it: sealing, opening, tampering, impersonation, new phones and report keys.
-- **What it doesn't do yet:** there are no security codes to compare with the other person in person, and keys are long-lived rather than rotated with every message as Signal's are. Both are on the list.
 
 Questions: [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
