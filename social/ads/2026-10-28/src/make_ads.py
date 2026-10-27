@@ -5,6 +5,9 @@ Each ad is one plan from the app: a big headline, a top-down sketch of the plan
 (a dot is a person, a dashed ring is an open spot) and the app's light-mode
 ActivityCard (app/src/components/activity-card.tsx, light palette in theme.ts),
 scaled up. Icons are the app's Ionicons, from the npm package `ionicons`.
+Every card carries an "Illustration" label just above it, right-aligned (Victor,
+28 Oct: app mocks never suggest activity that hasn't happened); it is the site's
+.mock-label (style.css) scaled for 1080 wide.
 """
 import json
 import math
@@ -20,6 +23,8 @@ APP = dict(surface='#FFFFFF', text='#0B1430', muted='#4A5470', border='#D9DEE8',
 
 HEAD_PX = 124   # one headline size for the whole series
 S = 2.4         # card scale: app points -> px
+# The site's .mock-label colour (--hero-soon), light and dark
+LABEL_FG = dict(cream='#4A5468', ink='#B7C0D1')
 
 ADS = [
     dict(n=1, key='yoga', bg='ink', head=['Stretch out', 'the night flight.'], title='Sunrise yoga',
@@ -82,6 +87,13 @@ def card(a, width=888):
         <span style="display: flex; gap: {px(3*S)}" role="img" aria-label="{spots}">{''.join(dots)}</span>
       </div>
     </div>'''
+
+
+def mock_label(bg):
+    """The site's .mock-label at 1080 wide: sits 20 px above its (positioned) parent, right-aligned."""
+    return (f'<span style="position: absolute; right: 0; bottom: 100%; margin-bottom: 20px; padding: 8px 20px 8px 22px; '
+            f'border: 2px solid currentColor; border-radius: 999px; font-size: 24px; font-weight: 700; line-height: 1.1; '
+            f'letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; color: {LABEL_FG[bg]}; opacity: 0.75">Illustration</span>')
 
 
 # ---------------------------------------------------------------------------
@@ -320,6 +332,7 @@ body{{margin:0}}
   <p style="position: absolute; left: 96px; top: {head_top}px; margin: 0; font-size: {HEAD_PX}px; font-weight: 900; letter-spacing: -0.045em; word-spacing: 0.04em; line-height: 0.95; white-space: nowrap">{head}</p>
   {svg}
   <div style="position: absolute; left: 96px; top: {card_top}px">
+    {mock_label(a['bg'])}
     {card(a)}
   </div>
   <div style="position: absolute; left: 96px; bottom: {wm_bottom}px">{wordmark(fg)}</div>
@@ -346,7 +359,7 @@ def caption(a):
 
 def alt_text(a):
     head = ' '.join(a['head'])
-    return f"Galley ad: \"{head}\" over the app's plan card: {a['alt_card']}, with a Join button. Sketch: {a['alt_sketch']}."
+    return f"Galley ad: \"{head}\" over an illustration of the app's plan card: {a['alt_card']}, with a Join button. Sketch: {a['alt_sketch']}."
 
 
 def stem(a, fmt):

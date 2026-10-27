@@ -1,12 +1,14 @@
-"""Render the artboards to JPEG: python3 render.py [stem ...]  (default: every *.dc.html here)
+"""Render the artboards to JPEG: python3 render.py [--out DIR] [--suffix S] [stem ...]
+(default: every *.dc.html here)
 
 A .dc.html is static markup: drop the support.js line, unwrap <x-dc> and <helmet>,
 and load Inter (variable, opsz + wght) from the site's own font file instead of
-Google Fonts. Output goes one folder up, as <stem>.jpg at quality 92.
+Google Fonts. Output goes one folder up (or to --out), as <stem><suffix>.jpg at quality 92.
+Week 1 (28 Oct, with the Illustration label): --out ../../../week1 --suffix=-illustration
 """
+import argparse
 import pathlib
 import re
-import sys
 
 from playwright.sync_api import sync_playwright
 
@@ -25,7 +27,14 @@ def static_html(src: str) -> str:
 
 
 def main():
-    stems = sys.argv[1:] or sorted(p.name[:-len('.dc.html')] for p in HERE.glob('*.dc.html'))
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--out', default=str(OUT))
+    ap.add_argument('--suffix', default='')
+    ap.add_argument('stems', nargs='*')
+    args = ap.parse_args()
+    out = (HERE / args.out).resolve()
+    out.mkdir(parents=True, exist_ok=True)
+    stems = args.stems or sorted(p.name[:-len('.dc.html')] for p in HERE.glob('*.dc.html'))
     tmp = HERE / '.render'
     tmp.mkdir(exist_ok=True)
     with sync_playwright() as p:
@@ -40,7 +49,7 @@ def main():
             pg.goto(f.as_uri())
             pg.evaluate('document.fonts.ready')
             pg.wait_for_timeout(150)
-            pg.screenshot(path=str(OUT / f'{stem}.jpg'), type='jpeg', quality=92)
+            pg.screenshot(path=str(out / f'{stem}{args.suffix}.jpg'), type='jpeg', quality=92)
             pg.close()
             print('rendered', stem)
         b.close()
