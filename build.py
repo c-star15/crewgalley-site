@@ -63,9 +63,8 @@ HERO = '''<section class="hero"><div class="wrap wide hero-grid"><div class="her
 </div></section>
 <section class="section origin"><div class="wrap">
 <p class="eyebrow">Our story</p>
-<h2>Made with crew life in mind.</h2>
-<p>Galley began with a simple observation: people can share a home base, similar interests and the same unpredictable schedules, yet rarely have their days off together.</p>
-<p>Created by an airline pilot, Galley is designed to make those days a little easier to enjoy. It starts with the people and places around us.</p>
+<h2>A little about us.</h2>
+<p>Galley is an independent project created by an airline pilot, with a genuine appreciation for the people, friendships and experiences that come with this profession.</p>
 </div></section>
 <section class="section closing"><div class="wrap">
 <p class="eyebrow">Join us</p>
