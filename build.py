@@ -34,13 +34,12 @@ HERO = '''<section class="hero"><div class="wrap wide hero-grid"><div class="her
 </div></section>
 <section class="section band clubs"><div class="wrap wide">
 <p class="eyebrow">Clubs</p>
-<h2>Good things start with common interests.</h2>
+<h2>A place for shared interests.</h2>
 <p class="intro">Join local clubs built around the things you enjoy.</p>
 <ul class="pills" aria-label="Clubs">
 <li>Tennis</li><li>Padel</li><li>Running</li><li>Coffee</li><li>Books</li><li>Studying</li><li class="more">and more</li>
 </ul>
-<p class="intro">Discover plans, exchange recommendations and get to know people who share your interests.</p>
-<p class="aside">Not every connection needs an event. Sometimes it starts with a good recommendation or a familiar face.</p>
+<p class="intro">Discover plans, exchange recommendations and get to know crew at your home base.</p>
 </div></section>
 <section class="section how" id="how"><div class="wrap wide">
 <p class="eyebrow">How Galley works</p>
