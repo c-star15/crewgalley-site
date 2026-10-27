@@ -19,7 +19,7 @@ Not ground staff, dispatchers or other airline staff, family or buddy-pass holde
 
 No screenshots, no crew ID, no passport, no staff number. Ever.
 
-First time we see your airline's email domain? A person checks the domain once, usually within 24 hours. After that, everyone from it gets straight in.
+First time we see your airline's email domain? Our team checks the domain once, usually within 24 hours. After that, everyone from it gets straight in.
 
 ## What we keep
 A one-way code made from your work address, never the address itself. It stops one mailbox opening two accounts and keeps a banned account from coming back. The address is deleted as soon as you type the code, or after 15 minutes. We also keep the domain and the decision with its date.
