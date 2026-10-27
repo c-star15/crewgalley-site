@@ -27,7 +27,7 @@ The single most important rule.
 
 - No harassment, threats, intimidation, stalking or pressure. "No", silence and a declined request are answers. Do not create new ways to contact someone who has declined or blocked you.
 - Plans, not pickup lines. Invites are for doing something together: a run, dinner, a walk. "Not now" is a full answer; don't invite the same person again or look for another way to reach them.
-- At your base, people are your colleagues too. Join plans to do the thing, not to find out who's free or when someone's away. Free days are only ever shown as totals; don't try to work out whose they are.
+- At your base, people are your colleagues too. You'll see who's free on a day off so you can plan together, never where they are. Don't use it to track someone's roster or when they're away from home.
 - Someone showing they're up for coffee is up for a coffee plan, not a chat-up line. Start a plan they can join.
 - You can message anyone in a plan with you. Keep it to the plan and getting there; if they don't answer, that's an answer. Don't join a plan just to message someone in it.
 - Add the layovers you actually fly, and don't fake your location. Stays added to see who is in a city you are not going to are misuse. The app limits each account to 8 new stays and 6 invites or requests a week, and shows names only from 2 days before an overlap.
