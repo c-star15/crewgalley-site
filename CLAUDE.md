@@ -16,3 +16,7 @@ agreement is `CLAUDE.md` in the app repo (c-star15/crew-hub). For this site:
   rotation yet.
 - Build with `python3 build.py`; check the page at 390 px wide in light and dark
   before pushing.
+- The home page leads with days off at home (Victor, 28 Oct 00:08): "Finally home. Let's
+  do something nice." Every layover-first crew app says "by crew, for crew", "connect with
+  verified crew" and "make the most of every layover", so don't bring those back, or
+  "Find your people. At base and away." as the headline. Layovers get one short block.
