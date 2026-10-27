@@ -225,3 +225,85 @@ main:not(.home) .join-new h2{border-top:0;padding-top:0;margin-top:0}
 .join-new .trust{margin:18px 0 22px}
 .join-new .trust li{color:var(--muted)}
 .join-new .trust strong{color:var(--text)}
+/* Hero with the app: copy left, phone right on wide screens; phone under the copy on phones.
+   The screen is the app's light mode (crew-hub app/src/theme.ts, ink.light), drawn at 375 pt and scaled. */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:960px){.hero-grid{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:56px}.hero-grid h1{font-size:clamp(52px,5.4vw,68px)}}
+.hero-phone{--s:.74;position:relative;justify-self:center;margin:12px 0 -96px;z-index:2}
+@media (min-width:960px){.hero-phone{--s:.8;margin:0 0 -140px 72px}}
+.phone{position:relative;width:calc(375px*var(--s) + 20px);height:calc(800px*var(--s) + 20px);padding:10px;border-radius:calc(54px*var(--s) + 10px);background:#0B1430;box-shadow:0 0 0 1px rgba(244,239,230,.16),0 40px 70px -24px rgba(11,20,36,.6)}
+.screen{position:relative;width:375px;height:800px;transform:scale(var(--s));transform-origin:0 0;border-radius:54px;overflow:hidden;background:#F3F5F9;color:#0B1430;font-family:-apple-system,BlinkMacSystemFont,Inter,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.3;text-align:left}
+.screen :where(p){margin:0}.screen :where(b){font-weight:800}
+.screen svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.screen svg.fill{fill:currentColor;stroke:none}
+.a-status{display:flex;justify-content:space-between;align-items:center;height:54px;padding:14px 34px 0 40px;font-size:16px}
+.a-batt{width:26px;height:12px;border:1.5px solid #0B1430;border-radius:4px;position:relative;opacity:.9}
+.a-batt::after{content:"";position:absolute;inset:1.5px 6px 1.5px 1.5px;background:#0B1430;border-radius:2px}
+.a-head{display:flex;align-items:center;gap:8px;padding:10px 16px 0}
+.a-head-t{flex:1;display:flex;flex-direction:column}
+.a-head-t b{font-size:28px;line-height:34px;letter-spacing:-.6px}
+.a-head-t span{color:#4A5470}
+.a-iconbtn{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#FFF}
+.a-me,.a-av{display:grid;place-items:center;border-radius:50%;background:#E3E8F1;color:#4A5470;font-weight:700}
+.a-me{width:40px;height:40px;font-size:14px;box-shadow:0 0 0 2px #FFF}
+.a-strip{display:flex;gap:6px;padding:32px 16px 0;overflow:hidden}
+.a-col{display:flex;flex-direction:column;align-items:center;flex:none}
+.a-cell{display:flex;flex-direction:column;align-items:center;justify-content:center;width:50px;height:66px;border-radius:12px;background:#FFF;border:2px solid transparent}
+.a-cell.free{background:#FFF3CC;border-color:#FFB800}
+.a-cell.on{background:#0B1430}
+.a-dow{font-size:11px;font-weight:600;color:#4A5470}
+.a-num{font-size:20px;font-weight:800;letter-spacing:-.4px}
+.a-cell.on .a-dow,.a-cell.on .a-num{color:#F3F5F9}
+.a-dots{display:flex;gap:3px;height:6px;margin-top:3px}
+.a-dots i{width:5px;height:5px;border-radius:50%;background:#8A5E00}
+.a-cell.on .a-dots i{background:#FFB800}
+.a-bar{width:22px;height:3px;border-radius:2px;margin-top:4px}
+.a-bar.on{background:#FFB800}
+.a-key{display:flex;align-items:center;gap:6px;padding:8px 16px 0;font-size:12px;color:#4A5470}
+.a-key .sw{width:12px;height:12px;border-radius:3px;background:#FFF3CC;border:1.5px solid #FFB800}
+.a-key .dt{width:5px;height:5px;border-radius:50%;background:#8A5E00;margin-left:16px}
+.a-free{display:flex;align-items:center;gap:16px;margin:16px 16px 0;padding:0 16px;min-height:48px;border-radius:12px;background:#FFF}
+.a-free p{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.a-free p span{font-size:14px;font-weight:600;color:#8A5E00}
+.a-link{display:inline-flex;align-items:center;gap:2px;font-weight:700;color:#8A5E00}
+.a-link svg{width:17px;height:17px;stroke-width:2.2}
+.a-info{color:#4A5470;display:flex}.a-info svg{width:18px;height:18px}
+.a-counts{font-size:14px;font-weight:700;margin:8px 16px 0}
+.a-sec{font-size:20px;font-weight:800;letter-spacing:-.3px;margin:24px 16px 8px}
+.a-people{display:flex;gap:8px;padding:0 16px}
+.a-person{flex:none;width:116px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px;border-radius:16px;background:#FFF;border:1.5px solid #FFF}
+.a-person.me{border-color:#FFB800}
+.a-av{width:52px;height:52px;font-size:17px}
+.a-person b{font-size:15px;margin-top:2px}
+.a-what{font-size:13px;font-weight:700;color:#8A5E00;text-align:center}
+.a-when{font-size:12px;color:#4A5470}
+.a-row{display:flex;align-items:center;justify-content:space-between;margin:24px 16px 8px}
+.a-row b{font-size:20px;letter-spacing:-.3px}
+.a-card{display:flex;align-items:center;gap:16px;margin:0 16px 8px;padding:14px 16px;border-radius:16px;background:#FFF}
+.a-ic{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#FFF3CC;color:#8A5E00;flex:none}
+.a-mid{flex:1;display:flex;flex-direction:column;gap:3px;min-width:0}
+.a-mid b{font-size:17px;font-weight:700}
+.a-mid span{font-size:14px;color:#4A5470}
+.a-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:64px}
+.a-join{display:grid;place-items:center;min-width:64px;height:32px;padding:0 14px;border-radius:999px;background:#FFB800;color:#0B1430;font-weight:800}
+.a-spots{display:flex;gap:3px}
+.a-spots i{width:7px;height:7px;border-radius:50%;border:1.5px solid #D9DEE8}
+.a-spots i.in{background:#8A5E00;border-color:#8A5E00}
+.a-tabs{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-around;padding:8px 8px 30px;background:#F3F5F9;border-top:1px solid #D9DEE8}
+.a-tabs span{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:600;color:#4A5470;width:72px}
+.a-tabs span.on{color:#8A5E00}
+.a-tabs svg{width:25px;height:25px}
+/* The "Game on?" call, as a notification over the phone */
+.push{position:absolute;z-index:3;left:-10px;right:-10px;top:30px;display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:20px;background:rgba(255,255,255,.94);color:#0B1430;box-shadow:0 18px 40px -16px rgba(11,20,36,.55),0 0 0 1px rgba(11,20,36,.06);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);text-align:left;font-family:-apple-system,BlinkMacSystemFont,Inter,"Segoe UI",Roboto,sans-serif}
+@media (min-width:960px){.push{left:-72px;right:auto;width:320px;top:18px}}
+.push-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#F2A93B;flex:none}
+.push-icon svg{height:22px;width:auto;margin:2px 0 0 4px}
+.push-text{min-width:0;flex:1}
+.push p{margin:0;line-height:1.3}
+.push-top{display:flex;justify-content:space-between;font-size:12px;color:#4A5470;text-transform:uppercase;letter-spacing:.04em}
+.push-top b{font-weight:600}
+.push-title{font-size:15px;font-weight:700}
+.push-body{font-size:15px;color:#0B1430}
+@media (prefers-reduced-motion:no-preference){.push{animation:push-in .7s cubic-bezier(.2,.8,.2,1) .6s both}}
+@keyframes push-in{from{opacity:0;transform:translateY(-14px) scale(.97)}to{opacity:1;transform:none}}
+.hero-copy .actions{margin-bottom:0}
