@@ -174,14 +174,14 @@
   // ---------------------------------------------------------------------------
   // End card: wordmark, "Life beyond the roster.", then "Opening soon"
   // ---------------------------------------------------------------------------
-  function EndCard(stage, bg, fg, soft) {
+  function EndCard(stage, bg, fg, soft, soonText) {
     const box = h('div', { position: 'absolute', inset: 0, background: bg, opacity: 0 });
     const wm = wordmark(196, fg); wm.className = 'wm';
     const wmBox = h('div', { position: 'absolute', left: 0, right: 0, top: '640px', textAlign: 'center' }, wm);
     const line = h('p', { position: 'absolute', left: 0, right: 0, top: '930px', margin: 0, textAlign: 'center', fontSize: '76px', fontWeight: 900, letterSpacing: '-.04em', color: fg, lineHeight: 1, fontVariationSettings: '"opsz" 32' });
     const words = 'Life beyond the roster.'.split(' ').map((w) => { const s = h('span', { display: 'inline-block' }, w); return s; });
     words.forEach((s, i) => { if (i) line.appendChild(document.createTextNode(' ')); line.appendChild(s); });
-    const soon = h('p', { position: 'absolute', left: 0, right: 0, top: '1060px', margin: 0, textAlign: 'center', fontSize: '42px', fontWeight: 600, letterSpacing: '-.01em', color: soft }, 'Opening soon');
+    const soon = h('p', { position: 'absolute', left: 0, right: 0, top: '1060px', margin: 0, textAlign: 'center', fontSize: '42px', fontWeight: 600, letterSpacing: '-.01em', color: soft }, soonText || 'Opening soon');
     box.appendChild(wmBox); box.appendChild(line); box.appendChild(soon);
     stage.appendChild(box);
     // t0: card in; t1: Opening soon

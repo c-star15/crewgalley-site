@@ -563,5 +563,98 @@
     return { bpm, dur: T(26), cues: { lift: T(6), drop: T(13), end: tEnd }, events, render, cover: T(10), key: 'Bb' };
   }
 
-  window.REELS = { 'off-today': offToday, '47-messages': messages, 'off-tuesday': offTuesday, 'roster-roulette': roster, clubs };
+
+  // ===========================================================================
+  // Forwardable (28 Oct, Victor): "When are you actually free?" A group chat
+  // with friends who work Monday to Friday, then the turn: crew are free on
+  // your Tuesday. No app on screen, no counts.
+  // ===========================================================================
+  function whenFree(stage) {
+    const bpm = 100, B = 60 / bpm, T = (b) => b * B;
+    stage.style.background = C.ink;
+    const events = [];
+    // chat header (stays on top while the chat scrolls under it)
+    const head = h('div', { position: 'absolute', left: '0', right: '0', top: '0', height: '440px', paddingTop: '210px', background: C.ink, zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px', opacity: 0 });
+    const avs = h('div', { display: 'flex' }, ['#E9A0A0', '#9DC3E6', '#B5D99C'].map((c, i) => h('div', { width: '74px', height: '74px', borderRadius: '50%', background: c, border: `5px solid ${C.ink}`, marginLeft: i ? '-20px' : '0' })));
+    head.appendChild(avs);
+    head.appendChild(h('span', { fontSize: '40px', fontWeight: 700, color: C.cream }, 'The girls 🌸'));
+    head.appendChild(h('span', { fontSize: '30px', color: C.softOnInk }, 'Ana, Mia, Sofia'));
+    stage.appendChild(head);
+    const MSG = [
+      // [who, text, beat]  who: f = a friend (left, with name), me = right
+      ['Ana', 'Brunch this Saturday? 🥞', 1],
+      ['me', 'Flying Saturday 😭', 3],
+      ['Mia', 'Sunday then?', 4.5],
+      ['me', 'Also flying', 6],
+      ['Sofia', 'Ok when ARE you free??', 7.5],
+      ['me', 'Tuesday. 11am. 🙌', 9.5],
+      ['Ana', '…we work, babe', 11.5],
+    ];
+    const col = h('div', { position: 'absolute', left: '72px', right: '72px', top: '470px', display: 'flex', flexDirection: 'column', gap: '22px' });
+    stage.appendChild(col);
+    const bubbles = MSG.map(([who, text, beat], i) => {
+      const me = who === 'me';
+      const wrap = h('div', { display: 'flex', flexDirection: 'column', alignItems: me ? 'flex-end' : 'flex-start', gap: '6px', opacity: 0 });
+      if (!me) wrap.appendChild(h('span', { fontSize: '26px', fontWeight: 600, color: C.softOnInk, marginLeft: '24px' }, who));
+      wrap.appendChild(h('div', { maxWidth: '760px', padding: '26px 36px', borderRadius: me ? '46px 46px 12px 46px' : '46px 46px 46px 12px', background: me ? C.amber : '#24365C', color: me ? C.ink : C.cream, fontSize: '50px', fontWeight: me ? 700 : 500, lineHeight: 1.2, letterSpacing: '-.01em' }, text));
+      col.appendChild(wrap);
+      const t = T(beat);
+      events.push({ t, kind: me ? 'tap' : 'pop', n: i });
+      return { wrap, t, me };
+    });
+    // typing dots before the last friend message
+    const typing = h('div', { display: 'flex', gap: '10px', padding: '28px 34px', borderRadius: '46px 46px 46px 12px', background: '#24365C', alignSelf: 'flex-start', opacity: 0 }, [0, 1, 2].map(() => h('i', { width: '16px', height: '16px', borderRadius: '50%', background: C.softOnInk, display: 'block' })));
+    col.appendChild(typing);
+    const dots = Array.from(typing.children);
+    const tTypeA = T(10.4), tTypeB = T(11.5);
+
+    // the turn
+    const tTurn = T(14);
+    events.push({ t: tTurn - 0.12, kind: 'whoosh' });
+    const turn = h('div', { position: 'absolute', inset: 0, background: C.cream, opacity: 0 });
+    stage.appendChild(turn);
+    const heads = Headlines(stage, [
+      { lines: ['Tuesday, 11am.'], t0: tTurn + 0.2, t1: T(26) - 0.3, top: 620, color: C.ink },
+      { lines: ['Someone at your', 'base is free too.'], t0: T(17), t1: T(26) - 0.3, top: 820, color: C.ink, style: { 1: { color: '#B9770E' } } },
+    ], { color: C.ink });
+    const sub = h('p', { position: 'absolute', left: '96px', right: '96px', top: '1150px', margin: 0, fontSize: '46px', fontWeight: 600, color: C.softOnCream, lineHeight: 1.3, opacity: 0 }, 'Padel, brunch, the beach.<br>With crew who get your roster.');
+    stage.appendChild(sub);
+    const tSub = T(20.5);
+    events.push({ t: T(17), kind: 'chime' });
+    const tEnd = T(26), tSoon = T(28);
+    const end = EndCard(stage, C.ink, C.cream, C.softOnInk, 'Coming soon to Dubai');
+
+    function render(t) {
+      const kh = EASE.out(ramp(t, 0.1, 0.5));
+      head.style.opacity = kh.toFixed(3);
+      head.style.transform = `translateY(${((1 - kh) * 30).toFixed(1)}px)`;
+      // the list scrolls up as messages arrive (keeps the newest in view)
+      let shown = 0;
+      bubbles.forEach((b) => {
+        const k = pop(t, b.t, 0.32);
+        b.wrap.style.opacity = Math.min(1, k).toFixed(3);
+        b.wrap.style.transform = `translateY(${((1 - Math.min(1, k)) * 40).toFixed(1)}px) scale(${(0.9 + 0.1 * k).toFixed(4)})`;
+        b.wrap.style.transformOrigin = b.me ? 'right bottom' : 'left bottom';
+        if (t >= b.t) shown++;
+      });
+      const ty = t >= tTypeA && t < tTypeB;
+      typing.style.opacity = ty ? '1' : '0';
+      typing.style.display = ty ? 'flex' : 'none';
+      dots.forEach((d, i) => { d.style.transform = `translateY(${(-8 * Math.max(0, Math.sin((t * 6 - i * 0.7) * Math.PI / 2))).toFixed(1)}px)`; });
+      const scroll = Math.max(0, shown - 8) * 150;
+      col.style.transform = `translateY(${(-scroll).toFixed(1)}px)`;
+      col.style.transition = 'none';
+      const kt = EASE.inOut(ramp(t, tTurn - 0.15, tTurn + 0.35));
+      turn.style.opacity = kt.toFixed(3);
+      head.style.opacity = (kh * (1 - kt)).toFixed(3);
+      heads.render(t);
+      const ks = EASE.out(ramp(t, tSub, tSub + 0.5)) * (1 - EASE.in(ramp(t, tEnd - 0.3, tEnd)));
+      sub.style.opacity = ks.toFixed(3);
+      sub.style.transform = `translateY(${((1 - Math.min(1, ks * 2)) * 30).toFixed(1)}px)`;
+      end.render(t, tEnd, tSoon);
+    }
+    return { bpm, dur: T(32), cues: { lift: T(8), drop: tTurn, end: tEnd }, events, render, cover: T(11.9), key: 'G' };
+  }
+
+  window.REELS = { 'when-free': whenFree, 'off-today': offToday, '47-messages': messages, 'off-tuesday': offTuesday, 'roster-roulette': roster, clubs };
 })();

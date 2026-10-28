@@ -40,6 +40,9 @@ PRESETS = {
                         bass=[0, 1.5, 3], bright=0.95, kick='four', seed=5),
     'roster-roulette': dict(key=50, prog=[('vi', 'm7'), ('IV', 'maj7'), ('I', 'add9'), ('V', '6')], arp=[0, 1, 2, 3, 1, 2, 3, 4], step=0.25,
                             bass=[0, 0.5, 2, 2.5, 3.5], bright=1.05, kick='four', seed=6),
+    'when-free': dict(key=55, prog=[('vi', 'm7'), ('IV', 'maj7'), ('I', 'add9'), ('V', '6')], post_key=55,
+                      post_prog=[('I', 'maj9'), ('vi', 'm7'), ('IV', 'maj7'), ('V', 'add9')], arp=[0, 2, 1, 3, 2, 4, 1, 3], step=0.5,
+                      bass=[0, 1.5, 2.5], bright=0.95, kick='four', seed=8),
     'clubs': dict(key=58, prog=[('I', 'maj7'), ('vi', 'm9'), ('ii', 'm7'), ('V', '6')], arp=[0, 2, 4, 2, 1, 3, 2, 3], step=0.5,
                   bass=[0, 1.5, 2.5], bright=1.0, kick='four', seed=7),
 }
