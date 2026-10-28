@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:"Inter";src:url(/home/claude/crewgalley-site/fonts/inter-latin.woff2) format("woff2");font-weight:100 900;font-display:block}
+:root{--ink:#13213A;--amber:#F2A93B;--hero-glow:rgba(242,169,59,.34);--hero-shade:rgba(214,203,184,.5);--hero-top:#FBF7F0;--hero-bottom:#F4EFE6;
+--hero-text:#13213A;--hero-lead:#3A4558;--hero-accent:#B86A00;--hero-eyebrow:#8A5200;--hero-soon:#4A5468}
+html,body{margin:0}
+body{width:1080px;height:1440px;overflow:hidden;position:relative;font-family:Inter,sans-serif;font-feature-settings:"cv11","ss01";-webkit-font-smoothing:antialiased;color:var(--hero-text);
+ background:radial-gradient(60% 70% at 88% 18%,var(--hero-glow),transparent 70%),radial-gradient(80% 60% at 10% 110%,var(--hero-shade),transparent 70%),linear-gradient(180deg,var(--hero-top) 0%,var(--hero-bottom) 100%)}
+.copy{position:absolute;left:96px;right:96px;top:__TOP__px}
+.brand{display:inline-block;white-space:nowrap;color:var(--ink);font-weight:900;font-size:64px;line-height:1;letter-spacing:-.055em;font-variation-settings:"opsz" 32}
+.brand .pin{display:inline-block;vertical-align:-.2em;height:.5em;width:auto;margin-left:.07em;overflow:visible}
+.eyebrow{display:flex;align-items:center;gap:18px;font-size:29px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-eyebrow);margin:__EYE__px 0 30px}
+.eyebrow::before{content:"";width:17px;height:17px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 9px rgba(242,169,59,.2)}
+h1{font-size:__H1__px;line-height:.98;letter-spacing:-.045em;margin:0 0 44px;font-weight:900;font-variation-settings:"opsz" 32;word-spacing:.06em}
+h1 em{font-style:normal;color:var(--hero-accent)}
+.tagline{font-size:46px;line-height:1.3;font-weight:750;letter-spacing:-.01em;margin:0 0 22px}
+.soon{font-size:32px;color:var(--hero-soon);margin:0}
+.gm{--gm-text:#13213A;--gm-muted:#4A5468;--gm-acc:#F2A93B;--gm-planet0:#EDE4D5;--gm-page:#F4EFE6;--gm-ring:rgba(19,33,58,.07);--gm-glow:rgba(242,169,59,.30);
+ position:absolute;left:0;right:0;bottom:0;height:__GMH__px;overflow:hidden}
+.gm-f{fill:var(--gf,currentColor)}.gm-d{fill:var(--gf,currentColor);opacity:var(--gdo,.3)}.gm-a{fill:var(--ga,#F2A93B)}
+path.gm-s.gm-f,path.gm-s.gm-d{fill:none;stroke:var(--gf,currentColor);stroke-linecap:round}
+path.gm-s.gm-a{fill:none;stroke:var(--ga,#F2A93B);stroke-linecap:round}
+.gm-pl{position:absolute;inset:0;width:100%;height:100%;--gf:var(--gm-text);--ga:var(--gm-acc);--gdo:.3}
+.gm-pl-glow0{stop-color:var(--gm-glow)}.gm-pl-glow1{stop-color:var(--gm-glow);stop-opacity:0}
+.gm-pl-b0{stop-color:var(--gm-planet0)}.gm-pl-b1{stop-color:var(--gm-page)}
+.gm-pl-body{stroke:var(--gm-ring);stroke-width:1.5}.gm-pl-ring{fill:none;stroke:var(--gm-ring);stroke-width:1.2}
+.gm-pl-orbit{fill:none;stroke:var(--gm-muted);stroke-opacity:.28;stroke-width:1.6;stroke-dasharray:3 10}
+.gm-pl-plane{fill:var(--gm-acc)}.gm-pin-needle{fill:var(--gm-text)}.gm-pin-ball{fill:var(--gm-acc)}
+</style><script>window.PL={R:__R__,apex:__APEX__,off:__OFF__};</script></head><body>
+<div class="copy">
+<div class="brand">galley<svg class="pin" viewBox="-60.7 -92.1 61.7 92.1" aria-hidden="true"><path d="M-33.25 -68.40 L-38.11 -65.81 L0 0Z" fill="currentColor"/><circle cx="-35.68" cy="-67.10" r="24" fill="#F2A93B"/></svg></div>
+<p class="eyebrow">A community for pilots and cabin crew</p>
+<h1>Life beyond<br><em>the roster.</em></h1>
+<p class="tagline">Your time off, your interests,<br>your community.</p>
+<p class="soon">Starting in Dubai · Coming soon</p>
+</div>
+<div class="gm" id="planet" aria-hidden="true"></div>
+<script src="planet.js"></script>
+</body></html>
