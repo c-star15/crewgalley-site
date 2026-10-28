@@ -4,7 +4,7 @@ description: The agreement between you and Galley.
 ---
 # Galley Terms of Service
 
-*Version 2026-10-28. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-28.2. Takes effect when Galley launches on the App Store and Google Play.*
 
 These terms are an agreement between you and **Crewgalley LLC**, a Wyoming limited liability company that operates Galley ("Galley", "we", "us"), postal address 30 N Gould St, Ste R, Sheridan, WY 82801, United States. By creating an account you accept them, together with the Community Guidelines ([crewgalley.app/guidelines/](/guidelines/)) and the Privacy Policy ([crewgalley.app/privacy/](/privacy/)), which form part of these terms.
 
@@ -12,9 +12,9 @@ Sections 11 and 12 limit our liability and section 17 sets out where disputes ar
 
 ## 1. What Galley is
 
-Galley helps verified airline pilots and cabin crew find other crew who are free when they are, at their home base and on layovers, join and organise plans, and message each other. Galley is free. We may add paid features later; if we do, we will tell you before anything is charged, and nothing you use today will start costing money without your agreement.
+Galley helps airline pilots and cabin crew find other crew who are free when they are, at their home base and on layovers, join and organise plans, and message each other. Galley is free. We may add paid features later; if we do, we will tell you before anything is charged, and nothing you use today will start costing money without your agreement.
 
-Galley is independent. It is not affiliated with, endorsed by or sponsored by any airline. Airline names appear only to describe where members work.
+Galley is independent. It is not affiliated with, endorsed by or sponsored by any airline. Galley does not ask for or show which airline you work for.
 
 ## 2. Who can use Galley
 
@@ -22,22 +22,23 @@ You may use Galley only if all of these are true:
 
 - you are at least 18 years old;
 - you currently work as a pilot or cabin crew member for an airline (including airline new-hire training, but not flight school, and including leave with a return date), and you stop using Galley when that stops being true;
+- everything you tell us about yourself (your name, home base and role) is true;
 - you have not been banned from Galley before;
 - using Galley is not against the law where you live or a rule of your employer that you are bound by. Many airlines have rules about social media, rosters, hotels, uniforms and alcohol. Following them is your responsibility.
 
 One person, one account. Admin and test accounts are the only exceptions.
 
-## 3. Verification
+## 3. Joining, the work email badge and crew checks
 
-Before you can see anyone, you must show that you are crew: with a code sent to your airline email address, or with vouches from two verified crew at your airline. Only use a work mailbox that is yours. Only vouch for someone you know flies for your airline now. Using someone else's mailbox, vouching for someone you don't know is crew, or sending crops from someone else's roster or an edited one, is grounds for a permanent ban.
+**Joining.** You join by giving your first name, home base and role (pilot or cabin crew) and confirming that section 2 is true for you. We do not check that members are crew, and we do not ask for your airline, a work email, an ID, a roster or a staff number to join. Everyone you meet on Galley has told us the same things you have, and nothing more. Members are adults who decide for themselves what to share and which plans to join: use your own judgement with everyone you meet (see [crewgalley.app/safety/](/safety/)).
 
-**What verification means.** Verification checks, at a point in time, that you can receive mail at your airline (the code) or that two crew there vouch for you. An airline email address cannot show whether you are crew or office staff: you confirm your role, and any member can report someone as "not crew". Verification does **not** check anyone's identity documents, character, criminal record, intentions or behaviour. A verified badge does not mean someone is safe. Use your own judgement with everyone you meet (see [crewgalley.app/safety/](/safety/)). We ask you to confirm your work email again at least every 12 months, and may ask at any time.
+**The work email badge (optional).** You can add a badge by confirming a code sent to your airline email address. Your profile then shows "Work email checked", without your airline. It shows that you could receive mail at an airline on that date. It does **not** show that someone is crew, or anything about their identity, character, criminal record, intentions or behaviour, and it does not mean someone is safe. It lapses after 12 months. Only use a work mailbox that is yours. A host can open a plan only to members with the badge.
 
-**Crew checks.** If someone reports you as "not crew", you have 72 hours to show us two crops of your roster (your name, and one day you flew in the last 2 weeks), cut on your phone, or to do a short video call. You stay visible meanwhile. If you don't answer, or the check doesn't confirm that you fly, your account is hidden until a check does. We never tell you who reported you.
+**Crew checks.** If someone reports you as "not crew", you have 72 hours to show us two crops of your roster (your name, and one day you flew in the last 2 weeks), cut on your phone. You stay visible meanwhile, unless two different people report you: then your account is hidden at once until a check confirms that you fly. If you don't answer, or the check doesn't confirm it, your account stays hidden until a check does. We never tell you who reported you. Using someone else's mailbox, or sending crops from someone else's roster or an edited one, is grounds for a permanent ban.
 
-**Invites and vouches.** Your invite link lets crew you know join. If someone you invited is rejected at verification, your link is switched off; if three are, you are asked to verify again. If someone you vouched for fails a crew check or is banned, your vouching and your invite link are switched off.
+**Invites.** Your invite code lets people you know join. If someone who joined with your code is banned, your code is switched off.
 
-**Invite-only bases.** While Galley or your base is invite-only, getting in takes a member's invite link, a code from us, or two vouches. Each member's link lets in a limited number of people while this lasts (we show you how many are left). Without one, you still verify, then wait on a list until we open seats, open your base, or end invite-only. Verifying doesn't guarantee a seat by a particular date, and codes are personal to the group they were given to: don't sell or publish them.
+**Invite-only bases.** We may make Galley or a base invite-only for a time, for example for safety. While that lasts, joining takes a member's invite code or a code from us. Codes are personal to the group they were given to: don't sell or publish them.
 
 ## 4. Your account
 
@@ -54,12 +55,12 @@ Follow the Community Guidelines. In particular, you must not:
 - impersonate anyone, or misrepresent your airline, role or employment;
 - use Galley for dating services, sex work, commercial promotion, recruitment, surveys, fundraising or selling anything, unless we have agreed in writing;
 - scrape, copy or collect data about other members, or use bots or automated access;
-- attempt to bypass verification, blocks, filters, rate limits, invite settings, the "landed" location check or security, or probe our systems, including by faking your phone's location or adding stays you will not fly;
+- attempt to bypass crew checks, badge-only plans, a host removing you, blocks, filters, rate limits, invite settings, the "landed" location check or security, or probe our systems, including by faking your phone's location or adding stays you will not fly;
 - use Galley if you are under 18.
 
 ## 6. Meetups and meeting in person
 
-On a layover, new contacts start with an invite: a plan, a day and a time, which the other person accepts or turns down. Only members who switch on "Open to meeting crew" for that layover can be invited. Accepting opens a chat. At your base, people meet through plans, and people in the same plan can message each other once both have joined. Nobody is owed an answer.
+On a layover, new contacts start with an invite: a plan, a day and a time, which the other person accepts or turns down. Only members who switch on "Open to meeting crew" for that layover can be invited. Accepting opens a chat. At your base, people meet through plans, and people in the same plan can message each other once both have joined. Nobody is owed an answer. A host can remove anyone from their plan; that person can't see it or join it again.
 
 
 Meetups are arranged by members, not by Galley. We do not organise, supervise, inspect or vouch for any meetup, venue, activity or person. You decide whether to go, and you are responsible for your own safety, belongings and conduct, including following your employer's rules on rest, alcohol and fitness for duty. Activities such as running, hiking, swimming or drinking carry risks you accept when you take part.
@@ -70,7 +71,7 @@ On a layover, plans meet in the hotel lobby by default; a plan at your base meet
 
 "Your content" means anything you post: profile text and photos, messages, meetups, tips, and photos.
 
-You keep ownership of your content. You give us a worldwide, non-exclusive, royalty-free licence to host, store, copy, display and transmit your content, only to the people the app shows it to, and only to run and improve Galley. For tips and for meetup photos that everyone pictured has agreed to show, this includes showing them on city pages to all verified members. The licence ends when you delete the content or your account, except for copies other members have already received in messages, and backups that are overwritten within 7 days.
+You keep ownership of your content. You give us a worldwide, non-exclusive, royalty-free licence to host, store, copy, display and transmit your content, only to the people the app shows it to, and only to run and improve Galley. For tips and for meetup photos that everyone pictured has agreed to show, this includes showing them on city pages to all members. The licence ends when you delete the content or your account, except for copies other members have already received in messages, and backups that are overwritten within 7 days.
 
 You promise that you have the right to post your content, that you have the consent of anyone identifiable in your photos, and that your content does not break these terms or the law.
 
@@ -78,9 +79,9 @@ We do not check content before it appears, but we may remove or restrict any con
 
 ## 8. Moderation, suspension and ending your account
 
-How we moderate: members can report and block anyone. Reports go to our moderation team. We act on reports of sexual, hateful or threatening content, or of someone at risk, within 24 hours, and decide every other report within 72 hours. Some steps are automatic: public text matching common hotel brands or the patterns of flight numbers, room numbers or long ID numbers is rejected; an account reported as "not crew" gets a crew check (section 3); an account with two open reports (other than "not crew") is suspended until reviewed; a work-email code on a domain we know for your airline, or two vouches, approves an account without a person; an account goes into a check 12 months after its last verification until it confirms its work email again; invites and message requests from an account pause if several people block or report it, or if very few of its invites are accepted across several cities, until we review it. Each account can add 8 stays and send 6 invites or requests a week, with 3 waiting at a time. Messages are end-to-end encrypted and we cannot read them; we see only messages a member chooses to attach to a report.
+How we moderate: members can report and block anyone. Reports go to our moderation team. We act on reports of sexual, hateful or threatening content, harassment, someone at risk, or someone in a plan that hasn't happened yet within 24 hours, and decide every other report within 5 business days (Monday to Friday). Some steps are automatic: public text matching common hotel brands or the patterns of flight numbers, room numbers or long ID numbers is rejected; an account reported as "not crew" gets a crew check, and an account reported as "not crew" by two different people is hidden until a check passes (section 3); an account with two open reports (other than "not crew") is suspended until reviewed; the work email badge is given when the code is confirmed, and lapses after 12 months; a new account can join 2 plans in its first 72 hours, until it has been to one; invites and message requests from an account pause if several people block or report it, or if very few of its invites are accepted across several cities, until we review it. Each account can add 8 stays and send 6 invites or requests a week, with 3 waiting at a time. Messages are end-to-end encrypted and we cannot read them; we see only messages a member chooses to attach to a report.
 
-What we may do: warn you, remove content, ask you to verify again, suspend your account (a suspension lasts until a person lifts it), or ban it permanently. A ban applies to you, not just the account: for 3 years we keep a one-way code made from your work email (for accounts verified before 26 October 2026, from your airline, staff number and surname), and a new account with the same details is held for review (Privacy Policy, section 3.2). When we restrict your account or content, we tell you what we did, why, which rule it was, whether it was automatic, and how to appeal, in the app (Settings → Account notices) and by email. You can appeal once per decision within 6 months by replying to that email or writing to [support@crewgalley.app](mailto:support@crewgalley.app) from your account email. A person looks at it again and we answer within 7 days.
+What we may do: warn you, remove content, ask you for a crew check, suspend your account (a suspension lasts until a person lifts it), or ban it permanently. A ban applies to you, not just the account: you may not sign up again. If you added the work email badge, for 3 years we keep a one-way code made from that address (for accounts verified before 26 October 2026, from your airline, staff number and surname), and the same details can't be used for a badge again (Privacy Policy, section 3.2). When we restrict your account or content, we tell you what we did, why, which rule it was, whether it was automatic, and how to appeal, in the app (Settings → Account notices) and by email. You can appeal once per decision within 6 months by replying to that email or writing to [support@crewgalley.app](mailto:support@crewgalley.app) from your account email. A person looks at it again and we answer within 7 days.
 
 You can stop using Galley and delete your account at any time in Settings. We may close Galley or any feature with at least 30 days' notice, except where we must act faster for legal or safety reasons.
 

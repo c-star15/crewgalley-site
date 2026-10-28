@@ -1,6 +1,6 @@
 ---
 title: You're invited · Galley
-description: A plan with verified pilots and cabin crew. Tap to see it.
+description: A plan with pilots and cabin crew on Galley. Tap to see it.
 robots: noindex
 ---
 <div class="join" id="join" aria-live="polite">
@@ -25,14 +25,14 @@ robots: noindex
 <div class="plan plan-empty" id="loading"><p class="plan-loading">Finding the plan…</p></div>
 <section class="join-new">
 <h2>New to Galley?</h2>
-<p>Galley is where pilots and cabin crew make plans with each other: padel, coffee, a run, dinner. At base on your days off, and on layovers. Every account is checked before it can see anyone.</p>
+<p>Galley is where pilots and cabin crew make plans with each other: padel, coffee, a run, dinner. At base on your days off, and on layovers. Join with your name, base and role.</p>
 <ul class="trust">
-<li><strong>Verified crew only.</strong> Any airline, pilots and cabin crew.</li>
+<li><strong>For pilots and cabin crew.</strong> Any airline.</li>
 <li><strong>Plans, not profiles.</strong> You join what’s on. Nobody sees where you are.</li>
 <li><strong>Starting in Dubai,</strong> December 2026.</li>
 </ul>
-<p>Once your account is checked, open this link again and you’ll land on the plan.</p>
-<div class="actions"><a class="btn secondary" href="/verification/">How we check crew</a><a class="btn ghost" href="/safety/">Meeting safely</a></div>
+<p>Once you’ve joined, open this link again and you’ll land on the plan.</p>
+<div class="actions"><a class="btn secondary" href="/verification/">How joining works</a><a class="btn ghost" href="/safety/">Meeting safely</a></div>
 </section>
 </div>
 <script>

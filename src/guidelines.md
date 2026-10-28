@@ -4,14 +4,16 @@ description: What Galley is for and what gets you removed.
 ---
 # Galley Community Guidelines
 
-*Version 2026-10-27. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-28. Takes effect when Galley launches on the App Store and Google Play.*
 
-Galley exists so that nobody has to spend a day off or a layover alone unless they want to. It works only if everyone here is crew, everyone is decent, and nobody has to worry about where they sleep tonight. These are the house rules. Breaking them can get your content removed or your account suspended or banned (see "What happens when someone breaks them").
+Galley exists so that nobody has to spend a day off or a layover alone unless they want to. It works only if everyone here is crew and honest about it, everyone is decent, and nobody has to worry about where they sleep tonight. These are the house rules. Breaking them can get your content removed or your account suspended or banned (see "What happens when someone breaks them").
 
 ## Be who you say you are
 
 - One account, yours, with your own photos and your real first name or the name crew know you by.
-- Verify with your own work email. Only vouch for people you know fly for your airline now: your account answers for it. In a crew check, crop your own roster, nothing edited.
+- Tell the truth about yourself: your name, your base, pilot or cabin crew. Nobody checks it when you join, so it rests on you.
+- The work email badge is optional; add it only with your own work mailbox. In a crew check, crop your own roster, nothing edited.
+- Invite people you know fly. If someone who joined with your code is banned, your code stops.
 - If you stop flying for an airline, stop using Galley. Former crew are welcome back when they return to the line.
 
 ## Protect the crew hotel
@@ -52,8 +54,9 @@ The single most important rule.
 - Turn up when you say you're in. If plans change, tap "Leave" (or "Can't make it" in the last hour) so the seat goes back. Hosts: cancel early rather than leave people waiting.
 - Choose public places. On a layover, meet in the lobby, then go together. At your base, meet at the venue.
 - No pressure to drink, stay out, spend, or go anywhere private.
-- Respect audience settings. Women-only plans are for women, men-only plans for men, and so on.
-- Share plan links with crew you know. Any verified crew member who gets the link can join that plan, so don't post links publicly. If you're joining a plan in another city, only say you're in if you'll be there.
+- Respect audience settings. Women-only plans are for women, men-only plans for men, badge-only plans for members with the work email badge, and so on.
+- Hosts can remove anyone from their plan, quietly; that person can't see it or join it again. Use it when something feels off, not to settle scores.
+- Share plan links with crew you know. Any member who gets the link can join that plan, so don't post links publicly. If you're joining a plan in another city, only say you're in if you'll be there.
 - Ask before taking photos of people, and before posting them anywhere outside Galley.
 
 ## Keep it real and legal
@@ -77,7 +80,7 @@ The single most important rule.
 ## If something goes wrong
 
 - **Not now** turns down an invite. The sender never finds out. Right after it you can choose **Don't show me them again** (a block) or **Report**.
-- **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a plan you're in.
+- **Block** anyone, any time. You disappear from each other's boards, profiles and messages, and they can't join a plan you're in. If you're both already in one, you don't see each other in it.
 - **Report** someone from their profile or from your chat with them. You can attach your recent messages with them; we can't read chats otherwise, because they're encrypted. Reporting also blocks. The person isn't told who reported them.
 - **Report** a club post, reply, place or route from its ••• menu. A person reviews it, and three reports from different members hide it until then. Reporting content doesn't block or suspend its author.
 - **Report** a city tip or a comment on it from its ••• menu, in the same way.
@@ -87,9 +90,9 @@ The single most important rule.
 
 ## What happens when someone breaks them
 
-- Reports of sexual, hateful or threatening content, or of someone at risk, are acted on within 24 hours. Every other report gets a decision within 72 hours.
-- Depending on what happened, we may dismiss the report, warn the person, remove content, ask them to verify again, suspend the account until we've reviewed it, or ban it permanently. Serious first offences (threats, sexual harassment, sharing someone's hotel, fake proof) can lead straight to a ban. A ban follows the person, not the account: a new account with the same work email is caught for 3 years.
-- Some steps are automatic. Public text matching common hotel brands or the patterns of flight numbers, room numbers or long numbers is rejected. A "not crew" report opens a crew check: the person has 72 hours to show us two roster crops or do a short video call, and stays visible meanwhile; with no answer, or no confirmation, they're hidden until a check passes. Report "not crew" only when you have a real reason. There's no limit, but we look at the reports of anyone who files a lot of them. Two open reports suspend an account until we review it. If several people block or report someone, or very few of their invites are accepted, their invites pause until we review it.
+- Reports of sexual, hateful or threatening content, harassment, someone at risk, or someone in a plan that hasn't happened yet are acted on within 24 hours. Every other report gets a decision within 5 business days (Monday to Friday).
+- Depending on what happened, we may dismiss the report, warn the person, remove content, ask them for a crew check, suspend the account until we've reviewed it, or ban it permanently. Serious first offences (threats, sexual harassment, sharing someone's hotel, fake proof) can lead straight to a ban. A ban follows the person, not the account: signing up again breaks the Terms, and a work email used for a badge by a banned account can't be used for one again for 3 years.
+- Some steps are automatic. Public text matching common hotel brands or the patterns of flight numbers, room numbers or long numbers is rejected. A "not crew" report opens a crew check: the person has 72 hours to show us two roster crops and stays visible meanwhile; with no answer, or no confirmation, they're hidden until a check passes. "Not crew" reports from two different people hide them at once until a check passes. New accounts can join 2 plans in their first 72 hours. Report "not crew" only when you have a real reason. There's no limit, but we look at the reports of anyone who files a lot of them. Two open reports suspend an account until we review it. If several people block or report someone, or very few of their invites are accepted, their invites pause until we review it.
 - If we act on your account or content, we tell you what we did, which rule, whether it was automatic, and how to appeal, in the app (Settings → Account notices) and by email. Reply to that email within 6 months to appeal; we answer within 7 days.
 
 Thanks for looking after each other. That's the whole point.

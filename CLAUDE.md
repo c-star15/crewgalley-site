@@ -25,3 +25,9 @@ agreement is `CLAUDE.md` in the app repo (c-star15/crew-hub). For this site:
   (counts, other people, plans); mocks are labelled "Illustration". Don't bring back
   "by crew, for crew", "connect with verified crew", "make the most of every layover" or
   "Find your people. At base and away."
+- Open sign-up (Victor, 28 Oct 2026; project doc `galley/build-plan-open-signup.md`): Galley does not
+  verify members. Never write "verified", "every account is checked" or "crew only" as a promise;
+  "For pilots and cabin crew" is the line. `/verification/` is "How joining works" (the nav says
+  "How to join"): self-declared joining, the optional "Work email checked" badge (no airline), the
+  crew check after reports, report times (24 hours urgent, 5 business days otherwise). `/vouch/`
+  only says vouching has closed. No airline is shown anywhere.

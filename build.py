@@ -60,7 +60,7 @@ HERO = '''<section class="hero"><div class="wrap wide hero-grid"><div class="her
 <section class="section closing"><div class="wrap">
 <p class="eyebrow">Join us</p>
 <h2>A little more life off duty.</h2>
-<p>A community for verified pilots and cabin crew, beginning in Dubai.</p>
+<p>A community for pilots and cabin crew, beginning in Dubai.</p>
 <div class="actions"><a class="btn" href="https://www.instagram.com/crewgalley/" rel="noopener">Follow @crewgalley</a></div>
 <p class="small">Launching December 2026.</p>
 <p class="small">Galley is an independent community for pilots and cabin crew aged 18+. It is not affiliated with any airline.</p>

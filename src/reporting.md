@@ -19,7 +19,7 @@ Galley is operated by Crewgalley LLC, 30 N Gould St, Ste R, Sheridan, WY 82801, 
 3. your name and email address. You may leave these out when reporting child sexual abuse material;
 4. a statement that you believe the report is accurate and complete.
 
-We confirm receipt, act within 24 hours on sexual, hateful or threatening content or someone at risk, decide everything else within 72 hours, and tell you what we decided. If we remove content or restrict an account, the person affected is told why and how to appeal. We do not tell them who reported them unless the law requires it.
+We confirm receipt, act within 24 hours on sexual, hateful or threatening content, harassment, someone at risk or someone in a plan that hasn't happened yet, decide everything else within 5 business days (Monday to Friday), and tell you what we decided. If we remove content or restrict an account, the person affected is told why and how to appeal. We do not tell them who reported them unless the law requires it.
 
 If someone is in immediate danger, contact local emergency services first.
 
@@ -29,9 +29,9 @@ If you believe content on Galley infringes your copyright, email **[legal@crewga
 
 ## Requests from law enforcement and authorities
 
-Galley holds little: no hotels, flights or precise locations; messages are end-to-end encrypted, so we hold only ciphertext we cannot open and the metadata in Privacy Policy section 4a; work email addresses are not kept, and crew-check crops are deleted soon after a decision; stays, Up for and meetups expire within days. Some records last longer (accepted conversations' metadata, 18 months of board views and meetup records). Section 8 of the Privacy Policy lists every period. Please check whether what you need could exist before you ask.
+Galley holds little: no hotels, flights or precise locations; messages are end-to-end encrypted, so we hold only ciphertext we cannot open and the metadata in Privacy Policy section 4a; we don't ask for anyone's airline, work email addresses (badge only) are not kept, and crew-check crops are deleted soon after a decision; stays, Up for and meetups expire within days. Some records last longer (accepted conversations' metadata, 18 months of board views and meetup records). Section 8 of the Privacy Policy lists every period. Please check whether what you need could exist before you ask.
 
-- Send requests to **[legal@crewgalley.app](mailto:legal@crewgalley.app)** from an official address, identifying the authority, the legal basis, the account concerned (email or display name and airline), and exactly what is requested.
+- Send requests to **[legal@crewgalley.app](mailto:legal@crewgalley.app)** from an official address, identifying the authority, the legal basis, the account concerned (email or display name and base), and exactly what is requested.
 - We disclose data only under valid legal process that binds us. We may ask for the request to come through an international channel (for example a mutual legal assistance request) where the law requires.
 - We tell the member about the request before disclosing, unless the law prohibits it or doing so would put someone at risk.
 - We push back on requests that are overbroad, unclear or not legally valid.
