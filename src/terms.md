@@ -4,9 +4,9 @@ description: The agreement between you and Galley.
 ---
 # Galley Terms of Service
 
-*Version 2026-10-27. Takes effect when Galley launches on the App Store and Google Play.*
+*Version 2026-10-28. Takes effect when Galley launches on the App Store and Google Play.*
 
-These terms are an agreement between you and **Galley's founder**, an individual based in Dubai, United Arab Emirates, who operates Galley ("Galley", "we", "us"), postal address on request at [privacy@crewgalley.app](mailto:privacy@crewgalley.app). By creating an account you accept them, together with the Community Guidelines ([crewgalley.app/guidelines/](/guidelines/)) and the Privacy Policy ([crewgalley.app/privacy/](/privacy/)), which form part of these terms.
+These terms are an agreement between you and **Crewgalley LLC**, a Wyoming limited liability company that operates Galley ("Galley", "we", "us"), postal address 30 N Gould St, Ste R, Sheridan, WY 82801, United States. By creating an account you accept them, together with the Community Guidelines ([crewgalley.app/guidelines/](/guidelines/)) and the Privacy Policy ([crewgalley.app/privacy/](/privacy/)), which form part of these terms.
 
 Sections 11 and 12 limit our liability and section 17 sets out where disputes are decided. Please read them.
 
@@ -139,17 +139,14 @@ If you downloaded Galley from Google Play, Google Play's terms also apply to you
 
 ## 17. Governing law and disputes
 
-These terms are governed by the laws of the Emirate of Dubai and the federal laws of the United Arab Emirates, and the courts of Dubai have jurisdiction, except as follows:
-
-- if you live in the European Union, the United Kingdom or another country whose law gives consumers the right to the protection of their local law or to sue in their local courts, you keep those rights;
-- either of us may seek urgent relief to stop harm in any competent court.
+These terms are governed by the laws of the State of Wyoming, United States, without regard to conflict-of-law rules. Any dispute is resolved by binding individual arbitration administered by the American Arbitration Association under its Consumer Arbitration Rules, except small-claims cases and requests for urgent relief. Class and representative actions are waived. You may opt out of arbitration within 30 days of first accepting these terms by writing to [legal@crewgalley.app](mailto:legal@crewgalley.app). If you live in the European Union, the United Kingdom or another country whose law gives consumers the right to the protection of their local law or to sue in their local courts, this arbitration clause does not apply to you and you keep those rights.
 
 Before starting any claim, please write to [legal@crewgalley.app](mailto:legal@crewgalley.app) so we can try to resolve it. EU residents can also use the online dispute resolution options available in their country.
 
 ## 18. General
 
-If a part of these terms is found unenforceable, the rest stays in force. If we do not enforce a right, we have not waived it. You may not transfer your rights under these terms. We may transfer ours to a company we form to operate Galley, or to a successor; we will tell you first, and your rights will not be reduced. These terms, the Community Guidelines and the Privacy Policy are the whole agreement between us about Galley. If a translation differs, the English version applies.
+If a part of these terms is found unenforceable, the rest stays in force. If we do not enforce a right, we have not waived it. You may not transfer your rights under these terms. We may transfer ours to a successor that operates Galley; we will tell you first, and your rights will not be reduced. These terms, the Community Guidelines and the Privacy Policy are the whole agreement between us about Galley. If a translation differs, the English version applies.
 
 ## 19. Contact
 
-[support@crewgalley.app](mailto:support@crewgalley.app) · [legal@crewgalley.app](mailto:legal@crewgalley.app) · Galley's founder, Dubai, United Arab Emirates
+[support@crewgalley.app](mailto:support@crewgalley.app) · [legal@crewgalley.app](mailto:legal@crewgalley.app) · Crewgalley LLC, 30 N Gould St, Ste R, Sheridan, WY 82801, United States

@@ -43,4 +43,4 @@ If you no longer have the app or can't sign in, email **[privacy@crewgalley.app]
 
 You can delete individual photos, tips, stays, meetups you host and conversations (for yourself) in the app at any time, without deleting your account. For anything else, write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app).
 
-Galley is operated by Galley's founder. Privacy Policy: [crewgalley.app/privacy/](/privacy/)
+Galley is operated by Crewgalley LLC. Privacy Policy: [crewgalley.app/privacy/](/privacy/)

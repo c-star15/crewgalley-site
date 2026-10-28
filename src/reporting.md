@@ -6,7 +6,7 @@ description: How to report content, send a copyright notice, or make a request a
 
 *Takes effect when Galley launches on the App Store and Google Play.*
 
-Galley is operated by Galley's founder, Dubai, United Arab Emirates. This page is for members, non-members, rights holders and authorities.
+Galley is operated by Crewgalley LLC, 30 N Gould St, Ste R, Sheridan, WY 82801, United States. This page is for members, non-members, rights holders and authorities.
 
 ## Report something on Galley
 

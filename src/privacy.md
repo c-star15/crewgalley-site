@@ -10,7 +10,7 @@ Galley is a social app for verified airline pilots and cabin crew to make plans 
 
 ## 1. Who we are
 
-Galley is operated by **its founder**, an individual based in Dubai, United Arab Emirates ("Galley", "we", "us"), postal address on request at [privacy@crewgalley.app](mailto:privacy@crewgalley.app). We are the controller of your personal data.
+Galley is operated by **Crewgalley LLC**, a Wyoming limited liability company ("Galley", "we", "us"), postal address 30 N Gould St, Ste R, Sheridan, WY 82801, United States. We are the controller of your personal data.
 
 - Privacy questions and requests: [privacy@crewgalley.app](mailto:privacy@crewgalley.app)
 - Representative in the European Union: being appointed before launch; until then write to [privacy@crewgalley.app](mailto:privacy@crewgalley.app)
@@ -232,4 +232,4 @@ We will post changes here with a new version date. If a change is significant, w
 
 ## 13. Contact
 
-[privacy@crewgalley.app](mailto:privacy@crewgalley.app) · Galley's founder, Dubai, United Arab Emirates
+[privacy@crewgalley.app](mailto:privacy@crewgalley.app) · Crewgalley LLC, 30 N Gould St, Ste R, Sheridan, WY 82801, United States
