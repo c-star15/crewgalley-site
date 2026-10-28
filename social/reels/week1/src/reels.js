@@ -565,95 +565,161 @@
 
 
   // ===========================================================================
-  // Forwardable (28 Oct, Victor): "When are you actually free?" A group chat
-  // with friends who work Monday to Friday, then the turn: crew are free on
-  // your Tuesday. No app on screen, no counts.
+  // Forwardable (Victor, 28 Oct 22:23): a crew group chat in a messaging-app
+  // style where four rosters never line up; "Making plans isn't always easy.
+  // Galley can help." Then a glimpse of Base (Illustration): your days off,
+  // one tap I'm free, your clubs. No counts, no other people.
   // ===========================================================================
   function whenFree(stage) {
     const bpm = 100, B = 60 / bpm, T = (b) => b * B;
     stage.style.background = C.ink;
     const events = [];
-    // chat header (stays on top while the chat scrolls under it)
-    const head = h('div', { position: 'absolute', left: '0', right: '0', top: '0', height: '440px', paddingTop: '210px', background: C.ink, zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px', opacity: 0 });
-    const avs = h('div', { display: 'flex' }, ['#E9A0A0', '#9DC3E6', '#B5D99C'].map((c, i) => h('div', { width: '74px', height: '74px', borderRadius: '50%', background: c, border: `5px solid ${C.ink}`, marginLeft: i ? '-20px' : '0' })));
-    head.appendChild(avs);
-    head.appendChild(h('span', { fontSize: '40px', fontWeight: 700, color: C.cream }, 'The girls 🌸'));
-    head.appendChild(h('span', { fontSize: '30px', color: C.softOnInk }, 'Ana, Mia, Sofia'));
-    stage.appendChild(head);
-    const MSG = [
-      // [who, text, beat]  who: f = a friend (left, with name), me = right
-      ['Ana', 'Brunch this Saturday? 🥞', 1],
-      ['me', 'Flying Saturday 😭', 3],
-      ['Mia', 'Sunday then?', 4.5],
-      ['me', 'Also flying', 6],
-      ['Sofia', 'Ok when ARE you free??', 7.5],
-      ['me', 'Tuesday. 11am. 🙌', 9.5],
-      ['Ana', '…we work, babe', 11.5],
-    ];
-    const col = h('div', { position: 'absolute', left: '72px', right: '72px', top: '470px', display: 'flex', flexDirection: 'column', gap: '22px' });
-    stage.appendChild(col);
-    const bubbles = MSG.map(([who, text, beat], i) => {
-      const me = who === 'me';
-      const wrap = h('div', { display: 'flex', flexDirection: 'column', alignItems: me ? 'flex-end' : 'flex-start', gap: '6px', opacity: 0 });
-      if (!me) wrap.appendChild(h('span', { fontSize: '26px', fontWeight: 600, color: C.softOnInk, marginLeft: '24px' }, who));
-      wrap.appendChild(h('div', { maxWidth: '760px', padding: '26px 36px', borderRadius: me ? '46px 46px 12px 46px' : '46px 46px 46px 12px', background: me ? C.amber : '#24365C', color: me ? C.ink : C.cream, fontSize: '50px', fontWeight: me ? 700 : 500, lineHeight: 1.2, letterSpacing: '-.01em' }, text));
-      col.appendChild(wrap);
-      const t = T(beat);
-      events.push({ t, kind: me ? 'tap' : 'pop', n: i });
-      return { wrap, t, me };
-    });
-    // typing dots before the last friend message
-    const typing = h('div', { display: 'flex', gap: '10px', padding: '28px 34px', borderRadius: '46px 46px 46px 12px', background: '#24365C', alignSelf: 'flex-start', opacity: 0 }, [0, 1, 2].map(() => h('i', { width: '16px', height: '16px', borderRadius: '50%', background: C.softOnInk, display: 'block' })));
-    col.appendChild(typing);
-    const dots = Array.from(typing.children);
-    const tTypeA = T(10.4), tTypeB = T(11.5);
+    const WA = { wall: '#EFEAE2', bar: '#F0F2F5', inBg: '#FFFFFF', outBg: '#D9FDD3', text: '#111B21', time: '#667781', tick: '#53BDEB' };
 
-    // the turn
-    const tTurn = T(14);
-    events.push({ t: tTurn - 0.12, kind: 'whoosh' });
-    const turn = h('div', { position: 'absolute', inset: 0, background: C.cream, opacity: 0 });
-    stage.appendChild(turn);
+    // --- scene 1: the chat ---------------------------------------------------
+    const chat = h('div', { position: 'absolute', inset: 0, background: WA.wall, overflow: 'hidden' });
+    // a faint dotted wallpaper
+    chat.style.backgroundImage = 'radial-gradient(rgba(17,27,33,.05) 2px, transparent 2.5px)';
+    chat.style.backgroundSize = '44px 44px';
+    stage.appendChild(chat);
+    const bar = h('div', { position: 'absolute', left: 0, right: 0, top: 0, height: '250px', paddingTop: '110px', background: WA.bar, zIndex: 2, display: 'flex', alignItems: 'center', gap: '22px', padding: '110px 40px 0 28px', borderBottom: '1px solid #D1D7DB' }, [
+      icon('arrow-back', 54, WA.text),
+      h('div', { width: '96px', height: '96px', borderRadius: '50%', background: '#FFE3B3', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '50px' }, '✈️'),
+      h('div', { flex: 1, display: 'flex', flexDirection: 'column', gap: '4px' }, [
+        h('span', { fontSize: '44px', fontWeight: 600, color: WA.text }, 'Crew brunch 🥞'),
+        h('span', { fontSize: '30px', color: WA.time }, 'Ana, Mia, Sofia, You'),
+      ]),
+      icon('videocam-outline', 50, WA.text), h('span', { width: '18px' }), icon('call-outline', 46, WA.text),
+    ]);
+    chat.appendChild(bar);
+    const NAME = { Ana: '#C2185B', Mia: '#1E88E5', Sofia: '#2E7D32' };
+    const MSG = [
+      ['Ana', 'Brunch this week? 🥞', '10:41', 1],
+      ['me', 'I’m off Tue and Wed!', '10:42', 2.6],
+      ['Mia', 'Tue I’m in Bangkok ✈️ Wed?', '10:44', 4.2],
+      ['Sofia', 'Wed I land at 6am 😵‍💫 sleeping all day', '10:45', 5.8],
+      ['Ana', 'Thursday?', '10:45', 7.2],
+      ['me', 'Turnaround Thursday 🙃', '10:46', 8.4],
+      ['Mia', 'Next week then', '10:48', 9.8],
+      ['Sofia', 'New roster just came out… I’m off Saturday only 😭', '10:51', 11.4],
+      ['Ana', 'Ok. Next month? 😂', '10:52', 13.2],
+    ];
+    const col = h('div', { position: 'absolute', left: '36px', right: '36px', top: '300px', display: 'flex', flexDirection: 'column', gap: '18px' });
+    chat.appendChild(col);
+    const bubbles = MSG.map(([who, text, time, beat], i) => {
+      const me = who === 'me';
+      const wrap = h('div', { display: 'flex', justifyContent: me ? 'flex-end' : 'flex-start', opacity: 0 });
+      const bub = h('div', { maxWidth: '800px', padding: '16px 24px 14px', borderRadius: me ? '28px 6px 28px 28px' : '6px 28px 28px 28px', background: me ? WA.outBg : WA.inBg, color: WA.text, boxShadow: '0 2px 2px rgba(11,20,26,.08)', display: 'flex', flexDirection: 'column', gap: '4px' });
+      if (!me) bub.appendChild(h('span', { fontSize: '30px', fontWeight: 600, color: NAME[who] }, who));
+      const line = h('div', { display: 'flex', alignItems: 'flex-end', gap: '18px', flexWrap: 'wrap' }, [
+        h('span', { fontSize: '44px', lineHeight: 1.3 }, text),
+        h('span', { marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '26px', color: WA.time, whiteSpace: 'nowrap' }, [h('span', null, time), me ? icon('checkmark-done', 34, WA.tick) : null]),
+      ]);
+      bub.appendChild(line);
+      wrap.appendChild(bub);
+      col.appendChild(wrap);
+      events.push({ t: T(beat), kind: me ? 'tap' : 'pop', n: i });
+      return { wrap, t: T(beat), me };
+    });
+    const tChatOut = T(16.5);
+
+    // --- scene 2: the line ---------------------------------------------------
     const heads = Headlines(stage, [
-      { lines: ['Tuesday, 11am.'], t0: tTurn + 0.2, t1: T(26) - 0.3, top: 620, color: C.ink },
-      { lines: ['Someone at your', 'base is free too.'], t0: T(17), t1: T(26) - 0.3, top: 820, color: C.ink, style: { 1: { color: '#B9770E' } } },
-    ], { color: C.ink });
-    const sub = h('p', { position: 'absolute', left: '96px', right: '96px', top: '1150px', margin: 0, fontSize: '46px', fontWeight: 600, color: C.softOnCream, lineHeight: 1.3, opacity: 0 }, 'Padel, brunch, the beach.<br>With crew who get your roster.');
-    stage.appendChild(sub);
-    const tSub = T(20.5);
-    events.push({ t: T(17), kind: 'chime' });
-    const tEnd = T(26), tSoon = T(28);
+      { lines: ['Making plans', 'isn’t always easy.'], t0: tChatOut + 0.3, t1: T(22) - 0.3, top: 700 },
+      { lines: ['Galley can help.'], t0: T(22), t1: T(26) - 0.3, top: 780, color: C.amber },
+    ], { color: C.cream });
+    events.push({ t: tChatOut, kind: 'whoosh' }, { t: T(22), kind: 'chime' });
+
+    // --- scene 3: a glimpse of Base (Illustration) ---------------------------
+    const tBase = T(26);
+    const top2 = h('p', { position: 'absolute', left: '96px', top: '210px', margin: 0, fontSize: '84px', fontWeight: 900, letterSpacing: '-.04em', lineHeight: 1, color: C.cream, opacity: 0, fontVariationSettings: '"opsz" 32' }, 'Your days off.<br><span style="color:#F2A93B">Your clubs.</span>');
+    stage.appendChild(top2);
+    const PT = 620;
+    const lab = illus(stage, 984, PT - 64, true);
+    const ph = Phone(stage, PT, true);
+    const content = h('div', { position: 'absolute', left: 0, top: 0, width: '100%' });
+    ph.inner.appendChild(content);
+    const S2 = 2.4, P = 16 * S2;
+    const add = (e, x, y) => { Object.assign(e.style, { position: 'absolute', left: px(x), top: px(y) }); content.appendChild(e); return e; };
+    const hdr = h('div', { width: px(936 - 2 * P), display: 'flex', alignItems: 'center', gap: px(8 * S2) }, [
+      h('div', { flex: 1, display: 'flex', flexDirection: 'column' }, [
+        h('span', { fontSize: px(28 * S2), lineHeight: px(34 * S2), fontWeight: 800, letterSpacing: px(-0.6 * S2), color: APP.text }, 'Dubai'),
+        h('span', { fontSize: px(15 * S2), color: APP.muted }, 'Make the most of your days off.'),
+      ]),
+      h('div', { width: px(44 * S2), height: px(44 * S2), borderRadius: '50%', background: APP.surface, display: 'flex', alignItems: 'center', justifyContent: 'center' }, icon('calendar-outline', 22 * S2, APP.text)),
+    ]);
+    hdr.className = 'app';
+    add(hdr, P, 18 * S2);
+    const days = [['Mon', 16], ['Tue', 17], ['Wed', 18], ['Thu', 19], ['Fri', 20], ['Sat', 21], ['Sun', 22]];
+    const cells = days.map(([dow, num], i) => { const c = DayCell({ dow, num, dots: 0 }, S2); add(c.el, P + i * 56 * S2, 80 * S2); return c; });
+    const fy = 80 * S2 + 66 * S2 + 16 * S2;
+    const freeBox = h('div', { width: px(936 - 2 * P), height: px(48 * S2), borderRadius: px(12 * S2), background: APP.surface, display: 'flex', alignItems: 'center', gap: px(16 * S2), padding: `0 ${px(16 * S2)}` });
+    freeBox.className = 'app';
+    const fText = h('span', { flex: 1, fontSize: px(15 * S2), fontWeight: 800, color: APP.text, whiteSpace: 'nowrap' });
+    const nf = h('span', { fontSize: px(14 * S2), fontWeight: 400, color: APP.muted }, ' · Not free');
+    const yf = h('span', { fontSize: px(14 * S2), fontWeight: 600, color: APP.link }, ' · Free all day');
+    fText.appendChild(document.createTextNode('Tue 17')); fText.appendChild(nf); fText.appendChild(yf);
+    const fBtn = h('div', { padding: `0 ${px(14 * S2)}`, height: px(34 * S2), borderRadius: '999px', background: APP.accent, color: APP.accentText, fontSize: px(14 * S2), fontWeight: 800, display: 'flex', alignItems: 'center' }, 'I’m free');
+    const fEdit = h('span', { fontSize: px(15 * S2), fontWeight: 700, color: APP.link }, 'Edit');
+    freeBox.appendChild(fText); freeBox.appendChild(fBtn); freeBox.appendChild(fEdit);
+    add(freeBox, P, fy);
+    const cy = fy + 48 * S2 + 30 * S2;
+    const clubsHead = add(h('div', { width: px(936 - 2 * P), display: 'flex', justifyContent: 'space-between', alignItems: 'center' }, [
+      h('span', { fontSize: px(20 * S2), fontWeight: 800, color: APP.text, letterSpacing: px(-0.3 * S2) }, 'Your clubs'),
+      h('span', { fontSize: px(15 * S2), fontWeight: 700, color: APP.link }, 'See all'),
+    ]), P, cy);
+    clubsHead.className = 'app';
+    const CL = [['tennisball-outline', 'Padel'], ['footsteps-outline', 'Running'], ['egg-outline', 'Brunch'], ['sunny-outline', 'Beach']];
+    const clubEls = CL.map(([ic, name], i) => {
+      const e = h('div', { width: px((936 - 2 * P - 8 * S2) / 2), display: 'flex', alignItems: 'center', gap: px(12 * S2), padding: px(12 * S2), borderRadius: px(16 * S2), background: APP.surface }, [
+        h('div', { width: px(42 * S2), height: px(42 * S2), borderRadius: '50%', background: APP.signalSoft, display: 'flex', alignItems: 'center', justifyContent: 'center' }, icon(ic, 21 * S2, APP.link)),
+        h('span', { fontSize: px(16 * S2), fontWeight: 700, color: APP.text }, name),
+      ]);
+      e.className = 'app';
+      add(e, P + (i % 2) * ((936 - 2 * P) / 2 + 4 * S2), cy + 40 * S2 + Math.floor(i / 2) * 74 * S2);
+      return e;
+    });
+    const tSel = tBase + T(2), tFree = tBase + T(4.5), tC = [tBase + T(6.5), tBase + T(7), tBase + T(7.5), tBase + T(8)];
+    events.push({ t: tSel, kind: 'tap' }, { t: tFree, kind: 'tap' }, { t: tFree + 0.05, kind: 'chime' });
+    tC.forEach((t, i) => events.push({ t, kind: 'pop', n: i }));
+    const tEnd = T(40), tSoon = T(42);
     const end = EndCard(stage, C.ink, C.cream, C.softOnInk, 'Coming soon to Dubai');
 
     function render(t) {
-      const kh = EASE.out(ramp(t, 0.1, 0.5));
-      head.style.opacity = kh.toFixed(3);
-      head.style.transform = `translateY(${((1 - kh) * 30).toFixed(1)}px)`;
-      // the list scrolls up as messages arrive (keeps the newest in view)
+      // chat
       let shown = 0;
       bubbles.forEach((b) => {
-        const k = pop(t, b.t, 0.32);
+        const k = pop(t, b.t, 0.3);
         b.wrap.style.opacity = Math.min(1, k).toFixed(3);
-        b.wrap.style.transform = `translateY(${((1 - Math.min(1, k)) * 40).toFixed(1)}px) scale(${(0.9 + 0.1 * k).toFixed(4)})`;
-        b.wrap.style.transformOrigin = b.me ? 'right bottom' : 'left bottom';
+        b.wrap.style.transform = `translateY(${((1 - Math.min(1, k)) * 30).toFixed(1)}px)`;
         if (t >= b.t) shown++;
       });
-      const ty = t >= tTypeA && t < tTypeB;
-      typing.style.opacity = ty ? '1' : '0';
-      typing.style.display = ty ? 'flex' : 'none';
-      dots.forEach((d, i) => { d.style.transform = `translateY(${(-8 * Math.max(0, Math.sin((t * 6 - i * 0.7) * Math.PI / 2))).toFixed(1)}px)`; });
-      const scroll = Math.max(0, shown - 8) * 150;
-      col.style.transform = `translateY(${(-scroll).toFixed(1)}px)`;
-      col.style.transition = 'none';
-      const kt = EASE.inOut(ramp(t, tTurn - 0.15, tTurn + 0.35));
-      turn.style.opacity = kt.toFixed(3);
-      head.style.opacity = (kh * (1 - kt)).toFixed(3);
+      // keep the newest message in view: measure the column
+      const hgt = col.offsetHeight, vis = 1920 - 300 - 120;
+      const visibleH = bubbles.filter((b) => t >= b.t).reduce((acc, b) => acc + b.wrap.offsetHeight + 18, 0);
+      col.style.transform = `translateY(${(-Math.max(0, visibleH - vis)).toFixed(1)}px)`;
+      const ko = EASE.inOut(ramp(t, tChatOut - 0.1, tChatOut + 0.4));
+      chat.style.opacity = (1 - ko).toFixed(3);
+      chat.style.transform = `scale(${(1 - 0.05 * ko).toFixed(4)})`;
       heads.render(t);
-      const ks = EASE.out(ramp(t, tSub, tSub + 0.5)) * (1 - EASE.in(ramp(t, tEnd - 0.3, tEnd)));
-      sub.style.opacity = ks.toFixed(3);
-      sub.style.transform = `translateY(${((1 - Math.min(1, ks * 2)) * 30).toFixed(1)}px)`;
+      // base
+      const kb = EASE.out(ramp(t, tBase, tBase + 0.6));
+      const kbo = EASE.in(ramp(t, tEnd - 0.4, tEnd));
+      top2.style.opacity = (kb * (1 - kbo)).toFixed(3);
+      top2.style.transform = `translateY(${((1 - kb) * 40).toFixed(1)}px)`;
+      ph.frame.style.opacity = kb.toFixed(3);
+      ph.frame.style.transform = `translateY(${((1 - kb) * 160).toFixed(1)}px)`;
+      lab.style.opacity = (0.75 * EASE.out(ramp(t, tBase + 0.3, tBase + 0.8))).toFixed(3);
+      cells.forEach((c, i) => c.set({ sel: i === 1 && t >= tSel ? 1 : 0, free: i === 1 && t >= tFree ? 1 : (i === 2 && t >= tFree + T(1) ? 1 : 0) }));
+      const freeNow = t >= tFree;
+      nf.style.display = freeNow ? 'none' : 'inline'; yf.style.display = freeNow ? 'inline' : 'none';
+      fBtn.style.display = freeNow ? 'none' : 'flex'; fEdit.style.display = freeNow ? 'inline' : 'none';
+      fBtn.style.transform = `scale(${(1 - 0.1 * Math.max(0, 1 - Math.abs(t - tFree) / 0.12)).toFixed(3)})`;
+      clubsHead.style.opacity = EASE.out(ramp(t, tC[0] - 0.3, tC[0])).toFixed(3);
+      clubEls.forEach((e, i) => { const k = pop(t, tC[i], 0.32); e.style.opacity = Math.min(1, k).toFixed(3); e.style.transform = `scale(${(0.85 + 0.15 * k).toFixed(4)})`; });
       end.render(t, tEnd, tSoon);
     }
-    return { bpm, dur: T(32), cues: { lift: T(8), drop: tTurn, end: tEnd }, events, render, cover: T(11.9), key: 'G' };
+    return { bpm, dur: T(46), cues: { lift: T(8), drop: tChatOut, end: tEnd }, events, render, cover: T(14), key: 'G' };
   }
 
   window.REELS = { 'when-free': whenFree, 'off-today': offToday, '47-messages': messages, 'off-tuesday': offTuesday, 'roster-roulette': roster, clubs };
