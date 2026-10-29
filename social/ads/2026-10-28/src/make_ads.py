@@ -354,12 +354,12 @@ HASHTAGS = '#crewlife #cabincrew #pilotlife #dubai'
 
 
 def caption(a):
-    return f"{a['caption']}\n\n{HASHTAGS} {a['tag']}"
+    return f"{a['caption']}\nOpening soon in Dubai.\n\n{HASHTAGS} {a['tag']}"
 
 
 def alt_text(a):
     head = ' '.join(a['head'])
-    return f"Galley ad: \"{head}\" over an illustration of the app's plan card: {a['alt_card']}, with a Join button. Sketch: {a['alt_sketch']}."
+    return f"\"{head}\" over an illustration of Galley's plan card: {a['alt_card']}, with a Join button. Sketch: {a['alt_sketch']}."
 
 
 def stem(a, fmt):
